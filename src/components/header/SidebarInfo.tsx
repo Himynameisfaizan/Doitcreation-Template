@@ -31,7 +31,7 @@ const SidebarInfo = ({ openInfoBar, isInfoOpen, closeInfoBar }: SidebarInfoProps
                     <div className="top">
                         <div className="widget">
                             <div className="logo">
-                                <Image src={logoLight} alt="Logo" />
+                                <Image src={logoLight} style={{width: '330px', height: "auto", objectFit: "cover"}} alt="Logo" />
                             </div>
                         </div>
                         <div className="widget address">

@@ -39,7 +39,7 @@ const BannerV8 = () => {
           <div className="row">
             <div className="col-xl-7">
               <div className="d-grid">
-                <h4>Dexus Agency</h4>
+                <h4>Digital Agency</h4>
                 <div className="right">
                   <p>
                     Providing innovative solutions in branding, marketing,

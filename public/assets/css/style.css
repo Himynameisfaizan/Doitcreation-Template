@@ -344,6 +344,21 @@ strong {
 }
 
 
+
+/* ============================================================== 
+    # home portfolio section
+=================================================================== */
+
+
+.gradient-text{
+	background-image: linear-gradient(to right, rgb(105, 202, 105), rgb(221, 158, 41));
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: 700;
+}
+
+
 /* ============================================================== 
     # Template Default Styles
 =================================================================== */

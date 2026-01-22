@@ -5,6 +5,7 @@ import ExpertiseV1 from "@/components/expertise/ExpertiseV1";
 import FooterV1 from "@/components/footer/FooterV1";
 import HeaderV1 from "@/components/header/HeaderV1";
 import { ProductCarousel } from "@/components/productCarousel/ProductCarousel";
+import Project from "@/components/project/Project";
 import ThemeDark from "@/components/switcher/ThemeDark";
 import WhyChooseV1 from "@/components/whyChoose/WhyChooseV1";
 
@@ -20,15 +21,15 @@ const Home1 = () => {
         <BannerV8 />
         <AboutV6 />
         <ProductCarousel />
-        <div className="panel bg-gray">
+        <div className="panel bg-gray py-5">
           <ExpertiseV1 />
         </div>
-         <div className="panel bg-gray">
+        <Project />
+         <div className="panel bg-gray py-5">
           <WhyChooseV1 />
         </div>
         <FooterV1 />
         <DarkClass />
-        <ThemeDark />
       </div>
     </>
   );

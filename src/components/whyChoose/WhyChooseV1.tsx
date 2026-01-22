@@ -1,4 +1,4 @@
-import thumb3 from '../../../public/assets/img/thumb/3.jpg';
+import thumb3 from '../../../public/assets/img/thumb/Packaging.png';
 import Image from 'next/image';
 
 interface DataType {
@@ -19,7 +19,7 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                         <div className="col-lg-7">
                             <div className="choose-us-style-one">
                                 <div className="pl-80 pl-md-0 pl-xs-0">
-                                    <h4 className="sub-title">Why Dixor</h4>
+                                    <h4 className="sub-title">Why Do it creation</h4>
                                     <h2 className="title">Unlock Revenue Growth</h2>
                                     <div className="faq-style-one accordion mt-30" id="faqAccordion">
                                         <div className="accordion-item">
