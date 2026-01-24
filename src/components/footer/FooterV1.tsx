@@ -44,7 +44,7 @@ const FooterV1 = ({ sectionClass }: DataType) => {
                                     <li><Link href="/contact-us">Contact</Link></li>
                                     <li><Link href="/faq">FAQS</Link></li>
                                     <li><Link href="/services">Services</Link></li>
-                                    <li><Link href="/about-us">Term & Conditions</Link></li>
+                                    <li><Link href="/terms-condition">Term & Conditions</Link></li>
                                     <li><Link href="/about-us">Privacy Policy</Link></li>
                                     <li><Link href="/about-us">Careers</Link></li>
                                     <li><Link href="/contact-us">Help Desk</Link></li>
