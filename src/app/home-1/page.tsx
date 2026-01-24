@@ -4,6 +4,7 @@ import DarkClass from "@/components/classes/DarkClass";
 import ExpertiseV1 from "@/components/expertise/ExpertiseV1";
 import FooterV1 from "@/components/footer/FooterV1";
 import HeaderV1 from "@/components/header/HeaderV1";
+import { HomeContact } from "@/components/homeContact/HomeContact";
 import { ProductCarousel } from "@/components/productCarousel/ProductCarousel";
 import Project from "@/components/project/Project";
 import ThemeDark from "@/components/switcher/ThemeDark";
@@ -30,6 +31,7 @@ const Home1 = () => {
          <div className="panel bg-gray py-5">
           <WhyChooseV1 />
         </div>
+        <HomeContact/>
         <FooterV1 />
         <DarkClass />
       </div>

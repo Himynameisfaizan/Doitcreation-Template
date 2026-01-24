@@ -21,7 +21,7 @@ export const ClientTestimonials = () => {
     <>
       <div className="" style={{ marginBottom: "100px" }}>
         <div className="expertise-area text-center">
-          <div className="container p-5">
+          <div className="container p-5"> 
             <h4 className="sub-title">Client Review</h4>
             <h2 className="title pt-2 fw-bold">Our Happy Clients</h2>
             <div className="d-flex align-items-center justify-content-center gap-2">
@@ -45,11 +45,9 @@ export const ClientTestimonials = () => {
           </div>
         </div>
         <div
-          className="image-slider"
+          className="container"
           style={{
             overflow: "hidden",
-            maxWidth: "1150px",
-            margin: "0 auto",
             display: "flex",
             gap: '20px',
           }}

@@ -301,6 +301,114 @@ select:focus {
 	box-shadow: inherit;
 }
 
+/********************************
+ 		Homecontact start 
+**********************************/
+.contact-form-parent{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.contact-form-parent> div:nth-child(3), 
+.contact-form-parent> div:nth-child(4){
+	grid-column: 2 span;
+}
+.contact-form-parent label{
+	font-size: 16px;
+}
+.contact-form-parent label span{
+	color: var(--color-primary);
+	font-size: 14px;
+}
+.contact-form-parent input{
+	border: 1px solid #ededed;
+	background-color: transparent;
+	color: white;
+	padding-left: 12px;
+	border-radius: 10px;
+	transition: all ease 0.4s;
+}
+.contact-form-parent input:focus,
+.contact-form-parent textarea:focus{
+	border: 1px solid #a1a1a1;
+	box-shadow: 0 0 1px 2px #646464;
+}
+.contact-form-parent textarea{
+	border: 1px solid #a1a1a1;
+	background-color: transparent;
+	color: white;
+	padding: 10px 0 0 12px;
+	border-radius: 10px;
+	transition: all ease 0.4s;
+}
+.contact-form-parent button{
+	color: white;
+}
+.contact-form-parent button:hover{
+	color: var(--white) !important;
+}
+.contact-detail{
+	height: fit-content;
+	border-radius: 10px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	position: sticky;
+	top: 100px;
+}
+.divider-vertical{
+	width: 30px;
+	height: 1px;
+	transform: rotate(90deg);
+	background-image: linear-gradient(to right, var(--dark-secondary) , var(--color-paragraph) 50%, var(--dark-secondary));
+}
+.divider-horizontal{
+	height: 1px;
+	background-image: linear-gradient(to right, var(--dark-secondary) , var(--color-paragraph) 50%, var(--dark-secondary));
+}
+.contact-icon-container{
+	display: flex;
+	align-items: center;
+	/* gap: 10px; */
+	padding: 10px;
+	background-color: var(--dark);
+	border-radius: 6px;
+}
+.contact-icon-container i{
+	font-size: 22px;
+}
+.contact-icon-container .icon-info div{
+	font-size: 16px;
+}
+.contact-icon-container .icon-info a{
+	font-size: 14px;
+	font-weight: 500;
+}
+.contact-social-icon{
+	display: flex;
+	justify-content: space-around;
+}
+.contact-social-icon i{
+	background-color: var(--dark-optional);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 100%;
+	color: white;
+	cursor: pointer;
+	transition: all ease-in-out 0.3s;
+}
+.contact-social-icon i:hover{
+	transform: translateY(-4px);
+	background-color: var(--color-primary);
+	box-shadow: inset 0 1px 2px #e9424a, inset -1px 0 2px #e9424a, 0 0 4px 0 #E4202A;
+}
+/********************************
+ 		Homecontact end
+**********************************/
+
 /* ----- Input Type Number Remove Arrows/Spinner ----- */
 
 .no-arrows::-webkit-outer-spin-button,
