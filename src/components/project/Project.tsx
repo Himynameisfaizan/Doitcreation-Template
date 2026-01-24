@@ -23,9 +23,7 @@ const Project = () => {
         <div className="expertise-area text-center">
           <div className="container p-5">
             <h4 className="sub-title">Our Portfolio</h4>
-            <h2 className="title pt-2 fw-bold">
-              Recent <span className="gradient-text">Projects</span>
-            </h2>
+            <h2 className="title pt-2 fw-bold">Recent Projects</h2>
             <div className="d-flex align-items-center justify-content-center gap-2">
               <div
                 style={{ height: "1px", width: "1px", padding: "2px" }}
@@ -59,7 +57,10 @@ const Project = () => {
             }}
             modules={[Autoplay]}
             className="mySwiper linear-swiper"
-            style={{ padding: "0 0 30px 0" }}
+            style={{ padding: "0 0 30px 0",
+              maskImage:
+                "linear-gradient(to right, transparent 0%, #000000ce 25%, #0000008c 85%, transparent 100%)",
+             }}
           >
             {/* Slides content same rahega */}
 
@@ -157,9 +158,11 @@ const Project = () => {
             }}
             modules={[Autoplay]}
             className="mySwiper linear-swiper"
-            style={{ padding: "0 0 60px 0" }}
+            style={{ padding: "0 0 60px 0",
+              maskImage:
+                "linear-gradient(to right, transparent 0%, #000000ce 25%, #0000008c 85%, transparent 100%)",
+             }}
           >
-
             <SwiperSlide
               style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
             >

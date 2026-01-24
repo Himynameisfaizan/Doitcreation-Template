@@ -53,7 +53,7 @@ export const ProductCarousel = () => {
                 style={{
                   height: "6px",
                   width: "6px",
-                  backgroundColor: "aqua",
+                  backgroundColor: "#E4202A",
                   display: "inline-block",
                   borderRadius: "2px",
                 }}
@@ -74,7 +74,7 @@ export const ProductCarousel = () => {
                 style={{
                   height: "6px",
                   width: "6px",
-                  backgroundColor: "aqua",
+                  backgroundColor: "#E4202A",
                   display: "inline-block",
                   borderRadius: "2px",
                 }}
@@ -95,7 +95,7 @@ export const ProductCarousel = () => {
                 style={{
                   height: "6px",
                   width: "6px",
-                  backgroundColor: "aqua",
+                  backgroundColor: "#E4202A",
                   display: "inline-block",
                   borderRadius: "2px",
                 }}
@@ -116,7 +116,7 @@ export const ProductCarousel = () => {
                 style={{
                   height: "6px",
                   width: "6px",
-                  backgroundColor: "aqua",
+                  backgroundColor: "#E4202A",
                   display: "inline-block",
                   borderRadius: "2px",
                 }}
@@ -137,7 +137,7 @@ export const ProductCarousel = () => {
                 style={{
                   height: "6px",
                   width: "6px",
-                  backgroundColor: "aqua",
+                  backgroundColor: "#E4202A",
                   display: "inline-block",
                   borderRadius: "2px",
                 }}
@@ -158,7 +158,7 @@ export const ProductCarousel = () => {
                 style={{
                   height: "6px",
                   width: "6px",
-                  backgroundColor: "aqua",
+                  backgroundColor: "#E4202A",
                   display: "inline-block",
                   borderRadius: "2px",
                 }}
@@ -167,92 +167,6 @@ export const ProductCarousel = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product1} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Website Design</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "aqua",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product2} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Packaging</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "aqua",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product3} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Branding Stationory</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "aqua",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product4} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Logo Design</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "aqua",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        {/* {[1, 2, 3, 4, 5, 6, 7].map((item, index) => (
-        ))} */}
       </Swiper>
     </>
   );

@@ -7,6 +7,7 @@ import HeaderV1 from "@/components/header/HeaderV1";
 import { ProductCarousel } from "@/components/productCarousel/ProductCarousel";
 import Project from "@/components/project/Project";
 import ThemeDark from "@/components/switcher/ThemeDark";
+import { ClientTestimonials } from "@/components/testimonials/ClientTestimonials";
 import WhyChooseV1 from "@/components/whyChoose/WhyChooseV1";
 
 export const metadata = {
@@ -25,6 +26,7 @@ const Home1 = () => {
           <ExpertiseV1 />
         </div>
         <Project />
+        <ClientTestimonials/>
          <div className="panel bg-gray py-5">
           <WhyChooseV1 />
         </div>
