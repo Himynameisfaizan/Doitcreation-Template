@@ -21,7 +21,7 @@ const HeaderV1 = () => {
         <>
             <header>
                 <nav className={`navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed on menu-center ${isMenuSticky ? "sticked" : "no-background"} ${isOpen ? "navbar-responsive" : ""}`}>
-                    <div className="container d-flex justify-content-between align-items-center">
+                    <div className="container-full d-flex justify-content-between align-items-center" >
                         <div className="navbar-header">
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" onClick={openMenu}>
                                 <i className="fa fa-bars" />
