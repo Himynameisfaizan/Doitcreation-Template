@@ -409,6 +409,58 @@ select:focus {
  		Homecontact end
 **********************************/
 
+/*================================
+ 		Portfolio start 
+===================================*/
+.portfolio-search .input{
+	width: 40%;
+	padding: 0;
+	min-height: 40px;
+	border-radius: 40px;
+	padding: 0 16px 0 16px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.portfolio-search .input i{
+	color: #a1a1a1;
+}
+.portfolio-search .input input{
+	width: 100%;
+	border: 0;
+}
+.portfolio-contact a{
+	padding: 10px 28px;
+	background-color: #E4202A;
+	border-radius: 40px;
+}
+.portfolio-contact a:hover{
+	background-color: var(--dark-optional);
+	color: #f1f1f1;
+}
+.portfolio-contact div i{
+	background-color: var(--dark-optional);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 100%;
+	color: white;
+	cursor: pointer;
+	transition: all ease-in-out 0.3s;
+}
+.portfolio-contact div i:hover{
+	background-color: var(--color-primary);
+	transform: translateY(-4px);
+
+}
+/*================================
+ 		Portfolio end 
+===================================*/
+
 /* ----- Input Type Number Remove Arrows/Spinner ----- */
 
 .no-arrows::-webkit-outer-spin-button,
@@ -3196,10 +3248,10 @@ a.btn-round-animation:hover::after {
 .text-scroll-animation .text {
 	width: 100%;
 	color: rgb(0, 0, 0, 0.4);
-	background: linear-gradient(to right, var(--color-heading), var(--color-heading)) no-repeat;
+	background: linear-gradient(to bottom, var(--color-heading), var(--color-heading)) no-repeat;
 	-webkit-background-clip: text;
 	background-clip: text;
-	background-size: 0%;
+	background-size: 100% 0%;
 	transition: background-size cubic-bezier(.1, .5, .5, 1) 0.5s;
 	display: flex;
 	flex-direction: column;

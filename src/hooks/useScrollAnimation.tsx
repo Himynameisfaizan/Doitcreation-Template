@@ -14,7 +14,7 @@ const useScrollAnimation = () => {
                 const textElements = gsap.utils.toArray<HTMLElement>('.text');
                 textElements.forEach(text => {
                     gsap.to(text, {
-                        backgroundSize: '100%',
+                        backgroundSize: '100% 100%',
                         ease: 'none',
                         scrollTrigger: {
                             trigger: text,

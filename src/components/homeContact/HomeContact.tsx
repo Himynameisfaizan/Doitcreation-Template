@@ -3,7 +3,7 @@ import React from "react";
 export const HomeContact = () => {
   return (
     <>
-      <div className="default-padding">
+      <div className="panel py-5">
         <div className="container">
           <div className="text-center mb-5">
             <h4 className="sub-title">Contact form</h4>
@@ -13,7 +13,7 @@ export const HomeContact = () => {
             <div className="col-lg-8" style={{ padding: "0 20px" }}>
               <div className="d-flex flex-column gap-5">
                 <div className="">
-                  <h4>Feel Free to Connect</h4>
+                  {/* <h4>Feel Free to Connect</h4> */}
                   <div className="" style={{ fontSize: "14px" }}>
                     Do you have question? Feel free to connect with us. We
                     create logo, website, Packaging and many
