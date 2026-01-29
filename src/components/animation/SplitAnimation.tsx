@@ -49,7 +49,7 @@ const SplitAnimation = ({ children }: SplitAnimationProps) => {
 
                 splitTl.from(splitEl.words, {
                     yPercent: 100,
-                    stagger: 0.025,
+                    stagger: 0.045,
                 });
 
                 return () => {

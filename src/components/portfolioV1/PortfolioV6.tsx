@@ -1,6 +1,24 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Portfolio = () => {
+  const [pic, setPic] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetch(
+        "https://picsum.photos/v2/list?page=2&limit=100",
+      );
+      const res = await data.json();
+
+      setPic(res);
+    };
+    fetchData();
+  }, []);
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="container-full default-padding">
       <div className="row">
@@ -18,19 +36,47 @@ const Portfolio = () => {
           <a href="/">Conact</a>
         </div>
       </div>
+
       <div className="row mt-4">
         <div className="col-lg-9">
-          <div className="">
-            <select name="" id="">
-              <option value="">Select Category</option>
-              <option value="">Logo</option>
-              <option value="">Packaging</option>
-              <option value="">Website</option>
-            </select>
+          <div
+            className="portfolio-category-dropdown"
+            onMouseEnter={() => setOpen(true)}
+            onMouseLeave={() => setOpen(false)}
+          >
+            <span className="dropdown-title">
+              Select Category <i className="ri-arrow-down-s-line"></i>
+            </span>
+
+            {open && (
+              <ul className="dropdown-menu-custom">
+                <li>
+                  <Link href="#">Logo</Link>
+                </li>
+                <li>
+                  <Link href="#">Packaging</Link>
+                </li>
+                <li>
+                  <Link href="#">Website</Link>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
         <div className="col-lg-3 d-flex justify-content-end">
           <div className="">Showing items: 1290</div>
+        </div>
+      </div>
+
+      <div className="row mt-5">
+        <div className="col-lg-12">
+          <ul>
+            {pic.map((item: any, id) => {
+              return <li key={id}>
+                
+              </li>;
+            })}
+          </ul>
         </div>
       </div>
     </div>

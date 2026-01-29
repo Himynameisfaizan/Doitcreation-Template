@@ -17,6 +17,7 @@ import "../../public/assets/css/helper.css";
 import "../../public/assets/css/unit-test.css";
 import "../../public/assets/css/validnavs.css";
 import "../../public/assets/css/style.css";
+import ClientLayout from "./ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,7 +48,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );

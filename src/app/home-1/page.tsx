@@ -18,17 +18,17 @@ export const metadata = {
 const Home1 = () => {
   return (
     <>
-      <div className="smooth-scroll-container">
+      <div className="smooth-scroll-container bg-black">
         <HeaderV1 />
         <BannerV8 />
         <AboutV6 />
         <ProductCarousel />
-        <div className="panel bg-gray py-5">
+        <div className="panel py-5">
           <ExpertiseV1 />
         </div>
         <Project />
         <ClientTestimonials/>
-         <div className="panel bg-gray py-5">
+         <div className="panel py-5">
           <WhyChooseV1 />
         </div>
         <HomeContact/>
