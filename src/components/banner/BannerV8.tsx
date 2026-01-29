@@ -42,7 +42,7 @@ const BannerV8 = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4">
+            <div className="col-xl-4" style={{marginTop: '-40px'}}>
               <div className="thumb">
                 <Image src={illustration1} alt="Image Not Found" />
               </div>
