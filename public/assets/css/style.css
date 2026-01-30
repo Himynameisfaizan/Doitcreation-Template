@@ -143,7 +143,6 @@ Sidebar heading:  22px 'Barlow', sans-serif
     transform: rotate(360deg);
   }
 }
-
 /*======================================================
 				 Loader end
 =========================================================*/
@@ -1924,6 +1923,38 @@ p {
 	position: relative;
 }
 
+.typing-text{
+	background: linear-gradient(to left, #6666660e, #30303017);
+	padding: 0 10px 0 10px;
+	border-radius: 10px;
+	box-shadow: inset 0 0 4px #a1a1a14f;
+	backdrop-filter: blur(2px);
+	letter-spacing: -1px;
+	text-shadow: 1px 1px 6px rgba(56, 56, 56, 0.082);
+}
+
+.typing-text::after{
+	content: '|';
+	font-weight: 100;
+	color: #a1a1a1;
+	animation: color 1000ms infinite;
+	transition: all ease 1000ms;
+}
+
+@keyframes color{
+	from{
+		color: #dfdfdf;
+	}
+	25%{
+		color: #a1a1a183;
+	}
+	75%{
+		color: #a1a1a12c;
+	}
+	100%{
+		color: #a1a1a100;
+	}
+}
 
 /* ============================================================== 
     # Button Styles
@@ -5437,22 +5468,13 @@ ul.project-meta {
 	text-transform: uppercase;
 	line-height: 1;
 	margin: 0;
+	letter-spacing: -1px;
 }
 
 p.text{
 	font-size: 16px;
 }
 
-.banner-style-eight-heading h2.changeText {
-	font-size: 90px;
-	text-transform: uppercase;
-	line-height: 1;
-	margin: 0;
-}
-
-.bannerSecoundColumn{
-	margin-top: 80px;
-}
 
 .banner-style-eight-heading h2.title-right {
 	text-align: right;

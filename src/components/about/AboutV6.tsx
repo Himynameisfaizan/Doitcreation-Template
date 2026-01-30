@@ -56,16 +56,22 @@ const AboutV6 = ({ sectionClass }: DataType) => {
                     command attention. With 8+ years of experience, we are a
                     results-driven creative design agency delivering high-impact
                     branding, logo design, packaging, print, digital creatives,
-                    and website design for businesses worldwide. We work with
+                    and website design for businesses worldwide.
+                    <br />
+                    We work with
                     startups, growing brands, and established companies across
                     Real Estate, Finance, Manufacturing, Food, Medical, IT,
                     Beauty, Fashion, Hospitality, NGO, Sports, and more. Our
                     expertise in pouch, label, and box packaging design strictly
                     follows FSSAI, BIS, and IT Act regulations—no compromises.
+                    <br />
                     We believe in original thinking, sharp strategy, and
                     flawless execution. Every project follows a proven process,
                     every design is quality-checked, and everything is delivered
                     under one roof.
+                    <br />
+                    We are client-focused, growth-obsessed, and serious about results. 
+                      At Do It Creation, your brand isn’t just designed—it’s built to lead.
                   </p>
                 </div>
                 {/* <ul className="service-list">
