@@ -19,7 +19,7 @@ const useScrollAnimation = () => {
                         scrollTrigger: {
                             trigger: text,
                             start: 'center 100%',
-                            end: 'center 50%',
+                            end: 'center 80%',
                             scrub: true,
                         },
                     });

@@ -8,9 +8,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetch(
-        "https://picsum.photos/v2/list?page=2&limit=100",
-      );
+      const data = await fetch("https://picsum.photos/v2/list?page=11&limit=60");
       const res = await data.json();
 
       setPic(res);
@@ -20,7 +18,7 @@ const Portfolio = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="container-full default-padding">
+    <div className="container-full default-padding" >
       <div className="row">
         <div className="col-lg-9 portfolio-search">
           <div className="input">
@@ -69,13 +67,13 @@ const Portfolio = () => {
       </div>
 
       <div className="row mt-5">
-        <div className="col-lg-12">
-          <ul>
-            {pic.map((item: any, id) => {
-              return <li key={id}>
-                
-              </li>;
-            })}
+        <div className="col-lg-12" >
+          <ul className="masonry">
+            {pic.map((item: any, id) => (
+              <li key={id} className="masonry-item" >
+                <img src={item.download_url} alt="Demo" className="apiimage" />
+              </li>
+            ))}
           </ul>
         </div>
       </div>
