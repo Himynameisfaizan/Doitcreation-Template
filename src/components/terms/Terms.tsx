@@ -7,20 +7,20 @@ const Terms = () => {
         <div className="main">
           <h3>Terms and Conditions Agreement</h3>
           <p>
-            THE FOLLOWING TERMS AND CONDITIONS (“TERMS”) APPLY TO YOUR USE OF
-            THE WEBSITES OF DO IT CREATION AND ITS AFFILIATES (“DO IT CREATION”,
-            “WE”“US” OR “OUR”), INCLUDING ANY CONTENT, FUNCTIONALITY, PRODUCTS,
-            AND SERVICES OFFERED ON OR THROUGH SUCH WEBSITES (COLLECTIVELY, THE
-            “WEBSITE”), WHETHER AS A GUEST OR A REGISTERED USER. THESE TERMS
-            ALSO APPLY TO YOUR USE OF OTHER DO IT CREATION SERVICES THAT DISPLAY
-            OR INCLUDE THESE TERMS (“ADDITIONAL SERVICES”). IN THESE TERMS, THE
-            WEBSITE AND ADDITIONAL SERVICES ARE COLLECTIVELY REFERRED TO AS THE
-            “SERVICES.” PLEASE READ THESE TERMS CAREFULLY BEFORE YOU START TO
-            USE THE SERVICES. BY USING THE SERVICES, YOU ACCEPT AND AGREE TO BE
-            BOUND AND ABIDE BY THESE TERMS OF SERVICE. IF YOU DO NOT WANT TO
-            AGREE TO THESE TERMS OF SERVICE, YOU MUST NOT USE THE SERVICES. IN
-            PARTICULAR, WE WANT TO HIGHLIGHT SOME IMPORTANT TERMS, POLICIES, AND
-            PROCEDURES IN THESE TERMS. BY ACCEPTING THESE TERMS:
+            The following terms and conditions (“terms”) apply to your use of
+            the websites of do it creation and its affiliates (“do it creation”,
+            “we”“us” or “our”), including any content, functionality, products,
+            and services offered on or through such websites (collectively, the
+            “website”), whether as a guest or a registered user. these terms
+            also apply to your use of other do it creation services that display
+            or include these terms (“additional services”). in these terms, the
+            website and additional services are collectively referred to as the
+            “services.” please read these terms carefully before you start to
+            use the services. by using the services, you accept and agree to be
+            bound and abide by these terms of service. if you do not want to
+            agree to these terms of service, you must not use the services. in
+            particular, we want to highlight some important terms, policies, and
+            procedures in these terms. by accepting these terms:
           </p>
         </div>
 
