@@ -666,7 +666,7 @@ export const ClientTestimonials = () => {
                 "linear-gradient(to bottom, transparent 0%, #000000ce 25%, #0000008c 85%, transparent 100%)",
             }}
           >
-                        <SwiperSlide
+            <SwiperSlide
               style={{
                 height: "auto",
                 maxWidth: "500px",

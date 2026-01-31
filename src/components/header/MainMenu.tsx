@@ -62,7 +62,7 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
         </li>
 
         <li>
-          <Link href="#">contact</Link>
+          <Link href="/contact-us">contact</Link>
         </li>
       </ul>
 

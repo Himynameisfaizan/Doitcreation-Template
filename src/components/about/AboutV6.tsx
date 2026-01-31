@@ -5,6 +5,10 @@ import Image from "next/image";
 import ServiceListData from "../../../public/assets/jsonData/services/ServiceListData.json";
 import ServiceList from "../services/ServiceList";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
+import Icon1 from '../../../public/assets/img/icon/aboutimg.png';
+import Icon2 from '../../../public/assets/img/icon/document.png';
+import Icon3 from '../../../public/assets/img/icon/globe.png';
+import Icon4 from '../../../public/assets/img/icon/members.png';
 import Link from "next/link";
 import { useState } from "react";
 
@@ -36,7 +40,7 @@ const AboutV6 = ({ sectionClass }: DataType) => {
           <div className="row">
             <div className="col-xl-5 col-lg-5">
               <div className="thumb-style-four">
-                <Image src={thumb2} alt="Image Not Found" />
+                <Image src={thumb2} alt="Image Not Found"/>
               </div>
             </div>
             <div className="col-xl-6 offset-xl-1 col-lg-7">
@@ -73,6 +77,52 @@ const AboutV6 = ({ sectionClass }: DataType) => {
                     We are client-focused, growth-obsessed, and serious about results. 
                       At Do It Creation, your brand isn’t just designed—it’s built to lead.
                   </p>
+                </div>
+                <div className="d-flex flex-column gap-2">
+                  <div className="d-flex align-items-start justify-content-between gap-2">
+                    <div className="aboutImage">
+                      <Image src={Icon1} className="image"  alt="Not found" fill />
+                    </div>
+                    <div className="aboutImagepara">
+                      <h5 className="text">8+ Years of Creative Expertise</h5>
+                      <p className="text">Timeless experience in branding, print, packaging, and 
+                        digital design, backed by deep industry knowledge and evolving creative practices.
+                      </p>
+                    </div>
+                  </div>  
+
+                  <div className="d-flex align-items-start justify-content-between gap-2">
+                    <div className="aboutImage">
+                      <Image src={Icon2} className="image" alt="Not found" fill />
+                    </div>
+                    <div className="aboutImagepara">
+                      <h5 className="text">2500+ Projects Successfully Delivered</h5>
+                      <p className="text">Proven multi-industry experience with high-quality output, 
+                        attention to detail, and consistent visual clarity across projects.</p>
+                    </div>
+                  </div>
+
+                  <div className="d-flex align-items-start justify-content-between gap-2">
+                    <div className="aboutImage">
+                      <Image src={Icon3} className="image" alt="Not found" fill />
+                    </div>
+                    <div className="aboutImagepara">
+                      <h5 className="text">Trusted in 20+ Countries</h5>
+                      <p className="text">Partnering with businesses across the USA, UK, 
+                        Canada, Australia, UAE, Germany, China, and beyond.</p>
+                    </div>
+                  </div>
+
+                  <div className="d-flex align-items-start justify-content-between gap-2">
+                    <div className="aboutImage">
+                      <Image src={Icon4} className="image" alt="Not found" fill />
+                    </div>
+                    <div className="aboutImagepara">
+                      <h5 className="text">Dedicated Expert Creative Team</h5>
+                      <p className="text">A focused, highly skilled team committed to precision, timely delivery, 
+                        and long-term creative support for growing brands.</p>
+                    </div>
+                  </div>
                 </div>
                 {/* <ul className="service-list">
                   {ServiceListData.map((service) => (

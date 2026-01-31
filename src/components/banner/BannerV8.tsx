@@ -91,7 +91,7 @@ const BannerV8 = () => {
             </div>
             <div className="col-xl-4" style={{ marginTop: "-60px" }}>
               <div className="thumb">
-                <Image src={illustration1} alt="Image Not Found" />
+                <Image src={illustration1} alt="Image Not Found"/>
               </div>
             </div>
           </div>
