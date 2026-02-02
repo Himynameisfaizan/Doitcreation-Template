@@ -10,7 +10,7 @@ const Portfolio = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetch(
-        "https://picsum.photos/v2/list?page=8&limit=40",
+        "https://picsum.photos/v2/list?page=8&limit=90",
       );
       const res = await data.json();
       setPic(res);
@@ -75,7 +75,7 @@ const Portfolio = () => {
           <ul className="masonry ">
             {pic.map((item: any, id) => (
               <li key={id} className="masonry-item animated--fade-in">
-                <img src={item.download_url} alt="Demo" className="apiimage" loading="lazy" />
+                <img src={`https://picsum.photos/id/${id}/500/400`} alt="Demo" className="apiimage" loading="lazy" />  
               </li>
             ))}
           </ul>
