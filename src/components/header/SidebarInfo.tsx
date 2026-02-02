@@ -40,19 +40,19 @@ const SidebarInfo = ({ openInfoBar, isInfoOpen, closeInfoBar }: SidebarInfoProps
                                     <li>
                                         <div className="content">
                                             <p>Address</p>
-                                            <strong>California, TX 70240</strong>
+                                            <strong>C - 1, 132, C Block, Kailash Hills, Nangloi, New Delhi, Delhi 110086</strong>
                                         </div>
                                     </li>
                                     <li>
                                         <div className="content">
                                             <p>Email</p>
-                                            <strong>support@validtheme.com</strong>
+                                            <strong><a href='mailto:support@doitcreation.com'>support@doitcreation.com</a></strong>
                                         </div>
                                     </li>
                                     <li>
                                         <div className="content">
                                             <p>Contact</p>
-                                            <strong>+44-20-7328-4499</strong>
+                                            <a href="tel:9560237516"><strong>+91 9560237516</strong></a>
                                         </div>
                                     </li>
                                 </ul>

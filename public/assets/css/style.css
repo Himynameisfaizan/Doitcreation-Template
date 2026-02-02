@@ -120,29 +120,30 @@ Sidebar heading:  22px 'Barlow', sans-serif
 =========================================================*/
 /* FULLSCREEN LOADER */
 .screen-loader {
-  position: fixed;
-  inset: 0;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999999;
+	position: fixed;
+	inset: 0;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999999;
 }
 
 .spinner {
-  width: 48px;
-  height: 48px;
-  border: 4px solid rgba(255, 255, 255, 0.336);
-  border-top: 4px solid #fff;
-  border-radius: 50%;
-  animation: spin 6s linear infinite;
+	width: 48px;
+	height: 48px;
+	border: 4px solid rgba(255, 255, 255, 0.336);
+	border-top: 4px solid #fff;
+	border-radius: 50%;
+	animation: spin 6s linear infinite;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+	to {
+		transform: rotate(360deg);
+	}
 }
+
 /*======================================================
 				 Loader end
 =========================================================*/
@@ -336,23 +337,27 @@ select:focus {
 /********************************
  		Homecontact start 
 **********************************/
-.contact-form-parent{
+.contact-form-parent {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 }
-.contact-form-parent> div:nth-child(3), 
-.contact-form-parent> div:nth-child(4){
+
+.contact-form-parent>div:nth-child(3),
+.contact-form-parent>div:nth-child(4) {
 	grid-column: 2 span;
 }
-.contact-form-parent label{
+
+.contact-form-parent label {
 	font-size: 16px;
 }
-.contact-form-parent label span{
+
+.contact-form-parent label span {
 	color: var(--color-primary);
 	font-size: 14px;
 }
-.contact-form-parent input{
+
+.contact-form-parent input {
 	border: 1px solid #ededed;
 	background-color: transparent;
 	color: white;
@@ -360,12 +365,14 @@ select:focus {
 	border-radius: 10px;
 	transition: all ease 0.4s;
 }
+
 .contact-form-parent input:focus,
-.contact-form-parent textarea:focus{
+.contact-form-parent textarea:focus {
 	border: 1px solid #a1a1a1;
 	box-shadow: 0 0 1px 2px #646464;
 }
-.contact-form-parent textarea{
+
+.contact-form-parent textarea {
 	border: 1px solid #a1a1a1;
 	background-color: transparent;
 	color: white;
@@ -373,13 +380,16 @@ select:focus {
 	border-radius: 10px;
 	transition: all ease 0.4s;
 }
-.contact-form-parent button{
+
+.contact-form-parent button {
 	color: white;
 }
-.contact-form-parent button:hover{
+
+.contact-form-parent button:hover {
 	color: var(--white) !important;
 }
-.contact-detail{
+
+.contact-detail {
 	height: fit-content;
 	border-radius: 10px;
 	padding-top: 16px;
@@ -387,17 +397,20 @@ select:focus {
 	position: sticky;
 	top: 100px;
 }
-.divider-vertical{
+
+.divider-vertical {
 	width: 30px;
 	height: 1px;
 	transform: rotate(90deg);
-	background-image: linear-gradient(to right, var(--dark-secondary) , var(--color-paragraph) 50%, var(--dark-secondary));
+	background-image: linear-gradient(to right, var(--dark-secondary), var(--color-paragraph) 50%, var(--dark-secondary));
 }
-.divider-horizontal{
+
+.divider-horizontal {
 	height: 1px;
-	background-image: linear-gradient(to right, var(--dark-secondary) , var(--color-paragraph) 50%, var(--dark-secondary));
+	background-image: linear-gradient(to right, var(--dark-secondary), var(--color-paragraph) 50%, var(--dark-secondary));
 }
-.contact-icon-container{
+
+.contact-icon-container {
 	display: flex;
 	align-items: center;
 	/* gap: 10px; */
@@ -405,21 +418,26 @@ select:focus {
 	background-color: var(--dark);
 	border-radius: 6px;
 }
-.contact-icon-container i{
+
+.contact-icon-container i {
 	font-size: 22px;
 }
-.contact-icon-container .icon-info div{
+
+.contact-icon-container .icon-info div {
 	font-size: 16px;
 }
-.contact-icon-container .icon-info a{
+
+.contact-icon-container .icon-info a {
 	font-size: 14px;
 	font-weight: 500;
 }
-.contact-social-icon{
+
+.contact-social-icon {
 	display: flex;
 	justify-content: space-around;
 }
-.contact-social-icon i{
+
+.contact-social-icon i {
 	background-color: var(--dark-optional);
 	display: flex;
 	justify-content: center;
@@ -432,11 +450,13 @@ select:focus {
 	cursor: pointer;
 	transition: all ease-in-out 0.3s;
 }
-.contact-social-icon i:hover{
+
+.contact-social-icon i:hover {
 	transform: translateY(-4px);
 	background-color: var(--color-primary);
 	box-shadow: inset 0 1px 2px #e9424a, inset -1px 0 2px #e9424a, 0 0 4px 0 #E4202A;
 }
+
 /********************************
  		Homecontact end
 **********************************/
@@ -444,27 +464,41 @@ select:focus {
 /*================================
  		Portfolio start 
 ===================================*/
+.animated--fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: fadeInUp 2.21s ease forwards;
+	transition: all ease 500s;
+}
+
+@keyframes fadeInUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .masonry {
-  column-count: 4;
-  column-gap: 10px;
+	column-count: 4;
+	column-gap: 10px;
 }
 
 .masonry-item {
-  list-style: none;
-  margin-bottom: 16px;
-  background-color: #4b4b4b94;
-  box-shadow: 0 1px 2px #6666661a;
-  padding: 1px;
-  border-radius: 8px;
+	list-style: none;
+	margin-bottom: 16px;
+	background-color: #4b4b4b94;
+	box-shadow: 0 1px 2px #6666661a;
+	padding: 1px;
+	border-radius: 8px;
 }
 
 .apiimage {
-  width: 100%;
-  border-radius: 8px;
+	width: 100%;
+	border-radius: 8px;
+	height: auto;
 }
 
-
-.portfolio-search .input{
+.portfolio-search .input {
 	width: 40%;
 	padding: 0;
 	min-height: 40px;
@@ -475,23 +509,28 @@ select:focus {
 	justify-content: space-between;
 	align-items: center;
 }
-.portfolio-search .input i{
+
+.portfolio-search .input i {
 	color: #a1a1a1;
 }
-.portfolio-search .input input{
+
+.portfolio-search .input input {
 	width: 100%;
 	border: 0;
 }
-.portfolio-contact a{
+
+.portfolio-contact a {
 	padding: 10px 28px;
 	background-color: #E4202A;
 	border-radius: 40px;
 }
-.portfolio-contact a:hover{
+
+.portfolio-contact a:hover {
 	background-color: var(--dark-optional);
 	color: #f1f1f1;
 }
-.portfolio-contact div i{
+
+.portfolio-contact div i {
 	background-color: var(--dark-optional);
 	display: flex;
 	justify-content: center;
@@ -504,54 +543,56 @@ select:focus {
 	cursor: pointer;
 	transition: all ease-in-out 0.3s;
 }
-.portfolio-contact div i:hover{
+
+.portfolio-contact div i:hover {
 	background-color: var(--color-primary);
 	transform: translateY(-4px);
 
 }
+
 .portfolio-category-dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .dropdown-title {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 6px;
 }
 
 /* Custom dropdown menu (not bootstrap) */
 .dropdown-menu-custom {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  min-width: 200px;
-  background: #111;
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 8px;
-  padding: 8px 0;
-  z-index: 9999;
+	position: absolute;
+	top: 120%;
+	left: 0;
+	min-width: 200px;
+	background: #111;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 8px;
+	padding: 8px 0;
+	z-index: 9999;
 }
 
 .dropdown-menu-custom li {
-  list-style: none;
+	list-style: none;
 }
 
 .dropdown-menu-custom li a {
-  display: block;
-  padding: 10px 18px;
-  color: #ccc;
-  font-size: 16px;
-  text-decoration: none;
+	display: block;
+	padding: 10px 18px;
+	color: #ccc;
+	font-size: 16px;
+	text-decoration: none;
 }
 
 .dropdown-menu-custom li a:hover {
-  background: rgba(0, 0, 0, 0.185);
-  color: #fff;
+	background: rgba(0, 0, 0, 0.185);
+	color: #fff;
 }
 
 /*================================
@@ -1943,11 +1984,11 @@ p {
 	position: relative;
 }
 
-.typing-text{
+.typing-text {
 	letter-spacing: -1px;
 }
 
-.typing-text::after{
+.typing-text::after {
 	content: '|';
 	font-weight: 100;
 	color: #a1a1a100;
@@ -5472,7 +5513,7 @@ ul.project-meta {
 	letter-spacing: -1px;
 }
 
-p.text{
+p.text {
 	font-size: 16px;
 }
 
@@ -7167,19 +7208,21 @@ ul.list-style-two li:last-child {
 /* ============================================================== 
     # About
 =================================================================== */
-.aboutImage{
-	width: 100px; 
-	height: 70px; 
-	position: relative; 
-    flex-shrink: 0;
+.aboutImage {
+	width: 100px;
+	height: 70px;
+	position: relative;
+	flex-shrink: 0;
 }
-.aboutImagepara h5{
+
+.aboutImagepara h5 {
 	margin-bottom: 10px;
 }
 
-.aboutImage .image{
+.aboutImage .image {
 	object-fit: contain;
 }
+
 .fun-fact .counter {
 	display: flex;
 	align-items: center;
@@ -7913,7 +7956,7 @@ ul.list-style-one li strong {
 	text-transform: uppercase;
 }
 
-.thumb-style-four{
+.thumb-style-four {
 	position: sticky;
 	top: 100px;
 }
@@ -11386,6 +11429,72 @@ h2.text-large-gradient {
 /* ============================================================== 
     # Clients
 =================================================================== */
+.swiper-client {
+	max-height: 700px;
+	padding: 0 0 60px 0;
+	height: 100%;
+	mask-image: linear-gradient(to bottom, transparent 0%, #000000ce 25%, #0000008c 85%, transparent 100%);
+}
+
+.swiper-client .client-swiperslide {
+	height: auto;
+	max-width: 500px;
+	object-fit: cover;
+	background-color: #2c2c2cc4;
+	border-radius: 10px;
+	border: 1px solid #303030;
+	box-shadow: 0 1px 8px 0px #3030306c;
+}
+.swiper-client .client-swiperslide .review-container {
+	padding: 16px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.review-container .review-client-name{
+	display: flex;
+	gap: 14px;
+	align-items: center;
+}
+.review-container .review-client-name div:nth-child(1){
+	max-width: 60px;
+	height: auto;
+}
+.review-container .review-client-name div:nth-child(2){
+	font-size: 18px;
+	color: #f1f1f1;
+}
+.review-container .review-para{
+	line-height: 26px;
+}
+.review-para {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;  
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.review-para.expanded {
+  -webkit-line-clamp: unset;
+}
+.review-star-container{
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+.review-star-container div:nth-child(1){
+	display: flex;
+	gap: 2px;
+	font-size: 14px;
+}
+.review-star-container div:nth-child(1) i{
+	color: #ffff00;
+}
+.review-star-container div:nth-child(2){
+	color: #949494;
+	font-size: 14px;
+}
+
 .client-style-one-items {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -14283,7 +14392,7 @@ ul.list-disc li {
 	transition: all ease 500;
 }
 
-.contact-style-one-info ul li a:hover{
+.contact-style-one-info ul li a:hover {
 	background: linear-gradient(180deg, var(--color-secondary), var(--color-secondary));
 	background-clip: text;
 }

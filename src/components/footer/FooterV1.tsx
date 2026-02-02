@@ -23,15 +23,9 @@ const FooterV1 = ({ sectionClass }: DataType) => {
                                 </div>
                                 <ul className="address-list">
                                     <li>
-                                        <h4>Australia</h4>
+                                        <h4>New Delhi</h4>
                                         <p>
-                                            Travel World House, Level 7, 17 Jones St, NSW, 2060
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>Dubai</h4>
-                                        <p>
-                                            Sheikh Mohammed bin salah, #234 B - Downtown - Dubai
+                                            C - 1, 132, C Block, Kailash Hills, Nangloi, New Delhi, Delhi 110086
                                         </p>
                                     </li>
                                 </ul>
@@ -42,20 +36,16 @@ const FooterV1 = ({ sectionClass }: DataType) => {
                                 <ul className="useful-link">
                                     <li><Link href="/about-us">About Us</Link></li>
                                     <li><Link href="/contact-us">Contact</Link></li>
-                                    <li><Link href="/faq">FAQS</Link></li>
-                                    <li><Link href="/services">Services</Link></li>
                                     <li><Link href="/terms-condition">Term & Conditions</Link></li>
                                     <li><Link href="/privacy-policy ">Privacy Policy</Link></li>
-                                    <li><Link href="/return-refund-policy">Return & Refund</Link></li>
-                                    <li><Link href="/contact-us">Help Desk</Link></li>
                                 </ul>
                                 <div className="footer-contact">
                                     <ul>
                                         <li>
-                                            <a href="mailto:someone@example.com">info@dixor.com</a>
+                                            <a href="mailto:support@doitcreation.com">support@doitcreation.com</a>
                                         </li>
                                         <li>
-                                            <a href="tel:+4733378901">+47 333 78 901</a>
+                                            <a href="tel:9560237516">+91 9560237516</a>
                                         </li>
                                     </ul>
                                 </div>

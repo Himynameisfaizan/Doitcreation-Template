@@ -6,19 +6,23 @@ import Image from "next/image";
 const Portfolio = () => {
   const [pic, setPic] = useState([]);
 
+  
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetch("https://picsum.photos/v2/list?page=11&limit=60");
+      const data = await fetch(
+        "https://picsum.photos/v2/list?page=8&limit=40",
+      );
       const res = await data.json();
-
       setPic(res);
     };
-    fetchData();
+    setTimeout(() => {
+      fetchData();
+    }, 2000);
   }, []);
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="container-full default-padding" >
+    <div className="container-fluid default-padding">
       <div className="row">
         <div className="col-lg-9 portfolio-search">
           <div className="input">
@@ -67,11 +71,11 @@ const Portfolio = () => {
       </div>
 
       <div className="row mt-5">
-        <div className="col-lg-12" >
-          <ul className="masonry">
+        <div className="col-lg-12">
+          <ul className="masonry ">
             {pic.map((item: any, id) => (
-              <li key={id} className="masonry-item" >
-                <img src={item.download_url} alt="Demo" className="apiimage" />
+              <li key={id} className="masonry-item animated--fade-in">
+                <img src={item.download_url} alt="Demo" className="apiimage" loading="lazy" />
               </li>
             ))}
           </ul>
