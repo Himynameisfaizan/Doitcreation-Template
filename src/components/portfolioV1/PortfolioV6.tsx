@@ -1,24 +1,24 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { PortfolioImage } from "../portfolioImage/PortfolioImage";
 
 const Portfolio = () => {
-  const [pic, setPic] = useState([]);
+  // const [pic, setPic] = useState([]);
 
-  
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetch(
-        "https://picsum.photos/v2/list?page=8&limit=90",
-      );
-      const res = await data.json();
-      setPic(res);
-    };
-    setTimeout(() => {
-      fetchData();
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await fetch(
+  //       "https://picsum.photos/v2/list?page=8&limit=90",
+  //     );
+  //     const res = await data.json();
+  //     setPic(res);
+  //   };
+  //   setTimeout(() => {
+  //     fetchData();
+  //   }, 2000);
+  // }, []);
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -69,13 +69,18 @@ const Portfolio = () => {
           <div className="">Showing items: 1290</div>
         </div>
       </div>
-
+      
       <div className="row mt-5">
         <div className="col-lg-12">
           <ul className="masonry ">
-            {pic.map((item: any, id) => (
+            {/* {pic.map((item: any, id) => (
               <li key={id} className="masonry-item animated--fade-in">
                 <img src={`https://picsum.photos/id/${id}/500/400`} alt="Demo" className="apiimage" loading="lazy" />  
+              </li>
+            ))} */}
+            {PortfolioImage.map((src, index) => (
+              <li key={index} className="masonry-item animated--fade-in">
+                <img src={src} alt="demo" className="apiimage show" loading="lazy"/>
               </li>
             ))}
           </ul>

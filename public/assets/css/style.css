@@ -467,8 +467,9 @@ select:focus {
 .animated--fade-in {
 	opacity: 0;
 	transform: translateY(20px);
-	animation: fadeInUp 2.21s ease forwards;
+	animation: fadeInUp 2s ease forwards;
 	transition: all ease 500s;
+	animation-delay: 3s;
 }
 
 @keyframes fadeInUp {
@@ -496,6 +497,12 @@ select:focus {
 	width: 100%;
 	border-radius: 8px;
 	height: auto;
+	opacity: 0;
+	transition: opacity 1s ease;
+  	transition-delay: 4s;
+}
+.apiimage.show{
+	opacity: 1;
 }
 
 .portfolio-search .input {

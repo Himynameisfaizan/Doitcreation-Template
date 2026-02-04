@@ -58,7 +58,7 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
         </li>
 
         <li>
-          <Link href="#">Digital Product</Link>
+          <Link href="/about-us">About</Link>
         </li>
 
         <li>

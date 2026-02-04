@@ -1,7 +1,9 @@
 "use client";
 import Link from 'next/link';
 import useScrollAnimation from '@/hooks/useScrollAnimation';
-import SplitTextV2 from "../../components/animation/SplitTextV2.jsx"
+// import SplitTextV2 from "../../components/animation/SplitTextV2.jsx"
+import SplitTextV2 from "@/components/animation/SplitTextV2.jsx"
+
 
 interface DataType {
     sectionClass?: string;
