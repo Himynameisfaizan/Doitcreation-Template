@@ -135,7 +135,7 @@ Sidebar heading:  22px 'Barlow', sans-serif
 	border: 4px solid rgba(255, 255, 255, 0.336);
 	border-top: 4px solid #fff;
 	border-radius: 50%;
-	animation: spin 6s linear infinite;
+	animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
