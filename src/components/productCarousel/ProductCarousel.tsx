@@ -24,7 +24,7 @@ export const ProductCarousel = () => {
   return (
     <>
       <style jsx global>{`
-        .linear-swiper .swiper-wrapper {
+        .linear-swiper  {
           transition-timing-function: linear !important;
         }
       `}</style>
@@ -34,6 +34,7 @@ export const ProductCarousel = () => {
         spaceBetween={20}
         loop={true}
         speed={4000}
+        freeMode={true}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
