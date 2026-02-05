@@ -5,10 +5,10 @@ import Image from "next/image";
 import ServiceListData from "../../../public/assets/jsonData/services/ServiceListData.json";
 import ServiceList from "../services/ServiceList";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
-import Icon1 from '../../../public/assets/img/icon/aboutimg.png';
-import Icon2 from '../../../public/assets/img/icon/document.png';
-import Icon3 from '../../../public/assets/img/icon/globe.png';
-import Icon4 from '../../../public/assets/img/icon/members.png';
+import Icon1 from "../../../public/assets/img/icon/aboutimg.png";
+import Icon2 from "../../../public/assets/img/icon/document.png";
+import Icon3 from "../../../public/assets/img/icon/globe.png";
+import Icon4 from "../../../public/assets/img/icon/members.png";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -40,7 +40,7 @@ const AboutV6 = ({ sectionClass }: DataType) => {
           <div className="row">
             <div className="col-xl-5 col-lg-5">
               <div className="thumb-style-four">
-                <Image src={thumb2} alt="Image Not Found"/>
+                <Image src={thumb2} alt="Image Not Found" />
               </div>
             </div>
             <div className="col-xl-6 offset-xl-1 col-lg-7">
@@ -62,25 +62,26 @@ const AboutV6 = ({ sectionClass }: DataType) => {
                     branding, logo design, packaging, print, digital creatives,
                     and website design for businesses worldwide.
                     <br />
-                    We work with
-                    startups, growing brands, and established companies across
-                    Real Estate, Finance, Manufacturing, Food, Medical, IT,
-                    Beauty, Fashion, Hospitality, NGO, Sports, and more. Our
-                    expertise in pouch, label, and box packaging design strictly
-                    follows FSSAI, BIS, and IT Act regulations—no compromises.
+                    We work with startups, growing brands, and established
+                    companies across Real Estate, Finance, Manufacturing, Food,
+                    Medical, IT, Beauty, Fashion, Hospitality, NGO, Sports, and
+                    more. Our expertise in pouch, label, and box packaging
+                    design strictly follows FSSAI, BIS, and IT Act
+                    regulations—no compromises.
                     <br />
                     We believe in original thinking, sharp strategy, and
                     flawless execution. Every project follows a proven process,
                     every design is quality-checked, and everything is delivered
                     under one roof.
                     <br />
-                    We are client-focused, growth-obsessed, and serious about results. 
-                      At Do It Creation, your brand isn’t just designed—it’s built to lead.
+                    We are client-focused, growth-obsessed, and serious about
+                    results. At Do It Creation, your brand isn’t just
+                    designed—it’s built to lead.
                   </p>
                 </div>
                 <div className="d-flex flex-column gap-2">
                   <div className="d-flex align-items-start justify-content-between gap-2">
-                    <div className="aboutImage">
+                    <div className="aboutImage d-flex align-items-center justify-content-center">
                       <Image src={Icon1} className="image"  alt="Not found" fill />
                     </div>
                     <div className="aboutImagepara">
@@ -124,6 +125,32 @@ const AboutV6 = ({ sectionClass }: DataType) => {
                     </div>
                   </div>
                 </div>
+{/* 
+                <div className="paragraph-section">
+                  <div className="d-flex align-items-start gap-3">
+                    <div className="bird-section">
+                      <Image
+                        src={Icon1}
+                        alt="Icon"
+                        width={44}
+                        height={44}
+                        className="bird-image"
+                      />
+                    </div>
+
+                    <div className="aboutImagepara">
+                      <h5 className="text mb-1">
+                        8+ Years of Creative Expertise
+                      </h5>
+                      <p className="text mb-0">
+                        Timeless experience in branding, print, packaging, and
+                        digital design, backed by deep industry knowledge and
+                        evolving creative practices.
+                      </p>
+                    </div>
+                  </div>
+                </div> */}
+
                 {/* <ul className="service-list">
                   {ServiceListData.map((service) => (
                     <li

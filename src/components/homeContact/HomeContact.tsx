@@ -7,8 +7,27 @@ export const HomeContact = () => {
         <div className="container">
           <div className="text-center mb-5">
             <h4 className="sub-title">Contact form</h4>
-            <h2 className="title">Get in Touch!</h2>
+            <h2 className="title mb-3">Get in Touch!</h2>
+            <div className="d-flex align-items-center justify-content-center gap-2">
+              <div
+                style={{ height: "1px", width: "1px", padding: "2px" }}
+                className="bg-white rounded-pill"
+              ></div>
+              <div
+                style={{ height: "1px", width: "1px", padding: "2px" }}
+                className="bg-white rounded-pill"
+              ></div>
+              <div
+                style={{ height: "1px", width: "1px", padding: "2px" }}
+                className="bg-white rounded-pill"
+              ></div>
+              <div
+                style={{ height: "1px", width: "120px", padding: "2px" }}
+                className="bg-white rounded-pill"
+              ></div>
+            </div>
           </div>
+
           <div className="row">
             <div className="col-lg-8" style={{ padding: "0 20px" }}>
               <div className="d-flex flex-column gap-5">
