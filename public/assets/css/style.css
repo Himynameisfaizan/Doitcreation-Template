@@ -484,22 +484,42 @@ select:focus {
 ===================================*/
 .animated--fade-in {
   opacity: 0;
-  transform: translateY(20px);
+  /* transform: translateY(20px); */
   animation: fadeInUp 2s ease forwards;
   transition: all ease 500s;
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 
 @keyframes fadeInUp {
   to {
     opacity: 1;
-    transform: translateY(0);
+    /* transform: translateY(0); */
   }
 }
 
 .masonry {
-  column-count: 6;
   column-gap: 12px;
+}
+
+
+@media (min-width: 1500px) {
+  .masonry { column-count: 7; }
+}
+
+@media (max-width: 1399px) {
+  .masonry { column-count: 5; }
+}
+
+@media (max-width: 1199px) {
+  .masonry { column-count: 4; }
+}
+
+@media (max-width: 991px) {
+  .masonry { column-count: 3; }
+}
+
+@media (max-width: 575px) {
+  .masonry { column-count: 2; }
 }
 
 .masonry-item {
@@ -519,6 +539,7 @@ select:focus {
   transition: opacity 1s ease;
   transition-delay: 4s;
 }
+
 .apiimage.show {
   opacity: 1;
 }
@@ -7312,8 +7333,8 @@ ul.list-style-two li:last-child {
     # About
 =================================================================== */
 .aboutImage {
-  width: 100px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   position: relative;
   flex-shrink: 0;
 }
@@ -8096,10 +8117,10 @@ ul.list-style-one li strong {
   top: 150px;
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 1600px) {
   .thumb-style-four {
     position: sticky;
-    top: 250px;
+    top: 200px;
   }
 }
 

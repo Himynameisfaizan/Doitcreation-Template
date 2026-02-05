@@ -70,8 +70,7 @@ const Portfolio = () => {
         </div>
       </div>
       
-      <div className="row mt-5">
-        <div className="col-lg-12">
+      <div className="mt-5">
           <ul className="masonry ">
             {/* {pic.map((item: any, id) => (
               <li key={id} className="masonry-item animated--fade-in">
@@ -84,9 +83,8 @@ const Portfolio = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div>  
       </div>
-    </div>
   );
 };
 
