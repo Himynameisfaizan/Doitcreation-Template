@@ -17,7 +17,7 @@ const page = () => {
   ];
 
   // Infinite loop ke liye items ko triple kar rahe hain
-  const allItems = [...items, ...items, ...items];
+  const allItems = [...items, ...items];
   
   const controls = useAnimationControls();
   const [isPaused, setIsPaused] = useState(false);
@@ -27,7 +27,7 @@ const page = () => {
     await controls.start({
       x: "-33.33%", // Kyunki humne triple items liye hain
       transition: {
-        duration: 2,
+        duration: 10,
         ease: "linear",
         repeat: Infinity,
       },

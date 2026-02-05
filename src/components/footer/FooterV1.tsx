@@ -34,7 +34,7 @@ const FooterV1 = ({ sectionClass }: DataType) => {
                             <div className="col-lg-5 offset-lg-1 footer-item">
                                 <h4 className="widget-title">Useful Link</h4>
                                 <ul className="useful-link">
-                                    <li><Link href="/about-us">About Us</Link></li>
+                                    <li><Link href="/portfolio">Portfolio</Link></li>
                                     <li><Link href="/contact-us">Contact</Link></li>
                                     <li><Link href="/terms-condition">Term & Conditions</Link></li>
                                     <li><Link href="/privacy-policy ">Privacy Policy</Link></li>

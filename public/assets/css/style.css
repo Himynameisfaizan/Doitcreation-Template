@@ -498,8 +498,8 @@ select:focus {
 }
 
 .masonry {
-  column-count: 4;
-  column-gap: 10px;
+  column-count: 6;
+  column-gap: 12px;
 }
 
 .masonry-item {

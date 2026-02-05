@@ -23,12 +23,12 @@ const Home1 = () => {
         <BannerV8 />
         <AboutV6 />
         <ProductCarousel />
-        <div className="panel py-5">
+        <div className="py-4">
           <ExpertiseV1 />
         </div>
         <Project />
         <ClientTestimonials/>
-         <div className="panel py-5">
+         <div className="py-4">
           <WhyChooseV1 />
         </div>
         <HomeContact/>

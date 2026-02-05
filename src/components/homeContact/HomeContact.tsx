@@ -3,7 +3,7 @@ import React from "react";
 export const HomeContact = () => {
   return (
     <>
-      <div className="panel py-5">
+      <div className="py-4">
         <div className="container">
           <div className="text-center mb-5">
             <h4 className="sub-title">Contact form</h4>
