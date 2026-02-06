@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import Draggable from "gsap/Draggable";
+
 import image1 from "../../../public/assets/img/logo/Bachat-Daddy.png";
 import image2 from "../../../public/assets/img/logo/Discover-resort-logo.png";
 import image3 from "../../../public/assets/img/logo/Enernew-Logo.png";
@@ -19,22 +20,67 @@ import image14 from "../../../public/assets/img/logo/Saroj.png";
 import image15 from "../../../public/assets/img/logo/Govendor-Logo.png";
 import Image from "next/image";
 
-// CSS Imports
-import "swiper/css";
+gsap.registerPlugin(Draggable);
+
 const BrandSlider = () => {
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  const images = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
+  ];
+
+  const img = [...images, ...images];
+
   const dividerStyle = {
     height: "2px",
     backgroundColor: "#fecaca",
     opacity: "0.25",
   };
+  // const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const items = track.children;
+    // const totalItems = items.length / 2;
+    // gsap.set(track, { xPercent: -40 });
+    const tl = gsap.to(track, {
+      xPercent: -50,
+      duration: 20,
+      ease: "linear",
+      repeat: Infinity,
+    });
+
+    track.addEventListener("mouseenter", () => tl.pause());
+    track.addEventListener("mouseleave", () => tl.resume());
+    Draggable.create(track, {
+      type: "x",
+      inertia: true,
+      onPress: () => tl.pause(),
+      onRelease: () => tl.resume(),
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
   return (
     <>
-      <style jsx global>{`
-        .linear-swiper .swiper-wrapper {
-          transition-timing-function: linear !important;
-        }
-      `}</style>
-
       <div className="slider-section w-100 bg-black">
         <div className="d-flex align-items-center gap-4 w-100">
           <div
@@ -42,9 +88,7 @@ const BrandSlider = () => {
             style={{ ...dividerStyle, width: "60px" }}
           ></div>
 
-          {/* Center Content: Stars + Text */}
           <div className="d-flex align-items-center gap-2 flex-shrink-0">
-            {/* Stars */}
             <div className="d-flex text-warning">
               <i className="ri-star-s-fill small text-warning"></i>
               <i className="ri-star-s-fill small text-warning"></i>
@@ -52,7 +96,6 @@ const BrandSlider = () => {
               <i className="ri-star-s-fill small text-warning"></i>
               <i className="ri-star-s-fill small text-warning"></i>
             </div>
-            {/* Text */}
             <h2
               className="fw-bold m-0 text-nowrap"
               style={{ fontSize: "12px", color: "#fff", fontWeight: "100" }}
@@ -61,151 +104,27 @@ const BrandSlider = () => {
             </h2>
           </div>
 
-          {/* Right Line (fills remaining space) */}
           <div className="flex-grow-1" style={dividerStyle}></div>
         </div>
 
-        {/* --- Swiper Section --- */}
-        <div className="w-100 py-3">
-          <Swiper
-            slidesPerView="auto"
-            spaceBetween={50}
-            loop={true}
-            speed={4000}
-            autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+        <div className="slider-section bg-black" style={{ overflow: "hidden" }}>
+          <div
+            ref={trackRef}
+            className="d-flex align-items-center gap-5 py-3"
+            style={{
+              width: "max-content",
             }}
-            modules={[Autoplay]}
-            className="mySwiper linear-swiper"
-            
           >
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="">
-                <Image src={image1} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
+            {img.map((img, i) => (
+              <div key={i} style={{ flexShrink: 0 }}>
+                <Image
+                  src={img}
+                  alt="icon"
+                  style={{ height: "50px", width: "auto" }}
+                />
               </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="">
-                <Image src={image2} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="">
-                <Image src={image3} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="">
-                <Image src={image4} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image5} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image6} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image7} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image8} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image9} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image10} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image11} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image12} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image13} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image14} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide
-              style={{ height: "auto", maxWidth: "fit-content"}}
-            >
-              <div className="d-flex align-items-center">
-                <Image src={image15} style={{width:'auto', height:'50px'}} alt="" className="rounded object-fit-cover" />
-              </div>
-            </SwiperSlide>
-
-   
-          </Swiper>
-
-          
+            ))}
+          </div>
         </div>
 
         <div className="w-100" style={dividerStyle}></div>

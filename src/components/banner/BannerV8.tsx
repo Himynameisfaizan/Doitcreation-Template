@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const BannerV8 = () => {
-  const splitName: string = "We create";
+  const splitName: string = "We design";
   const words = ["Logo", "website", "packaging"];
   const [displayText, setDisplayText] = useState("");
   const wordIndex = useRef(0);

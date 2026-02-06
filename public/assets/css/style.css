@@ -7333,8 +7333,8 @@ ul.list-style-two li:last-child {
     # About
 =================================================================== */
 .aboutImage {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: relative;
   flex-shrink: 0;
 }
@@ -7349,7 +7349,7 @@ ul.list-style-two li:last-child {
 }
 
 .aboutImagepara {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 .aboutImagepara h5 {
   margin-bottom: 10px;
@@ -8114,7 +8114,7 @@ ul.list-style-one li strong {
 
 .thumb-style-four {
   position: sticky;
-  top: 150px;
+  top: 140px;
 }
 
 @media (min-width: 1600px) {
@@ -11671,19 +11671,19 @@ h2.text-large-gradient {
   padding: 16px 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 .review-container .review-client-name {
   display: flex;
-  gap: 14px;
-  align-items: center;
+  gap: 10px;
+  /* align-items: center; */
 }
 .review-container .review-client-name div:nth-child(1) {
-  max-width: 60px;
+  max-width: 50px;
   height: auto;
 }
-.review-container .review-client-name div:nth-child(2) {
-  font-size: 18px;
+
+.review-container .review-client-name div:nth-child(2) h4 {
+  text-transform: capitalize;
   color: #f1f1f1;
 }
 

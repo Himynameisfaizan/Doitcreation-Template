@@ -1,103 +1,78 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion, useAnimationControls } from "framer-motion";
+import gsap from "gsap";
+import Draggable from "gsap/Draggable";
 
-// Images (Apne path check kar lena)
-import product1 from "../../../public/assets/img/thumb/WebsiteDesign.png";
-import DarkClass from "@/components/classes/DarkClass";
+import icon1 from "../../../public/assets/img/icon/20+ Contry.png";
+import icon2 from "../../../public/assets/img/icon/Expert Team.png";
+import icon3 from "../../../public/assets/img/icon/8+ Years.png";
+import icon4 from "../../../public/assets/img/icon/2500+ Project Done.png";
 
-const page = () => {
-  const items = [
-    { id: 1, img: product1, title: "Website Design" },
-    { id: 2, img: product1, title: "Packaging" },
-    { id: 3, img: product1, title: "Branding" },
-    { id: 4, img: product1, title: "Logo Design" },
-    { id: 5, img: product1, title: "App Dev" },
-  ];
-
-  // Infinite loop ke liye items ko triple kar rahe hain
-  const allItems = [...items, ...items];
-  
-  const controls = useAnimationControls();
-  const [isPaused, setIsPaused] = useState(false);
-
-  // Animation Start karne ke liye
-  const startAnimation = async () => {
-    await controls.start({
-      x: "-33.33%", // Kyunki humne triple items liye hain
-      transition: {
-        duration: 10,
-        ease: "linear",
-        repeat: Infinity,
-      },
-    });
-  };
+gsap.registerPlugin(Draggable);
+const Page = () => {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    startAnimation();
+    const track = trackRef.current;
+    if (!track) return;
+    const items = track.children;
+    const totalItems = items.length / 2;
+    // gsap.set(track, { xPercent: -40 });
+    const tl = gsap.to(track, {
+      xPercent: -50,
+      duration: 10,
+      ease: "linear",
+      repeat: -1,
+    });
+
+    track.addEventListener("mouseenter", () => tl.pause());
+    track.addEventListener("mouseleave", () => tl.resume());
+    Draggable.create(track, {
+      type: "x",
+      inertia: true,
+      onPress: () => tl.pause(),
+      onRelease: () => tl.resume(),
+    });
+
+    return () => {
+      tl.kill();
+    };
   }, []);
 
-  return (
-    <>
-    <div className="carousel-container">
-      <style jsx>{`
-        .carousel-container {
-          overflow: hidden;
-          width: 100%;
-          padding: 40px 0;
-          cursor: grab;
-        }
-        .carousel-container:active {
-          cursor: grabbing;
-        }
-        .item-box {
-          width: 300px;
-          flex-shrink: 0;
-          user-select: none;
-        }
-        .dot {
-          height: 6px;
-          width: 6px;
-          background-color: #e4202a;
-          border-radius: 2px;
-        }
-      `}</style>
+  const icons = [icon1, icon2, icon3, icon4, icon1, icon2, icon3, icon4];
+  const items = [...icons, ...icons, ...icons]; 
 
-      <motion.div
-        className="d-flex gap-4"
-        animate={controls}
-        drag="x"
-        // Jab drag shuru ho toh animation stop kar do
-        onDragStart={() => controls.stop()}
-        // Jab drag khatam ho toh wapas start karo
-        onDragEnd={() => startAnimation()}
-        // Hover par pause
-        onMouseEnter={() => controls.stop()}
-        onMouseLeave={() => !isPaused && startAnimation()}
-        style={{ width: "max-content" }}
+  return (
+    <div
+      ref={wrapperRef}
+      style={{
+        overflow: "hidden",
+        width: "100%",
+      }}
+    >
+      <div
+        ref={trackRef}
+        style={{
+          display: "flex",
+          gap: "40px",
+          width: "max-content",
+          cursor: "grab",
+        }}
       >
-        {allItems.map((item, index) => (
-          <div key={index} className="item-box">
+        {items.map((img, i) => (
+          <div key={i} style={{ flexShrink: 0 }}>
             <Image
-              src={item.img}
-              alt={item.title}
-              width={300}
-              height={200}
-              className="rounded"
-              draggable="false" // Image drag default band
+              src={img}
+              alt="icon"
+              style={{ height: "120px", width: "120px" }}
             />
-            <div className="d-flex align-items-center gap-2 mt-2">
-              <span style={{ fontSize: "14px" }}>{item.title}</span>
-              <span className="dot"></span>
-            </div>
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
-<DarkClass />
-    </>
   );
 };
 
-export default page
+export default Page;

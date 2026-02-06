@@ -11,7 +11,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import product1 from "../../../public/assets/img/thumb/Milind Dhage.png";
 import product2 from "../../../public/assets/img/thumb/Raj Kishore Mohanty.png";
-import product3 from "../../../public/assets/img/thumb/shib Patnaik.png";
+import product3 from "../../../public/assets/img/thumb/Swati Ray.png";
 import product4 from "../../../public/assets/img/thumb/Rachit Jaiswal.png";
 import product5 from "../../../public/assets/img/thumb/Sumanth Mahadeva.png";
 import product6 from "../../../public/assets/img/thumb/the indian chhori.png";
@@ -130,7 +130,7 @@ Chakme Transolution PVT LTD.
                     </div>
                   </div>
                 </div>
-
+                
                 <div className="review-star-container">
                   <div className="">
                     <i className="ri-star-fill"></i>
@@ -144,8 +144,7 @@ Chakme Transolution PVT LTD.
 
                 <div className="review-para text-white shadow-sm">
                   <Readmore
-                    text="Absolutely Marvelous. Our concept and expectations translated into to a beautiful logo. The delivery period is also very quick. We strongly recommend for Do It Creation.
-"
+                    text="Absolutely Marvelous. Our concept and expectations translated into to a beautiful logo. The delivery period is also very quick. We strongly recommend for Do It Creation."
                   />
                 </div>
               </div>
@@ -188,7 +187,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product4} alt="" className="rounded-circle" />
+                    <Image src={product4} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-center">
                     <h4>Rachit Jaiswal</h4>
@@ -224,7 +223,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product15} alt="" className="rounded-circle" />
+                    <Image src={product15} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-center">
                     <h4>Vishal Sharma</h4>
@@ -257,7 +256,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product16} alt="" className="rounded-circle" />
+                    <Image src={product16} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-center">
                     <h4>Rinki 06</h4>
@@ -281,9 +280,7 @@ Chakme Transolution PVT LTD.
                 </div>
 
                 <div className="review-para text-white shadow-sm">
-                  <Readmore
-                    text="Do it Creation is the best logo designing company Best service ❣️ I am very happy 😊 with your service thank you so much."
-                  />
+                  <Readmore text="Do it Creation is the best logo designing company Best service ❣️ I am very happy 😊 with your service thank you so much." />
                 </div>
               </div>
             </SwiperSlide>
@@ -308,7 +305,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product5} alt="" className="rounded-circle" />
+                    <Image src={product5} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Sumanth Mahadeva</h4>
@@ -344,7 +341,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product6} alt="" className="rounded-circle" />
+                    <Image src={product6} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>the indian chhori</h4>
@@ -380,7 +377,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product7} alt="" className="rounded-circle" />
+                    <Image src={product7} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Tushar Arora</h4>
@@ -413,7 +410,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product8} alt="" className="rounded-circle" />
+                    <Image src={product8} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Rahul Pareek</h4>
@@ -446,7 +443,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product14} alt="" className="rounded-circle" />
+                    <Image src={product14} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Avikal singh photography</h4>
@@ -495,7 +492,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product9} alt="" className="rounded-circle" />
+                    <Image src={product9} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Rafiq Ahmad Naik</h4>
@@ -528,7 +525,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product10} alt="" className="rounded-circle" />
+                    <Image src={product10} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Mahfooz Theruvath</h4>
@@ -561,7 +558,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product11} alt="" className="rounded-circle" />
+                    <Image src={product11} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Swati Ray</h4>
@@ -594,7 +591,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product12} alt="" className="rounded-circle" />
+                    <Image src={product12} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Deepak Sharma</h4>
@@ -627,7 +624,7 @@ Chakme Transolution PVT LTD.
               <div className="review-container">
                 <div className="review-client-name">
                   <div>
-                    <Image src={product13} alt="" className="rounded-circle" />
+                    <Image src={product13} alt="" className="" />
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Bhaskar Mishra</h4>
