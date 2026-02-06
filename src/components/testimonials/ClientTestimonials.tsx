@@ -107,9 +107,7 @@ export const ClientTestimonials = () => {
 
                 <div className="review-para text-white shadow-sm">
                   <Readmore
-                    text="My experience with you has been very good and I am very happy with your work.You have passion and patience.It would be a great pleasure to work with you in the future and to share your work with everyone. It was a great satisfaction for me. Thank you, as I do. We will work together in the future. Best wishes for the future.Thank you.
-Chakme Transolution PVT LTD.
-"
+                    text="My experience with you has been very good and I am very happy with your work.You have passion and patience.It would be a great pleasure to work with you in the future and to share your work with everyone. It was a great satisfaction for me. Thank you, as I do. We will work together in the future. Best wishes for the future.Thank you. Chakme Transolution PVT LTD."
                   />
                 </div>
               </div>
@@ -130,7 +128,7 @@ Chakme Transolution PVT LTD.
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="review-star-container">
                   <div className="">
                     <i className="ri-star-fill"></i>
@@ -143,9 +141,7 @@ Chakme Transolution PVT LTD.
                 </div>
 
                 <div className="review-para text-white shadow-sm">
-                  <Readmore
-                    text="Absolutely Marvelous. Our concept and expectations translated into to a beautiful logo. The delivery period is also very quick. We strongly recommend for Do It Creation."
-                  />
+                  <Readmore text="Absolutely Marvelous. Our concept and expectations translated into to a beautiful logo. The delivery period is also very quick. We strongly recommend for Do It Creation." />
                 </div>
               </div>
             </SwiperSlide>
@@ -258,7 +254,7 @@ Chakme Transolution PVT LTD.
                   <div>
                     <Image src={product16} alt="" className="" />
                   </div>
-                  <div className="client-name d-flex flex-column align-items-center">
+                  <div className="client-name d-flex flex-column align-items-start">
                     <h4>Rinki 06</h4>
                     <div className="review-photo d-flex align-items-center gap-2 ">
                       <p className="">1 Reviews </p>

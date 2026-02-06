@@ -106,9 +106,30 @@ export const HomeContact = () => {
                   </div>
                   <div className="divider-horizontal"></div>
                   <div className="contact-social-icon">
-                    <i className="ri-facebook-fill"></i>
-                    <i className="ri-instagram-line"></i>
-                    <i className="ri-twitter-x-fill"></i>
+                    <a
+                      href=" https://www.facebook.com/doitcreation/"
+                      target="_blank"
+                    >
+                      <i className="ri-facebook-fill"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/doitcreation/"
+                      target="_blank"
+                    >
+                      <i className="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://in.pinterest.com/doitcreation/" target="_blank">
+                     <i className="ri-pinterest-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/doitcreation/posts/?feedView=all" target="_blank">
+                     <i className="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://dribbble.com/doitcreation" target="_blank">
+                      <i className="ri-dribbble-line"></i>
+                    </a>
+                    <a href=" https://www.behance.net/doitcreation" target="_blank">
+                      <i className="ri-behance-fill"></i>
+                    </a>
                   </div>
                 </div>
               </div>

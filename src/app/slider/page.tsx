@@ -58,7 +58,6 @@ const Page = () => {
           display: "flex",
           gap: "40px",
           width: "max-content",
-          cursor: "grab",
         }}
       >
         {items.map((img, i) => (

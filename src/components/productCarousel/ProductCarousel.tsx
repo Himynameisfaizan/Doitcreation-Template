@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -20,15 +19,24 @@ import product8 from "../../../public/assets/img/thumb/seo.png";
 import product9 from "../../../public/assets/img/thumb/SocialMedia.png";
 import product10 from "../../../public/assets/img/thumb/LogoTrademark.png";
 
+const images = [
+  { title: "Website Design", img: product1 },
+  { title: "Packaging", img: product2 },
+  { title: "Branding Stationery", img: product3 },
+  { title: "Logo Design", img: product4 },
+  { title: "App Development", img: product5 },
+  { title: "Video Editing", img: product6 },
+  { title: "Brand Name Research", img: product7 },
+  { title: "SEO", img: product8 },
+  { title: "Social Media", img: product9 },
+  { title: "Logo Trademark", img: product10 },
+];
+
 export const ProductCarousel = () => {
+  const img = [...images, ...images];
+
   return (
     <>
-      <style jsx global>{`
-        .linear-swiper  {
-          transition-timing-function: linear !important;
-        }
-      `}</style>
-
       <Swiper
         slidesPerView="auto"
         spaceBetween={20}
@@ -42,220 +50,66 @@ export const ProductCarousel = () => {
         }}
         modules={[Autoplay]}
         className="mySwiper linear-swiper"
-        style={{ padding: "0 0 60px 0" }}
+        style={{ padding: "0 0 60px 0", transitionTimingFunction: "linear" }}
       >
-        {/* Slides content same rahega */}
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product1} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Website Design</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
+        {img.map((img) => (
+          <SwiperSlide
+            style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
+          >
+            <div className="">
+              <Image src={img.img} alt="" className="rounded" />
+              <div className="d-flex align-items-center gap-2">
+                <span style={{ fontSize: "14px" }}>{img.title}</span>
+                <span
+                  style={{
+                    height: "6px",
+                    width: "6px",
+                    backgroundColor: "#E4202A",
+                    display: "inline-block",
+                    borderRadius: "2px",
+                  }}
+                ></span>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product2} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Packaging</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product3} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Branding Stationory</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product4} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Logo Design</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product5} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>App Development</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product6} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Video Editing</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product7} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Brand Name Research</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product8} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>SEO</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product9} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Social Media</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          // key={index}
-          style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-        >
-          <div className="">
-            <Image src={product10} alt="" className="rounded" />
-            <div className="d-flex align-items-center gap-2">
-              <span style={{ fontSize: "14px" }}>Logo Trademark</span>
-              <span
-                style={{
-                  height: "6px",
-                  width: "6px",
-                  backgroundColor: "#E4202A",
-                  display: "inline-block",
-                  borderRadius: "2px",
-                }}
-              ></span>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
+
+      {/* <div className="d-flex justify-content-center align-items-center gap-10">
+        <div
+          ref={trackRef}
+          style={{
+            height: "auto",
+            maxWidth: "300px",
+            objectFit: "cover",
+            display: "flex",
+            gap:'20px'
+          }}
+        >
+          {img.map((item, i) => (
+            <div key={i} className="" style={{ flexShrink: "0" }}>
+              <Image
+                src={item.img}
+                alt="image"
+                style={{ height: "300px", width: "auto" }}
+                className="rounded"
+              />
+              <div className="d-flex align-items-center gap-2">
+                <span style={{ fontSize: "14px" }}>{item.title}</span>
+                <span
+                  style={{
+                    height: "6px",
+                    width: "6px",
+                    backgroundColor: "#E4202A",
+                    display: "inline-block",
+                    borderRadius: "2px",
+                  }}
+                ></span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div> */}
     </>
   );
 };

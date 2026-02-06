@@ -60,7 +60,7 @@ const BrandSlider = () => {
     // gsap.set(track, { xPercent: -40 });
     const tl = gsap.to(track, {
       xPercent: -50,
-      duration: 20,
+      duration: 50,
       ease: "linear",
       repeat: Infinity,
     });
@@ -115,10 +115,10 @@ const BrandSlider = () => {
               width: "max-content",
             }}
           >
-            {img.map((img, i) => (
+            {img.map((imgs, i) => (
               <div key={i} style={{ flexShrink: 0 }}>
                 <Image
-                  src={img}
+                  src={imgs}
                   alt="icon"
                   style={{ height: "50px", width: "auto" }}
                 />
