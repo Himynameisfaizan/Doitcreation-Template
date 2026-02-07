@@ -499,49 +499,61 @@ select:focus {
 }
 
 .masonry {
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
 }
 
 
 @media (min-width: 1500px) {
-  .masonry { column-count: 7; }
+  .masonry {
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 
 @media (max-width: 1399px) {
-  .masonry { column-count: 5; }
+  .masonry {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media (max-width: 1199px) {
-  .masonry { column-count: 4; }
+  .masonry {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 991px) {
-  .masonry { column-count: 3; }
+  .masonry {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 575px) {
-  .masonry { column-count: 2; }
+  .masonry {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .masonry-item {
   list-style: none;
-  margin-bottom: 16px;
-  background-color: #4b4b4b94;
-  box-shadow: 0 1px 2px #6666661a;
   padding: 1px;
   border-radius: 8px;
+
 }
 
-.apiimage {
+.apiimage{
   width: 100%;
+  border: 1px solid  #4b4b4b1e;
   border-radius: 8px;
-  height: auto;
+  object-fit: cover;
+  height: 100%;
   opacity: 0;
   transition: opacity 1s ease;
   transition-delay: 4s;
 }
 
-.apiimage.show {
+.apiimage.show{
   opacity: 1;
 }
 

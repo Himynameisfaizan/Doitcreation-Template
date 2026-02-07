@@ -77,9 +77,17 @@ const Portfolio = () => {
                 <img src={`https://picsum.photos/id/${id}/500/400`} alt="Demo" className="apiimage" loading="lazy" />  
               </li>
             ))} */}
-            {PortfolioImage.map((src, index) => (
+            {PortfolioImage.map((item, index) => (
               <li key={index} className="masonry-item animated--fade-in">
-                <img src={src} alt="demo" className="apiimage show" loading="lazy"/>
+                {
+                  item.type == 'img' && (
+                    <img src={item.src} alt="demo" className="apiimage show" loading="lazy"/>    
+                )}
+                {item.type == 'video' && (
+                  <video className="apiimage show" autoPlay loop muted>
+                    <source src={item.src} type="video/mp4"/>
+                  </video>
+                )}
               </li>
             ))}
           </ul>
