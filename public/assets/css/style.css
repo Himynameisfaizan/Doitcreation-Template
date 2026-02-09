@@ -524,69 +524,40 @@ select:focus {
 }
 
 .masonry {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 10px;
-}
-
-
-@media (min-width: 1500px) {
-  .masonry {
-    grid-template-columns: repeat(7, 1fr);
-  }
-}
-
-@media (max-width: 1399px) {
-  .masonry {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media (max-width: 1199px) {
-  .masonry {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 991px) {
-  .masonry {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 575px) {
-  .masonry {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  column-count: 6;
+  column-gap: 15px;
+  padding: 0;
+  list-style: none;
 }
 
 .masonry-item {
-  list-style: none;
-  padding: 1px;
-  border-radius: 8px;
-
-}
-
-.apiimage{
+  display: block; 
   width: 100%;
-  border: 1px solid  #4b4b4b1e;
-  border-radius: 8px;
-  object-fit: cover;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease;
-  transition-delay: 4s;
+  margin-bottom: 15px; 
+  break-inside: avoid;
 }
 
-.apiimage.show{
-  opacity: 1;
+@media (max-width: 1500px) { .masonry { column-count: 7; } }
+@media (max-width: 1366px) { .masonry { column-count: 6; } }
+@media (max-width: 1150px) { .masonry { column-count: 5; } }
+@media (max-width: 992px) { .masonry { column-count: 3; } }
+@media (max-width: 600px) { .masonry { column-count: 2; } }
+
+.apiimage {
+  width: 100%;
+  height: auto; 
+  display: block;
+  border-radius: 8px;
+  object-fit: contain; 
+  opacity: 1; 
 }
+
 
 .portfolio-search .input {
-  width: 40%;
+  width: 30%;
   padding: 0;
-  min-height: 40px;
-  border-radius: 40px;
+  min-height: 20px;
+  border-radius: 30px;
   padding: 0 16px 0 16px;
   background-color: white;
   display: flex;
@@ -595,11 +566,13 @@ select:focus {
 }
 
 .portfolio-search .input i {
-  color: #a1a1a1;
+  cursor: pointer;
+  color: #313131;
 }
 
 .portfolio-search .input input {
   width: 100%;
+  padding-left: 10px;
   border: 0;
 }
 
@@ -15168,6 +15141,46 @@ ul.footer-social li a img {
 
 .footer-contact a {
   font-size: 26px;
+  font-weight: 500;
+}
+
+.footer-contact .svg-styling{
+ height: 35px;
+ width: 50px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ /* justify-content: center; */
+}
+
+.footer-contact a .svg1{
+ height: 145px;
+ width: 150px;
+ cursor: pointer;
+ transition:0.2s ease;
+}
+
+.footer-contact a .svg{
+ height: 30px;
+ width: 150px;
+ cursor: pointer;
+ fill: white;
+ transition:0.2s ease;
+}
+
+.footer-contact a .svg:hover{
+  fill: #e4202a;
+  stroke: #e4202a;
+}
+
+.footer-contact a svg:hover{
+  fill: #e4202a;
+  stroke: #e4202a;
+}
+
+.footer-contact p {
+  font-size: 26px;
+  color: white;
   font-weight: 500;
 }
 

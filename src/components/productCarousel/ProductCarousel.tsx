@@ -1,7 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+
+import gsap from "gsap";
+import Draggable from "gsap/Draggable";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -32,12 +35,56 @@ const images = [
   { title: "Logo Trademark", img: product10 },
 ];
 
-export const ProductCarousel = () => {
-  const img = [...images, ...images];
+gsap.registerPlugin(Draggable);
 
+export const ProductCarousel = () => {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    const wrapper = wrapperRef.current;
+    if (!track || !wrapper) return;
+
+    const totalWidth = track.scrollWidth / 2;
+
+    const tl = gsap.to(track, {
+      x: -totalWidth,
+      duration: 40,
+      ease: "none",
+      repeat: -1,
+      modifiers: {
+        x: (x) => `${parseFloat(x) % totalWidth}px`,
+      },
+    });
+
+    // 🔹 INSTANT hover pause / resume
+    wrapper.addEventListener("mouseenter", () => tl.pause());
+    wrapper.addEventListener("mouseleave", () => tl.resume());
+
+    // 🔹 Draggable synced with timeline
+    Draggable.create(track, {
+      type: "x",
+      inertia: true,
+      // onPress: () => tl.pause(),
+      onDrag: function () {
+        gsap.set(track, { x: this.x });
+      },
+      onThrowUpdate: function () {
+        gsap.set(track, { x: this.x });
+      },
+      // onRelease: () => tl.resume(),
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+  const duplicatedImages = [...images, ...images, ...images];
   return (
     <>
-      <Swiper
+      {/* <Swiper
         slidesPerView="auto"
         spaceBetween={20}
         loop={true}
@@ -73,28 +120,33 @@ export const ProductCarousel = () => {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
 
-      {/* <div className="d-flex justify-content-center align-items-center gap-10">
+      <div
+        ref={wrapperRef}
+        style={{
+          overflow: "hidden",
+          width: "100%",
+          padding: "0px 0",
+        }}
+      >
         <div
           ref={trackRef}
           style={{
-            height: "auto",
-            maxWidth: "300px",
-            objectFit: "cover",
             display: "flex",
-            gap:'20px'
+            gap: "20px",
+            width: "max-content",
           }}
         >
-          {img.map((item, i) => (
-            <div key={i} className="" style={{ flexShrink: "0" }}>
+          {duplicatedImages.map((item, i) => (
+            <div key={i} style={{ flexShrink: 0 }}>
               <Image
                 src={item.img}
-                alt="image"
+                alt={item.title}
                 style={{ height: "300px", width: "auto" }}
                 className="rounded"
               />
-              <div className="d-flex align-items-center gap-2">
+              <div className="d-flex align-items-center gap-2 mt-2">
                 <span style={{ fontSize: "14px" }}>{item.title}</span>
                 <span
                   style={{
@@ -104,12 +156,12 @@ export const ProductCarousel = () => {
                     display: "inline-block",
                     borderRadius: "2px",
                   }}
-                ></span>
+                />
               </div>
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

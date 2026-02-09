@@ -1,5 +1,7 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import Draggable from "gsap/Draggable";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -27,21 +29,21 @@ import product14 from "../../../public/assets/img/portfolio/14Rapido-Ad-2.jpg";
 import product15 from "../../../public/assets/img/portfolio/15Ladylink-Logo.jpg";
 
 //Slider secound
-import productimg1 from "../../../public/assets/img/portfolio/1RApido-Ad-4.jpg"
-import productimg2 from "../../../public/assets/img/portfolio/2Mustard-Oil.jpg"
-import productimg3 from "../../../public/assets/img/portfolio/3Trigo-Bake-LOgo.jpg"
-import productimg4 from "../../../public/assets/img/portfolio/4Coffee.jpg"
-import productimg5 from "../../../public/assets/img/portfolio/5Daring-Devis-BOok-Cover.jpg"
-import productimg6 from "../../../public/assets/img/portfolio/6Discover-Resort--Catologue.jpg"
-import productimg7 from "../../../public/assets/img/portfolio/7Wick-Logo.jpg"
-import productimg8 from "../../../public/assets/img/portfolio/8Darkmont-1.jpg"
-import productimg9 from "../../../public/assets/img/portfolio/9Ninja-Pasta.jpg"
-import productimg10 from "../../../public/assets/img/portfolio/10-Poshyam-Logo.jpg"
-import productimg11 from "../../../public/assets/img/portfolio/11A2-Desi-Ghee-2.jpg"
-import productimg12 from "../../../public/assets/img/portfolio/12RApido-5.jpg"
-import productimg13 from "../../../public/assets/img/portfolio/13Notebook-Design.jpg"
-import productimg14 from "../../../public/assets/img/portfolio/14AArna-Farms-Logo.jpg"
-import productimg15 from "../../../public/assets/img/portfolio/15Standee-Design-2.jpg"
+import productimg1 from "../../../public/assets/img/portfolio/1RApido-Ad-4.jpg";
+import productimg2 from "../../../public/assets/img/portfolio/2Mustard-Oil.jpg";
+import productimg3 from "../../../public/assets/img/portfolio/3Trigo-Bake-LOgo.jpg";
+import productimg4 from "../../../public/assets/img/portfolio/4Coffee.jpg";
+import productimg5 from "../../../public/assets/img/portfolio/5Daring-Devis-BOok-Cover.jpg";
+import productimg6 from "../../../public/assets/img/portfolio/6Discover-Resort--Catologue.jpg";
+import productimg7 from "../../../public/assets/img/portfolio/7Wick-Logo.jpg";
+import productimg8 from "../../../public/assets/img/portfolio/8Darkmont-1.jpg";
+import productimg9 from "../../../public/assets/img/portfolio/9Ninja-Pasta.jpg";
+import productimg10 from "../../../public/assets/img/portfolio/10-Poshyam-Logo.jpg";
+import productimg11 from "../../../public/assets/img/portfolio/11A2-Desi-Ghee-2.jpg";
+import productimg12 from "../../../public/assets/img/portfolio/12RApido-5.jpg";
+import productimg13 from "../../../public/assets/img/portfolio/13Notebook-Design.jpg";
+import productimg14 from "../../../public/assets/img/portfolio/14AArna-Farms-Logo.jpg";
+import productimg15 from "../../../public/assets/img/portfolio/15Standee-Design-2.jpg";
 
 const products = [
   product1,
@@ -60,6 +62,7 @@ const products = [
   product14,
   product15,
 ];
+
 const productimg = [
   productimg1,
   productimg2,
@@ -78,8 +81,102 @@ const productimg = [
   productimg15,
 ];
 
+gsap.registerPlugin(Draggable);
 
 const Project = () => {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    const wrapper = wrapperRef.current;
+    if (!track || !wrapper) return;
+
+    const totalWidth = track.scrollWidth / 2;
+
+    const tl = gsap.to(track, {
+      x: -totalWidth,
+      duration: 40,
+      ease: "none",
+      repeat: -1,
+      modifiers: {
+        x: (x) => `${parseFloat(x) % totalWidth}px`,
+      },
+    });
+
+    // 🔹 INSTANT hover pause / resume
+    wrapper.addEventListener("mouseenter", () => tl.pause());
+    wrapper.addEventListener("mouseleave", () => tl.resume());
+
+    // 🔹 Draggable synced with timeline
+    Draggable.create(track, {
+      type: "x",
+      inertia: true,
+      // onPress: () => tl.pause(),
+      onDrag: function () {
+        gsap.set(track, { x: this.x });
+      },
+      onThrowUpdate: function () {
+        gsap.set(track, { x: this.x });
+      },
+      // onRelease: () => tl.resume(),
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+
+  const wrapperRef1 = useRef<HTMLDivElement>(null);
+  const trackRef1 = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track1 = trackRef1.current;
+    const wrapper1 = wrapperRef1.current;
+    if (!track1 || !wrapper1) return;
+
+    const totalWidth = track1.scrollWidth / 2;
+
+    const tl = gsap.fromTo(track1, 
+      {x: -totalWidth},
+      {
+      x: 0,
+      duration: 40,
+      ease: "none",
+      repeat: -1,
+      modifiers: {
+        x: (x) => `${parseFloat(x) % totalWidth}px`,
+      },
+    });
+
+    // 🔹 INSTANT hover pause / resume
+    wrapper1.addEventListener("mouseenter", () => tl.pause());
+    wrapper1.addEventListener("mouseleave", () => tl.resume());
+
+    // 🔹 Draggable synced with timeline
+    Draggable.create(track1, {
+      type: "x",
+      inertia: true,
+      // onPress: () => tl.pause(),
+      onDrag: function () {
+        gsap.set(track1, { x: this.x });
+      },
+      onThrowUpdate: function () {
+        gsap.set(track1, { x: this.x });
+      },
+      // onRelease: () => tl.resume(),
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+  const copyImage = [...products, ...products];
+
+  const copyImage1 = [...productimg, ...productimg]
+
   return (
     <>
       <div>
@@ -108,7 +205,7 @@ const Project = () => {
           </div>
         </div>
         <div className="image-slider">
-          <Swiper
+          {/* <Swiper
             slidesPerView="auto"
             spaceBetween={20}
             loop={true}
@@ -142,9 +239,67 @@ const Project = () => {
                 />
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> */}
 
-          <Swiper
+          <div
+            ref={wrapperRef}
+            style={{
+              overflow: "hidden",
+              width: "100%",
+              padding: "0px 0",
+            }}
+          >
+            <div
+              ref={trackRef}
+              style={{
+                display: "flex",
+                gap: "20px",
+                width: "max-content",
+              }}
+            >
+              {copyImage.map((item, i) => (
+                <div key={i} style={{ flexShrink: 0 }}>
+                  <Image
+                    src={item}
+                    alt="img"
+                    style={{ height: "300px", width: "auto" }}
+                    className="rounded"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div
+            ref={wrapperRef1}
+            style={{
+              overflow: "hidden",
+              width: "100%",
+              padding: "25px 0",
+            }}
+          >
+            <div
+              ref={trackRef1}
+              style={{
+                display: "flex",
+                gap: "20px",
+                width: "max-content",
+              }}
+            >
+              {copyImage1.map((item, i) => (
+                <div key={i} style={{ flexShrink: 0 }}>
+                  <Image
+                    src={item}
+                    alt="img"
+                    style={{ height: "300px", width: "auto" }}
+                    className="rounded"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* <Swiper
             dir="rtl"
             slidesPerView="auto"
             spaceBetween={20}
@@ -178,9 +333,8 @@ const Project = () => {
                   className="rounded"
                 />
               </SwiperSlide>
-              ))}
-          </Swiper>
-
+            ))}
+          </Swiper> */}
         </div>
       </div>
     </>
@@ -188,4 +342,3 @@ const Project = () => {
 };
 
 export default Project;
-

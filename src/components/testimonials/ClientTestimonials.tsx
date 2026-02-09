@@ -62,6 +62,7 @@ export const ClientTestimonials = () => {
             gap: "20px",
           }}
         >
+          
           <Swiper
             direction="vertical"
             slidesPerView="auto"
@@ -86,7 +87,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Milind Dhage</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1 ">
                       <p className="">5 Reviews </p>
                       <p>-</p>
                       <p className="">3 Photo</p>
@@ -121,7 +122,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Raj Kishore Mohanty</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1 ">
                       <p className="">117 reviews </p>
                       <p>-</p>
                       <p className="">4 Photo</p>
@@ -154,7 +155,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-center">
                     <h4>shib Patnaik</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">1 Reviews </p>
                       <p>-</p>
                       <p className="">0 Photo</p>
@@ -187,7 +188,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-center">
                     <h4>Rachit Jaiswal</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">2 Reviews </p>
                       <p>-</p>
                       <p className="">3 Photo</p>
@@ -223,7 +224,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-center">
                     <h4>Vishal Sharma</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">1 Reviews </p>
                       <p>-</p>
                       <p className="">0 Photo</p>
@@ -256,7 +257,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Rinki 06</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">1 Reviews </p>
                       <p>-</p>
                       <p className="">0 Photo</p>
@@ -305,7 +306,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Sumanth Mahadeva</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">2 Reviews </p>
                       <p>-</p>
                       <p className="">1 Photo</p>
@@ -341,7 +342,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>the indian chhori</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">57 Reviews </p>
                       <p>-</p>
                       <p className="">72 Photo</p>
@@ -377,7 +378,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Tushar Arora</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">2 Reviews </p>
                       <p>-</p>
                       <p className="">1 Photo</p>
@@ -410,7 +411,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Rahul Pareek</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">23 Reviews </p>
                       <p>-</p>
                       <p className="">0 Photo</p>
@@ -443,7 +444,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Avikal singh photography</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">1 Reviews </p>
                       <p>-</p>
                       <p className="">2 Photo</p>
@@ -492,7 +493,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Rafiq Ahmad Naik</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">1 Reviews </p>
                       <p>-</p>
                       <p className="">0 Photo</p>
@@ -525,7 +526,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Mahfooz Theruvath</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">13 Reviews </p>
                       <p>-</p>
                       <p className="">12 Photo</p>
@@ -558,7 +559,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Swati Ray</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">1 Reviews </p>
                       <p>-</p>
                       <p className="">0 Photo</p>
@@ -591,7 +592,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Deepak Sharma</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">10 Reviews </p>
                       <p>-</p>
                       <p className="">106 Photo</p>
@@ -624,7 +625,7 @@ export const ClientTestimonials = () => {
                   </div>
                   <div className="client-name d-flex flex-column align-items-start">
                     <h4>Bhaskar Mishra</h4>
-                    <div className="review-photo d-flex align-items-center gap-2 ">
+                    <div className="review-photo d-flex align-items-center gap-1">
                       <p className="">5 Reviews </p>
                       <p>-</p>
                       <p className="">1 Photo</p>

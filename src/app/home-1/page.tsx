@@ -22,16 +22,18 @@ const Home1 = () => {
         <HeaderV1 />
         <BannerV8 />
         <AboutV6 />
-        <ProductCarousel />
+        <div style={{paddingBottom: '40px'}}>
+          <ProductCarousel />
+        </div>
         <div className="py-4">
           <ExpertiseV1 />
         </div>
         <Project />
-        <ClientTestimonials/>
-         <div className="py-4">
+        <ClientTestimonials />
+        <div className="py-4">
           <WhyChooseV1 />
         </div>
-        <HomeContact/>
+        <HomeContact />
         <FooterV1 />
         <DarkClass />
       </div>
