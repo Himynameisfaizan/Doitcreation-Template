@@ -63,7 +63,7 @@ const FooterV1 = ({ sectionClass }: DataType) => {
                             </div>
                             <div className="col-lg-6 text-end">
                                 <p>
-                                    Copyright &copy; {(new Date().getFullYear())} Dixor. All Rights Reserved
+                                    Copyright &copy; 2017 - 2026 Doitcreation. All Rights Reserved
                                 </p>
                             </div>
                         </div>

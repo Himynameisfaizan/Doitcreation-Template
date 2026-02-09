@@ -32,8 +32,6 @@ const Page = () => {
     Draggable.create(track, {
       type: "x",
       inertia: true,
-      onPress: () => tl.pause(),
-      onRelease: () => tl.resume(),
     });
 
     return () => {

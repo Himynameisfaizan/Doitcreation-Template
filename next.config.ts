@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
-  output: "export", // Yeh line sabse important hai static deployment ke liye
+  output: "export",
+  trailingSlash: true, 
   images: {
-    unoptimized: true, // Shared hosting par image optimization support nahi hota
+    unoptimized: true,
   },
 };
 

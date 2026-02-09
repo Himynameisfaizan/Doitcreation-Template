@@ -1,5 +1,6 @@
 import React from "react";
-
+import Image from 'next/image';
+import pinterest from "../../../public/assets/img/icon/pinterest-white.svg"
 export const HomeContact = () => {
   return (
     <>
@@ -119,7 +120,8 @@ export const HomeContact = () => {
                       <i className="ri-instagram-line"></i>
                     </a>
                     <a href="https://in.pinterest.com/doitcreation/" target="_blank">
-                     <i className="ri-pinterest-line"></i>
+                    <Image className="image" src={pinterest} alt="pinterst" />
+                     {/* <i className="ri-pinterest-line"></i> */}
                     </a>
                     <a href="https://www.linkedin.com/company/doitcreation/posts/?feedView=all" target="_blank">
                      <i className="ri-linkedin-fill"></i>

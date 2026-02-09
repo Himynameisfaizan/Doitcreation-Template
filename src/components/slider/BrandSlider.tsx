@@ -69,9 +69,8 @@ const BrandSlider = () => {
     track.addEventListener("mouseleave", () => tl.resume());
     Draggable.create(track, {
       type: "x",
-      inertia: true,
-      onPress: () => tl.pause(),
-      onRelease: () => tl.resume(),
+      inertia: true
+     
     });
 
     return () => {
