@@ -529,6 +529,12 @@ select:focus {
   padding: 0;
   list-style: none;
 }
+.masonry-item.hide {
+  visibility: hidden;
+}
+.masonry-item.show {
+  visibility: visible;
+}
 
 .masonry-item {
   display: block; 

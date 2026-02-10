@@ -12,38 +12,38 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 
 // Slider first
-import product1 from "../../../public/assets/img/portfolio/1A2-Desi-Ghee.jpg";
-import product2 from "../../../public/assets/img/portfolio/2Discover-Resort.jpg";
-import product3 from "../../../public/assets/img//portfolio/3Advaya-Resort.jpg";
-import product4 from "../../../public/assets/img/portfolio/4Bill-BOard.jpg";
-import product5 from "../../../public/assets/img/portfolio/5Oil.jpg";
-import product6 from "../../../public/assets/img/portfolio/6Manviya-tech-solutions-llp.jpg";
-import product7 from "../../../public/assets/img/portfolio/7Discover-Resort-Menu-Design.jpg";
-import product8 from "../../../public/assets/img/portfolio/8News-Paper-Ad.png";
-import product9 from "../../../public/assets/img/portfolio/9Rapido-Ad-1.jpg";
-import product10 from "../../../public/assets/img/portfolio/10Standee-Design.jpg";
-import product11 from "../../../public/assets/img/portfolio/11-Excellience-Logo.jpg";
-import product12 from "../../../public/assets/img/portfolio/12Vermi-COmpost.jpg";
-import product13 from "../../../public/assets/img/portfolio/13Meraki-2.jpg";
-import product14 from "../../../public/assets/img/portfolio/14Rapido-Ad-2.jpg";
-import product15 from "../../../public/assets/img/portfolio/15Ladylink-Logo.jpg";
+import product1 from "../../../public/assets/img/portfolio2/1A2-Desi-Ghee.webp";
+import product2 from "../../../public/assets/img/portfolio2/2Discover-Resort.webp";
+import product3 from "../../../public/assets/img//portfolio2/3Advaya-Resort.webp";
+import product4 from "../../../public/assets/img/portfolio2/4Bill-BOard.webp";
+import product5 from "../../../public/assets/img/portfolio2/5Oil.webp";
+import product6 from "../../../public/assets/img/portfolio2/6Manviya-tech-solutions-llp.webp";
+import product7 from "../../../public/assets/img/portfolio2/7Discover-Resort-Menu-Design.webp";
+import product8 from "../../../public/assets/img/portfolio2/8News-Paper-Ad.webp";
+import product9 from "../../../public/assets/img/portfolio2/9Rapido-Ad-1.webp";
+import product10 from "../../../public/assets/img/portfolio2/10Standee-Design.webp";
+import product11 from "../../../public/assets/img/portfolio2/11-Excellience-Logo.webp";
+import product12 from "../../../public/assets/img/portfolio2/12Vermi-COmpost.webp";
+import product13 from "../../../public/assets/img/portfolio2/13Meraki-2.webp";
+import product14 from "../../../public/assets/img/portfolio2/14Rapido-Ad-2.webp";
+import product15 from "../../../public/assets/img/portfolio2/15Ladylink-Logo.webp";
 
 //Slider secound
-import productimg1 from "../../../public/assets/img/portfolio/1RApido-Ad-4.jpg";
-import productimg2 from "../../../public/assets/img/portfolio/2Mustard-Oil.jpg";
-import productimg3 from "../../../public/assets/img/portfolio/3Trigo-Bake-LOgo.jpg";
-import productimg4 from "../../../public/assets/img/portfolio/4Coffee.jpg";
-import productimg5 from "../../../public/assets/img/portfolio/5Daring-Devis-BOok-Cover.jpg";
-import productimg6 from "../../../public/assets/img/portfolio/6Discover-Resort--Catologue.jpg";
-import productimg7 from "../../../public/assets/img/portfolio/7Wick-Logo.jpg";
-import productimg8 from "../../../public/assets/img/portfolio/8Darkmont-1.jpg";
-import productimg9 from "../../../public/assets/img/portfolio/9Ninja-Pasta.jpg";
-import productimg10 from "../../../public/assets/img/portfolio/10-Poshyam-Logo.jpg";
-import productimg11 from "../../../public/assets/img/portfolio/11A2-Desi-Ghee-2.jpg";
-import productimg12 from "../../../public/assets/img/portfolio/12RApido-5.jpg";
-import productimg13 from "../../../public/assets/img/portfolio/13Notebook-Design.jpg";
-import productimg14 from "../../../public/assets/img/portfolio/14AArna-Farms-Logo.jpg";
-import productimg15 from "../../../public/assets/img/portfolio/15Standee-Design-2.jpg";
+import productimg1 from "../../../public/assets/img/portfolio2/1RApido-Ad-4.webp";
+import productimg2 from "../../../public/assets/img/portfolio2/2Mustard-Oil.webp";
+import productimg3 from "../../../public/assets/img/portfolio2/3Trigo-Bake-LOgo.webp";
+import productimg4 from "../../../public/assets/img/portfolio2/4Coffee.webp";
+import productimg5 from "../../../public/assets/img/portfolio2/5Daring-Devis-BOok-Cover.webp";
+import productimg6 from "../../../public/assets/img/portfolio2/6Discover-Resort--Catologue.webp";
+import productimg7 from "../../../public/assets/img/portfolio2/7Wick-Logo.webp";
+import productimg8 from "../../../public/assets/img/portfolio2/8Darkmont-1.webp";
+import productimg9 from "../../../public/assets/img/portfolio2/9Ninja-Pasta.webp";
+import productimg10 from "../../../public/assets/img/portfolio2/10-Poshyam-Logo.webp";
+import productimg11 from "../../../public/assets/img/portfolio2/11A2-Desi-Ghee-2.webp";
+import productimg12 from "../../../public/assets/img/portfolio2/12RApido-5.webp";
+import productimg13 from "../../../public/assets/img/portfolio2/13Notebook-Design.webp";
+import productimg14 from "../../../public/assets/img/portfolio2/14AArna-Farms-Logo.webp";
+import productimg15 from "../../../public/assets/img/portfolio2/15Standee-Design-2.webp";
 
 const products = [
   product1,
