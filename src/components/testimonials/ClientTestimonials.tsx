@@ -33,7 +33,7 @@ export const ClientTestimonials = () => {
         <div className="expertise-area text-center">
           <div className="container p-5">
             <h4 className="sub-title">Client Review</h4>
-            <h2 className="title pt-2 fw-bold">Our Happy Clients</h2>
+            <h2 className="title pt-2 fw-bold">Our client's words for us!</h2>
             <div className="d-flex align-items-center justify-content-center gap-2">
               <div
                 style={{ height: "1px", width: "1px", padding: "2px" }}

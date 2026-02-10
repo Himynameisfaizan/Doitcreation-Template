@@ -71,27 +71,29 @@ const FooterV1 = ({ sectionClass }: DataType) => {
                 <div className="footer-contact">
                   <ul>
                     <li>
-                      <a href="mailto:support@doitcreation.com">
-                        support@doitcreation.com
+                      <a href="mailto:contact@doitcreation.com">
+                        contact@doitcreation.com
                       </a>
                     </li>
                     <li>
                       <a href="tel:9560237516">+91 9560237516</a>
                     </li>
                   </ul>
-                  <ul className="d-flex flex-column align-items-start gap-0">
+                  <ul className="d-flex flex-column align-items-start gap-0 mt-3">
                     <li>
-                      <p>Official Design Partner</p>
+                      <p style={{ color: "#e4202a" }}>
+                        Official Design Partner
+                      </p>
                     </li>
                     <div
                       className="d-flex gap-4 align-items-center justify-content-center"
                       style={{ marginTop: "-20px" }}
                     >
-                        <li>
-                      <a
-                        href="https://stock.adobe.com/in/contributor/209562968/do-it-creation"
-                        target="_blank"
-                      >
+                      <li>
+                        <a
+                          href="https://stock.adobe.com/in/contributor/209562968/do-it-creation"
+                          target="_blank"
+                        >
                           <svg
                             className="svg"
                             viewBox="0 0 518.9 112.8"
@@ -216,8 +218,8 @@ const FooterV1 = ({ sectionClass }: DataType) => {
 		c1.2,1.5,2,2.5,2.6,3.3c0.2,0.3,0.3,0.3,0.4,0.4s0.3,0.1,0.5,0.1h10.8c0.2,0,0.3-0.1,0.4-0.2C508.9,78.7,508.9,78.6,508.8,78.5z"
                             />
                           </svg>
-                      </a>
-                        </li>
+                        </a>
+                      </li>
 
                       <li className="svg-styling">
                         <a

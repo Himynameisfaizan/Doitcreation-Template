@@ -1,6 +1,6 @@
 import React from "react";
-import Image from 'next/image';
-import pinterest from "../../../public/assets/img/icon/pinterest-white.svg"
+import Image from "next/image";
+import pinterest from "../../../public/assets/img/icon/pinterest-white.svg";
 export const HomeContact = () => {
   return (
     <>
@@ -41,33 +41,35 @@ export const HomeContact = () => {
                     more which help to you expand your business.
                   </div>
                 </div>
-                <div className="contact-form-parent">
-                  <div className="d-flex flex-column">
-                    <label htmlFor="">
-                      Full Name<span> *</span>
-                    </label>
-                    <input type="text" name="" id="" />
+                <form action="">
+                  <div className="contact-form-parent">
+                    <div className="d-flex flex-column">
+                      <label htmlFor="">
+                        Full Name<span> *</span>
+                      </label>
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div className="d-flex flex-column">
+                      <label htmlFor="">
+                        Email<span> *</span>
+                      </label>
+                      <input type="email" name="" id="" />
+                    </div>
+                    <div className="d-flex flex-column">
+                      <label htmlFor="">
+                        Mobile no.<span> *</span>
+                      </label>
+                      <input type="text" name="" id="" />
+                    </div>
+                    <div className="d-flex flex-column">
+                      <label htmlFor="">Message</label>
+                      <textarea name="" id="" rows={6}></textarea>
+                    </div>
+                    <div className="">
+                      <button>Submit</button>
+                    </div>
                   </div>
-                  <div className="d-flex flex-column">
-                    <label htmlFor="">
-                      Email<span> *</span>
-                    </label>
-                    <input type="email" name="" id="" />
-                  </div>
-                  <div className="d-flex flex-column">
-                    <label htmlFor="">
-                      Mobile no.<span> *</span>
-                    </label>
-                    <input type="text" name="" id="" />
-                  </div>
-                  <div className="d-flex flex-column">
-                    <label htmlFor="">Message</label>
-                    <textarea name="" id="" rows={6}></textarea>
-                  </div>
-                  <div className="">
-                    <button>Submit</button>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
             <div className="col-lg-4 contact-detail bg-gray">
@@ -89,8 +91,8 @@ export const HomeContact = () => {
                     <div className="divider-vertical"></div>
                     <div className="icon-info">
                       <div className="">Email</div>
-                      <a className="" href="mailto:support@doitcreation.com">
-                        support@doitcreation.com
+                      <a className="" href="mailto:contact@doitcreation.com">
+                        contact@doitcreation.com
                       </a>
                     </div>
                   </div>
@@ -119,17 +121,26 @@ export const HomeContact = () => {
                     >
                       <i className="ri-instagram-line"></i>
                     </a>
-                    <a href="https://in.pinterest.com/doitcreation/" target="_blank">
-                    <Image className="image" src={pinterest} alt="pinterst" />
-                     {/* <i className="ri-pinterest-line"></i> */}
+                    <a
+                      href="https://in.pinterest.com/doitcreation/"
+                      target="_blank"
+                    >
+                      <Image className="image" src={pinterest} alt="pinterst" />
+                      {/* <i className="ri-pinterest-line"></i> */}
                     </a>
-                    <a href="https://www.linkedin.com/company/doitcreation/posts/?feedView=all" target="_blank">
-                     <i className="ri-linkedin-fill"></i>
+                    <a
+                      href="https://www.linkedin.com/company/doitcreation/posts/?feedView=all"
+                      target="_blank"
+                    >
+                      <i className="ri-linkedin-fill"></i>
                     </a>
                     <a href="https://dribbble.com/doitcreation" target="_blank">
                       <i className="ri-dribbble-line"></i>
                     </a>
-                    <a href=" https://www.behance.net/doitcreation" target="_blank">
+                    <a
+                      href=" https://www.behance.net/doitcreation"
+                      target="_blank"
+                    >
                       <i className="ri-behance-fill"></i>
                     </a>
                   </div>
