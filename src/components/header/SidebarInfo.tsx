@@ -46,7 +46,7 @@ const SidebarInfo = ({ openInfoBar, isInfoOpen, closeInfoBar }: SidebarInfoProps
                                     <li>
                                         <div className="content">
                                             <p>Email</p>
-                                            <strong><a href='mailto:support@doitcreation.com'>support@doitcreation.com</a></strong>
+                                            <strong><a href='mailto:contact@doitcreation.com'>contact@doitcreation.com</a></strong>
                                         </div>
                                     </li>
                                     <li>

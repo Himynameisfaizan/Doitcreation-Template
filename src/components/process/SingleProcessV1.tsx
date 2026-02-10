@@ -29,7 +29,7 @@ const SingleProcessV1 = ({ process }: { process: DataType }) => {
             height={230}
           />
         </div>
-        <h4>{title}</h4>
+        <h4 style={{color: '#e4202a'}}>{title}</h4>
         <p className="text">{text}</p>
       </div>
     </>

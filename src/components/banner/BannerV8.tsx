@@ -107,7 +107,7 @@ const BannerV8 = () => {
                     design, and meaningful words to help brands standout and
                     connect.
                   </p>
-                  <Link className="btn-animation mt-10" href="/about-us">
+                  <Link className="btn-animation mt-10" href="/portfolio">
                     <i className="fas fa-arrow-right" /> <span>Know More</span>
                   </Link>
                 </div>

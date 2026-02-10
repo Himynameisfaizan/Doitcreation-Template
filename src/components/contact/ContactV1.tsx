@@ -29,7 +29,7 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                                         <li>
                                             <div className="info">
                                                 <h4>Official Email</h4>
-                                                <a href="mailto:support@doitcreation.com">support@doitcreation.com</a>
+                                                <a href="mailto:contact@doitcreation.com">contact@doitcreation.com</a>
                                             </div>
                                         </li>
                                         <li>
