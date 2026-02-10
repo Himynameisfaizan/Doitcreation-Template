@@ -9,6 +9,7 @@ interface DataType {
 }
 
 const Portfolio = () => {
+  const [loaded, setLoaded] = useState<Record<number, boolean>>({});
   // const [pic, setPic] = useState([]);
 
   // useEffect(() => {
@@ -108,21 +109,30 @@ const Portfolio = () => {
               </li>
             ))} */}
             {PortfolioImage.map((item, index) => (
-              <li key={index} className="masonry-item">
+              <li key={index} 
+              className="masonry-item animated--fade-in"
+              // className="masonry-item animated--fade-in"
+              >
                 {item.type === "img" ? (
                   <img
                     src={item.src}
                     alt="portfolio"
-                    className="apiimage show"
+                    className={`apiimage show ${loaded[index]? "show":"hide"}`}
                     loading="lazy"
+                    onLoad={() =>
+                      setLoaded(prev => ({ ...prev, [index]: true }))
+                    }
                   />
                 ) : (
                   <video
-                    className="apiimage show"
+                    className={`apiimage show ${loaded[index]? "show":"hide"}`}
                     autoPlay
                     loop
                     muted
                     playsInline
+                    onCanPlay={() =>
+                      setLoaded(prev => ({ ...prev, [index]: true }))
+                    }
                   >
                     <source src={item.src} type="video/mp4" />
                   </video>
