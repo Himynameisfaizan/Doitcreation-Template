@@ -130,6 +130,7 @@ const Portfolio = () => {
                     loop
                     muted
                     playsInline
+                    preload="meta"
                     onCanPlay={() =>
                       setLoaded(prev => ({ ...prev, [index]: true }))
                     }

@@ -511,9 +511,9 @@ select:focus {
 .animated--fade-in {
   opacity: 0;
   /* transform: translateY(20px); */
-  animation: fadeInUp 2s ease forwards;
+  animation: fadeInUp 3s ease forwards;
   transition: all ease 500s;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes fadeInUp {

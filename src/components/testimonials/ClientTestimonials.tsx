@@ -1,13 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+
+import gsap from "gsap";
+import Draggable from "gsap/Draggable";
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import {
+  reviewsData,
+  reviewDatasecound,
+  reviewThird,
+} from "../../data/reviewsData.js";
+
+gsap.registerPlugin(Draggable);
 
 import product1 from "../../../public/assets/img/thumb/Milind Dhage.png";
 import product2 from "../../../public/assets/img/thumb/Raj Kishore Mohanty.png";
@@ -27,6 +37,159 @@ import product15 from "../../../public/assets/img/thumb/Vishal mishra.png";
 import product16 from "../../../public/assets/img/thumb/Rinki 06.png";
 
 export const ClientTestimonials = () => {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    const wrapper = wrapperRef.current;
+    if (!track || !wrapper) return;
+
+    const totalWidth = track.scrollWidth / 2;
+
+    const tl = gsap.to(track, {
+      y: -totalWidth,
+      yPercent: -50,
+      duration: 60,
+      ease: "none",
+      repeat: -1,
+      modifiers: {
+        y: (y) => `${parseFloat(y) % totalWidth}px`,
+      },
+    });
+
+    // 🔹 INSTANT hover pause / resume
+    wrapper.addEventListener("mouseenter", () => tl.pause());
+    wrapper.addEventListener("mouseleave", () => tl.resume());
+
+    // 🔹 Draggable synced with timeline
+    Draggable.create(track, {
+      type: "y",
+      inertia: true,
+      // onPress: () => tl.pause(),
+      onDrag: function () {
+        gsap.set(track, { y: this.y });
+      },
+      onThrowUpdate: function () {
+        gsap.set(track, { y: this.y });
+      },
+      // onRelease: () => tl.resume(),
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+  const wrapperRef1 = useRef<HTMLDivElement>(null);
+  const trackRef1 = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track1 = trackRef1.current;
+    const wrapper1 = wrapperRef1.current;
+    if (!track1 || !wrapper1) return;
+
+    const totalWidth = track1.scrollWidth / 2;
+    gsap.set(track1, { yPercent: -85 });
+
+    const tl = gsap.to(track1, {
+      y: totalWidth,
+      yPercent: 0,
+      duration: 60,
+      ease: "none",
+      repeat: -1,
+      modifiers: {
+        y: (y) => `${parseFloat(y) % totalWidth}px`,
+      },
+    });
+
+    // 🔹 INSTANT hover pause / resume
+    wrapper1.addEventListener("mouseenter", () => tl.pause());
+    wrapper1.addEventListener("mouseleave", () => tl.resume());
+
+    // 🔹 Draggable synced with timeline
+    Draggable.create(track1, {
+      type: "y",
+      inertia: true,
+      // onPress: () => tl.pause(),
+      onDrag: function () {
+        gsap.set(track1, { y: this.y });
+      },
+      onThrowUpdate: function () {
+        gsap.set(track1, { y: this.y });
+      },
+      // onRelease: () => tl.resume(),
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+  const wrapperRef3 = useRef<HTMLDivElement>(null);
+  const trackRef3 = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const track3 = trackRef3.current;
+    const wrapper3 = wrapperRef3.current;
+    if (!track3 || !wrapper3) return;
+
+    const totalWidth = track3.scrollWidth / 2;
+
+    const tl = gsap.to(track3, {
+      y: -totalWidth,
+      yPercent: -50,
+      duration: 60,
+      ease: "none",
+      repeat: -1,
+      modifiers: {
+        y: (y) => `${parseFloat(y) % totalWidth}px`,
+      },
+    });
+
+    // 🔹 INSTANT hover pause / resume
+    wrapper3.addEventListener("mouseenter", () => tl.pause());
+    wrapper3.addEventListener("mouseleave", () => tl.resume());
+
+    // 🔹 Draggable synced with timeline
+    Draggable.create(track3, {
+      type: "y",
+      inertia: true,
+      // onPress: () => tl.pause(),
+      onDrag: function () {
+        gsap.set(track3, { y: this.y });
+      },
+      onThrowUpdate: function () {
+        gsap.set(track3, { y: this.y });
+      },
+      // onRelease: () => tl.resume(),
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+  const reviewOne = [
+    ...reviewsData,
+    ...reviewsData,
+    ...reviewsData,
+    ...reviewsData,
+  ];
+  const reviewTwo = [
+    ...reviewDatasecound,
+    ...reviewDatasecound,
+    ...reviewDatasecound,
+    ...reviewDatasecound,
+    ...reviewDatasecound,
+    ...reviewDatasecound,
+  ];
+  const reviewThree = [
+    ...reviewThird,
+    ...reviewThird,
+    ...reviewThird,
+    ...reviewThird,
+  ];
   return (
     <>
       <div className="" style={{ marginBottom: "100px" }}>
@@ -62,8 +225,7 @@ export const ClientTestimonials = () => {
             gap: "20px",
           }}
         >
-          
-          <Swiper
+          {/* <Swiper
             direction="vertical"
             slidesPerView="auto"
             spaceBetween={20}
@@ -281,9 +443,59 @@ export const ClientTestimonials = () => {
                 </div>
               </div>
             </SwiperSlide>
-          </Swiper>
+          </Swiper> */}
 
-          <Swiper
+          <div
+            ref={wrapperRef}
+            className="mySwiper linear-swiper swiper-client"
+          >
+            <div
+              className=""
+              ref={trackRef}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+              }}
+            >
+              {reviewOne.map((item, index) => (
+                <div key={index} className="client-swiperslide">
+                  <div className="review-container">
+                    <div className="review-client-name">
+                      <div>
+                        <Image src={item.image} alt="" className="" />
+                      </div>
+                      <div className="client-name d-flex flex-column align-items-start">
+                        <h4>{item.name}</h4>
+                        <div className="review-photo d-flex align-items-center gap-1 ">
+                          <p className="">{item.reviews} </p>
+                          <p>-</p>
+                          <p className="">{item.photos} Photos</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="review-star-container">
+                      <div className="">
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                      </div>
+                      <div className="">{item.time}</div>
+                    </div>
+
+                    <div className="review-para text-white shadow-sm">
+                      <Readmore text={item.para} />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* <Swiper
             direction="vertical"
             slidesPerView="auto"
             spaceBetween={20}
@@ -468,9 +680,59 @@ export const ClientTestimonials = () => {
                 </div>
               </div>
             </SwiperSlide>
-          </Swiper>
+          </Swiper> */}
 
-          <Swiper
+          <div
+            ref={wrapperRef1}
+            className="mySwiper linear-swiper swiper-client"
+          >
+            <div
+              className=""
+              ref={trackRef1}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+              }}
+            >
+              {reviewTwo.map((item, index) => (
+                <div key={index} className="client-swiperslide">
+                  <div className="review-container">
+                    <div className="review-client-name">
+                      <div>
+                        <Image src={item.image} alt="" className="" />
+                      </div>
+                      <div className="client-name d-flex flex-column align-items-start">
+                        <h4>{item.name}</h4>
+                        <div className="review-photo d-flex align-items-center gap-1 ">
+                          <p className="">{item.reviews} Reviews</p>
+                          <p>-</p>
+                          <p className="">{item.photos} Photos</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="review-star-container">
+                      <div className="">
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                      </div>
+                      <div className="">{item.time}</div>
+                    </div>
+
+                    <div className="review-para text-white shadow-sm">
+                      <Readmore text={item.para} />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* <Swiper
             direction="vertical"
             slidesPerView="auto"
             spaceBetween={20}
@@ -649,7 +911,58 @@ export const ClientTestimonials = () => {
                 </div>
               </div>
             </SwiperSlide>
-          </Swiper>
+          </Swiper> */}
+
+          <div
+            ref={wrapperRef3}
+            className="mySwiper linear-swiper swiper-client"
+          >
+            <div
+              className=""
+              ref={trackRef3}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+              }}
+            >
+              {reviewThree.map((item, index) => (
+                <div key={index} className="client-swiperslide">
+                  <div className="review-container">
+                    <div className="review-client-name">
+                      <div>
+                        <Image src={item.image} alt="" className="" />
+                      </div>
+                      <div className="client-name d-flex flex-column align-items-start">
+                        <h4>{item.name}</h4>
+                        <div className="review-photo d-flex align-items-center gap-1 ">
+                          <p className="">{item.reviews} Reviews</p>
+                          <p>-</p>
+                          <p className="">{item.photos} Photos</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="review-star-container">
+                      <div className="">
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                        <i className="ri-star-fill"></i>
+                      </div>
+                      <div className="">{item.time}</div>
+                    </div>
+
+                    <div className="review-para text-white shadow-sm">
+                      <Readmore text={item.para} />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </>
