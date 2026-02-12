@@ -95,7 +95,7 @@ export const ClientTestimonials = () => {
     const tl = gsap.to(track1, {
       y: totalWidth,
       yPercent: 0,
-      duration: 60,
+      duration: 90,
       ease: "none",
       repeat: -1,
       modifiers: {
