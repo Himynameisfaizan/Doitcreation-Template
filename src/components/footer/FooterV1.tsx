@@ -87,7 +87,7 @@ const FooterV1 = ({ sectionClass }: DataType) => {
                     </li>
                     <div
                       className="d-flex gap-4 align-items-center justify-content-center"
-                      style={{ marginTop: "-20px" }}
+                      style={{ marginTop: "-4px" }}
                     >
                       <li>
                         <a
