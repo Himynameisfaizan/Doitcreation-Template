@@ -18,6 +18,7 @@ import "../../public/assets/css/unit-test.css";
 import "../../public/assets/css/validnavs.css";
 import "../../public/assets/css/style.css";
 import "../../public/assets/css/bannerForm.css";
+import "../../public/assets/css/adminCss/adminHome.css";
 import ClientLayout from "./ClientLayout";
 
 const geistSans = Geist({
