@@ -1,6 +1,5 @@
-import AdminHome from '@/components/adminHome/AdminHome'
+import AdminHome from '@/components/adminPages/adminHome/AdminHome'
 import DarkClass from '@/components/classes/DarkClass'
-import React from 'react'
 
 const page = () => {
   return (

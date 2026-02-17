@@ -33,7 +33,9 @@
     rgba(204, 223, 247, 1) 100%
   );
 }
-
+/*================================
+         Admin Home Start 
+==================================*/
 #dashboard{
     background: repeating-linear-gradient(
     45deg,
@@ -136,10 +138,6 @@
 }
 .dashboard-container .right-side .dashboard-heading  p{
     font-size: 16px;
-}
-.dashboard-stats{
-    /* background-color: #666666; */
-    padding: 30px 0 0 0;
 }
 .dashboard-stats .stats-container{
     display: grid;
@@ -271,3 +269,40 @@
     justify-content: space-between;
     width: 100%;
 }
+/*================================
+         Admin Home End 
+==================================*/
+
+/*=================================================
+         Admin portfolio image and video Start 
+===================================================*/
+.dashboard-portfolio-container .video-upload-form{
+    display: flex;
+    gap: 20px
+}
+.dashboard-portfolio-container .video-upload-form>div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-basis: 50%;
+}
+.dashboard-portfolio-container .video-upload-form>div input{
+    border-radius: 8px;
+}
+
+.dashboard-portfolio-video .dashboard-portfolio-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.portfolio-video-image{
+    display: flex;
+    gap: 20px;
+}
+.portfolio-video-image .dashboard-portfolio-video,
+.portfolio-video-image .dashboard-portfolio-image{
+    flex: 1;
+}
+/*=================================================
+         Admin portfolio image and video End 
+===================================================*/
