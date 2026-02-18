@@ -98,25 +98,11 @@ const AdminHome = () => {
                         className="client-image"
                       />
                       
-                        <ClientReview text="My experience with you has been very good and I am very happy with your work.
+                        <ClientReview text={`My experience with you has been very good and I am very happy with your work.
                         You have passion and patience.It would be a great pleasure to work with you in the 
                         future and to share your work with everyone. It was a great satisfaction for me. 
                         Thank you, as I do. We will work together in the future. 
-                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD."/>
-                    </div>
-                    <div className="dashboard-divide"></div>
-                    <div className="">
-                      <Image
-                        src={product2}
-                        alt="admin-image"
-                        className="client-image"
-                      />
-                      
-                        <ClientReview text="My experience with you has been very good and I am very happy with your work.
-                        You have passion and patience.It would be a great pleasure to work with you in the 
-                        future and to share your work with everyone. It was a great satisfaction for me. 
-                        Thank you, as I do. We will work together in the future. 
-                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD."/>
+                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD.`}/>
                     </div>
                     <div className="dashboard-divide"></div>
 
@@ -127,11 +113,11 @@ const AdminHome = () => {
                         className="client-image"
                       />
                       
-                        <ClientReview text="My experience with you has been very good and I am very happy with your work.
+                        <ClientReview text={`My experience with you has been very good and I am very happy with your work.
                         You have passion and patience.It would be a great pleasure to work with you in the 
                         future and to share your work with everyone. It was a great satisfaction for me. 
                         Thank you, as I do. We will work together in the future. 
-                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD."/>
+                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD.`}/>
                     </div>
                     <div className="dashboard-divide"></div>
 
@@ -142,11 +128,11 @@ const AdminHome = () => {
                         className="client-image"
                       />
                       
-                        <ClientReview text="My experience with you has been very good and I am very happy with your work.
+                        <ClientReview text={`My experience with you has been very good and I am very happy with your work.
                         You have passion and patience.It would be a great pleasure to work with you in the 
                         future and to share your work with everyone. It was a great satisfaction for me. 
                         Thank you, as I do. We will work together in the future. 
-                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD."/>
+                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD.`}/>
                     </div>
                     <div className="dashboard-divide"></div>
 
@@ -157,24 +143,41 @@ const AdminHome = () => {
                         className="client-image"
                       />
                       
-                        <ClientReview text="My experience with you has been very good and I am very happy with your work.
+                        <ClientReview text={`My experience with you has been very good and I am very happy with your work.
                         You have passion and patience.It would be a great pleasure to work with you in the 
                         future and to share your work with everyone. It was a great satisfaction for me. 
                         Thank you, as I do. We will work together in the future. 
-                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD."/>
+                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD.`}/>
                     </div>
                     <div className="dashboard-divide"></div>
+
+                    <div className="">
+                      <Image
+                        src={product2}
+                        alt="admin-image"
+                        className="client-image"
+                      />
+                      
+                        <ClientReview text={`My experience with you has been very good and I am very happy with your work.
+                        You have passion and patience.It would be a great pleasure to work with you in the 
+                        future and to share your work with everyone. It was a great satisfaction for me. 
+                        Thank you, as I do. We will work together in the future. 
+                        Best wishes for the future.Thank you. Chakme Transolution PVT LTD.`}/>
+                    </div>
+                    <div className="dashboard-divide"></div>
+                    
                     
                   </div>
                 </div>
                 <div className="dashboard-clients">
                   <div className="client-testmonial-container">
                     <h3>Users</h3>
+
                     <div className="dashboard-user-detail">
                       <div className="">
-                        <h4>Faizan</h4>
-                        <a href="">faizansheikh@gmail.com</a>
-                        <a href="">9099568908</a>
+                        <h4>Rohan singh</h4>
+                        <a href="" className="user-email">rohan455@gmail.com</a>
+                        <a href="" className="user-mobile">9099568908</a>
                       </div>
                       <p>I want to design webste</p>
                     </div>
@@ -183,8 +186,18 @@ const AdminHome = () => {
                     <div className="dashboard-user-detail">
                       <div className="">
                         <h4>Faizan</h4>
-                        <a href="">faizansheikh@gmail.com</a>
-                        <a href="">9099568908</a>
+                        <a href="" className="user-email">faizansheikh@gmail.com</a>
+                        <a href="" className="user-mobile">9099568908</a>
+                      </div>
+                      <p>I want to design webste</p>
+                    </div>
+                    <div className="dashboard-divide"></div>
+
+                    <div className="dashboard-user-detail">
+                      <div className="">
+                        <h4>Rohan singh</h4>
+                        <a href="" className="user-email">rohan455@gmail.com</a>
+                        <a href="" className="user-mobile">9099568908</a>
                       </div>
                       <p>I want to design webste</p>
                     </div>
@@ -193,8 +206,18 @@ const AdminHome = () => {
                     <div className="dashboard-user-detail">
                       <div className="">
                         <h4>Faizan</h4>
-                        <a href="">faizansheikh@gmail.com</a>
-                        <a href="">9099568908</a>
+                        <a href="" className="user-email">faizansheikh@gmail.com</a>
+                        <a href="" className="user-mobile">9099568908</a>
+                      </div>
+                      <p>I want to design webste</p>
+                    </div>
+                    <div className="dashboard-divide"></div>
+
+                    <div className="dashboard-user-detail">
+                      <div className="">
+                        <h4>Rohan singh</h4>
+                        <a href="" className="user-email">rohan455@gmail.com</a>
+                        <a href="" className="user-mobile">9099568908</a>
                       </div>
                       <p>I want to design webste</p>
                     </div>
@@ -203,8 +226,8 @@ const AdminHome = () => {
                     <div className="dashboard-user-detail">
                       <div className="">
                         <h4>Faizan</h4>
-                        <a href="">faizansheikh@gmail.com</a>
-                        <a href="">9099568908</a>
+                        <a href="" className="user-email">faizansheikh@gmail.com</a>
+                        <a href="" className="user-mobile">9099568908</a>
                       </div>
                       <p>I want to design webste</p>
                     </div>

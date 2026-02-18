@@ -258,7 +258,7 @@
 .dashboard-clients .client-testmonial-container .dashboard-user-detail{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
 }
 .client-testmonial-container .dashboard-user-detail p,
 .client-testmonial-container .dashboard-user-detail h4{
@@ -266,8 +266,17 @@
 }
 .client-testmonial-container .dashboard-user-detail>div{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    /* justify-content: space-between; */
+    /* width: 100%; */
+}
+.client-testmonial-container .dashboard-user-detail>div *{
+    flex: 1;
+}
+.client-testmonial-container .dashboard-user-detail>div .user-mobile{
+    text-align: right;
+}
+.client-testmonial-container .dashboard-user-detail>div .user-email{
+    text-align: center;
 }
 /*================================
          Admin Home End 
@@ -276,9 +285,15 @@
 /*=================================================
          Admin portfolio image and video Start 
 ===================================================*/
-.dashboard-portfolio-container .video-upload-form{
+.dashboard-portfolio-container{
     display: flex;
-    gap: 20px
+    flex-direction: column;
+    gap: 20px;
+}
+.dashboard-portfolio-container .video-upload-form{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
 }
 .dashboard-portfolio-container .video-upload-form>div{
     display: flex;
@@ -286,14 +301,23 @@
     gap: 4px;
     flex-basis: 50%;
 }
-.dashboard-portfolio-container .video-upload-form>div input{
-    border-radius: 8px;
+.dashboard-portfolio-container .video-upload-form>div option{
+    background-color: #262629;
+    color: white;
 }
-
-.dashboard-portfolio-video .dashboard-portfolio-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.dashboard-portfolio-container .video-upload-form>div input,
+.dashboard-portfolio-container .video-upload-form>div select,
+.dashboard-portfolio-container .video-upload-form>div textarea{
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #e7e7e7;
+    min-height: 20px;
+    height: 100%;
+}
+.dashboard-portfolio-container .video-upload-form>div select,
+.dashboard-portfolio-container .video-upload-form>div textarea{
+    padding: 10px 10px;
 }
 .portfolio-video-image{
     display: flex;
@@ -303,6 +327,58 @@
 .portfolio-video-image .dashboard-portfolio-image{
     flex: 1;
 }
+.portfolio-video-image .dashboard-portfolio-video,
+.portfolio-video-image .dashboard-portfolio-image{
+    border-radius: 10px;
+    background-color: #262629;
+    padding: 0px 20px 30px 20px;
+    border: 1px solid var(--border-color);
+    gap: 20px;
+    max-height: 400px;
+    overflow-y: scroll;
+    height: 100%;
+}
+.video-upload-form>div .dashboard-upload-video-image{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: fit-content;
+}
+.video-upload-form>div .dashboard-upload-video-image div{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.portfolio-video-image .dashboard-portfolio-video h3,
+.portfolio-video-image .dashboard-portfolio-image h3{
+    position: sticky;
+    top: 0;
+    background-color: #262629;
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+.portfolio-video-image .dashboard-portfolio-video .dashboard-video-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.dashboard-portfolio-video .dashboard-video-detail p,
+.dashboard-portfolio-video .dashboard-video-detail h4{
+    margin: 0;
+}
+.dashboard-portfolio-video .dashboard-video-detail>div{
+    display: flex;
+}
+.dashboard-portfolio-video .dashboard-video-detail>div *{
+    flex: 1;
+}
+.dashboard-portfolio-video .dashboard-video-detail>div p{
+    text-align: right;
+}
+.dashboard-portfolio-video .dashboard-video-detail>div .video-name{
+    text-align: center;
+}
+
 /*=================================================
          Admin portfolio image and video End 
 ===================================================*/
