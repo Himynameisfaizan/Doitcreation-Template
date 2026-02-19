@@ -291,8 +291,8 @@
     gap: 20px;
 }
 .dashboard-portfolio-container .video-upload-form{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
+   display: flex;
+   flex-direction: column;
    gap: 20px;
 }
 .dashboard-portfolio-container .video-upload-form>div{
@@ -311,9 +311,10 @@
     border-radius: 8px;
     background-color: transparent;
     color: white;
-    border: 1px solid #e7e7e7;
+    border: 1px solid #444;
     min-height: 20px;
     height: 100%;
+    padding: 8px;
 }
 .dashboard-portfolio-container .video-upload-form>div select,
 .dashboard-portfolio-container .video-upload-form>div textarea{
@@ -342,7 +343,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    height: fit-content;
 }
 .video-upload-form>div .dashboard-upload-video-image div{
     display: flex;
@@ -369,6 +369,7 @@
 .dashboard-portfolio-video .dashboard-video-detail>div{
     display: flex;
 }
+
 .dashboard-portfolio-video .dashboard-video-detail>div *{
     flex: 1;
 }
@@ -378,7 +379,341 @@
 .dashboard-portfolio-video .dashboard-video-detail>div .video-name{
     text-align: center;
 }
+.video-upload-form .upload-btn{
+    width: fit-content;
+    align-self: flex-start;
+    padding: 10px 20px;
+}
+.dashboard-video-detail .tags-and-delete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-video-detail .tags-and-delete i{
+    color: #ff2626;
+    cursor: pointer ;
 
+}
 /*=================================================
          Admin portfolio image and video End 
+===================================================*/
+
+/*=================================================
+         Admin Brand logo start 
+===================================================*/
+
+.dashboard-brand-logo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.brandlogo-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.brandlogo-form input {
+  background: transparent;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.upload-btn {
+  background: var(--color-primary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.upload-btn:hover {
+    color: white !important;
+  opacity: 0.85;
+}
+
+.brandlogo-display-column {
+  background: #262629;
+  border-radius: 10px;
+  padding: 0px 30px 20px 30px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.brandlogo-display-column{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.brandlogo-display-column h3{
+  grid-column: 1 / -1;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #262629;
+  z-index: 4;
+}
+
+.brandlogo-image-box{
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.brandlogo-image-box:hover{
+  border-color: #ff2b2b;
+}
+
+.brandlogo-image-box img{
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+}
+
+/*=================================================
+         Admin Brand logo end 
+===================================================*/
+/*=================================================
+         User data dashboard start 
+===================================================*/
+.dashboard-user-data{
+  background: #262629;
+  border-radius: 10px;
+  padding: 20px 30px;
+  border: 1px solid #2f2f2f;
+  margin-top: 20px;
+}
+
+.user-heading{
+  margin-bottom: 20px;
+}
+
+.user-table{
+  display: flex;
+  flex-direction: column;
+}
+.user-table-header,
+.user-table-row{
+  display: grid;
+  grid-template-columns: 
+    70px      /* S.No */
+    1.3fr     /* Name */
+    2fr       /* Email */
+    1.3fr     /* Phone */
+    2fr       /* Message */
+    1fr;      /* Action */
+
+  align-items: center;
+  padding: 12px 0;
+  column-gap: 20px;
+}
+
+.user-table-header{
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 16px;
+    border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.user-table-row{
+  border-bottom: 1px solid #333;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 16px;
+}
+
+.user-table-row a{
+    font-weight: 500;
+}
+
+.user-table-row:hover{
+  background: #1f1f1f94;
+}
+
+.user-name{
+  font-weight: 500;
+}
+
+.user-message{
+  opacity: 0.7;
+}
+.action-icon{
+    display: flex;
+    gap: 10px;
+}
+.action-icon .delete{
+    color: #ff2626;
+    cursor: pointer;
+}
+.action-icon .edit{
+    cursor: pointer;
+    color: rgb(51, 180, 0);
+}
+/*=================================================
+         User data dashboard end 
+===================================================*/
+/*=================================================
+         Client testmonial start
+===================================================*/
+
+.add-client-testmonial{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Form */
+.testimonial-form-box{
+  background:#1f1f1f;
+  border:1px solid #2f2f2f;
+  border-radius:10px;
+  padding:20px;
+  max-height: fit-content;
+  position: sticky;
+  top: 10px;
+}
+
+.testimonial-form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.testimonial-form input,
+.testimonial-form textarea{
+  background:transparent;
+  border:1px solid #444;
+  color:white;
+  padding:10px;
+  border-radius:6px;
+}
+
+/* Display */
+.testimonial-display-box{
+  background:#262629;
+  border:1px solid #2f2f2f;
+  border-radius:10px;
+  padding:20px;
+  height: fit-content;
+}
+
+/* Cards */
+.testimonial-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:15px;
+  margin-bottom:25px;
+}
+
+.testimonial-card{
+  background:#1f1f1f;
+  border:1px solid #333;
+  border-radius:10px;
+  padding:15px;
+}
+
+.testimonial-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.testimonial-user{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.testimonial-avatar{
+  width:40px;
+  height:40px;
+  background:#333;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.testimonial-text{
+  font-size:13px;
+  opacity:0.8;
+}
+
+/* Table */
+.testimonial-table-header{
+  display:grid;
+  grid-template-columns:70px 1.5fr 3fr 1fr;
+  align-items:center;
+  padding:10px 0;
+}
+.testimonial-table-row> .testmonial-table-main-detail{
+    display:grid;
+    grid-template-columns:70px 1.5fr 3fr 1fr;
+    align-items:start;
+    padding:10px 0;
+
+}
+.testmonial-table-main-detail .testmonial-table-image-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.testmonial-table-main-detail .testmonial-table-client-image{
+    width: 40px;
+    height: 40px;
+}
+.testimonial-table-header{
+  border-bottom:1px solid #3a3a3a;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-weight:600;
+}
+
+.testimonial-table-row{
+    border-bottom:1px solid #333;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.testimonial-table-row .testmonial-table-other-detail{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.testimonial-row-text{
+  opacity:0.7;
+}
+
+.testimonial-actions{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  cursor:pointer;
+}
+.testimonial-actions .delete{
+    color: #ff2626;
+    cursor: pointer;
+}
+.testimonial-actions .edit{
+    cursor: pointer;
+    color: rgb(51, 180, 0);
+}
+/*=================================================
+         Client testmonial end
 ===================================================*/

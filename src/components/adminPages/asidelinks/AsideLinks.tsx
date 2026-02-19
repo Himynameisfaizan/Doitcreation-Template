@@ -37,12 +37,12 @@ const AsideLinks = () => {
                 <i className="ri-feedback-line"></i> Testmonials
               </li>
             </Link>
-            <Link href="">
+            <Link href="/admin/brandlogo">
               <li>
                 <i className="ri-star-line"></i> Brand Logo
               </li>
             </Link>
-            <Link href="">
+            <Link href="/admin/adduser">
               <li>
                 <i className="ri-user-3-line"></i> Users
               </li>

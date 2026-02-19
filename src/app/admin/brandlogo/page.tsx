@@ -1,7 +1,11 @@
+import AddBrandLogo from "@/components/adminPages/addbrandlogo/AddBrandLogo";
+import DarkClass from "@/components/classes/DarkClass";
+
 const BrandLogo = () => {
     return(
         <>
-            <h1>Brand logo</h1>
+            <AddBrandLogo/>
+            <DarkClass/>
         </>
     )
 }

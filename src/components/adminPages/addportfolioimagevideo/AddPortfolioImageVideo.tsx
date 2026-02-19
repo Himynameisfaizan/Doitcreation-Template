@@ -84,6 +84,7 @@ const FormContainer = () => {
           </label>
           <textarea name="" id="" rows={1}></textarea>
         </div>
+          <button type="submit" className="upload-btn">Add Image/Video</button>
       </form>
     </>
   );
@@ -102,7 +103,10 @@ const VideoAndImage = () => {
               <p className="video-name">New logo.mp4</p>
               <p>Real state</p>
             </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
+            <span className="tags-and-delete">
+              <p className="dashboard-tags">Tags :- Logo, Real state</p>
+              <i className="ri-delete-bin-line"></i>
+            </span>
           </div>
           <div className="dashboard-divide"></div>
 
@@ -112,7 +116,10 @@ const VideoAndImage = () => {
               <p className="video-name">New logo.mp4</p>
               <p>Real state</p>
             </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
+            <span className="tags-and-delete">
+              <p className="dashboard-tags">Tags :- Logo, Real state</p>
+              <i className="ri-delete-bin-line"></i>
+            </span>
           </div>
           <div className="dashboard-divide"></div>
 
@@ -122,7 +129,10 @@ const VideoAndImage = () => {
               <p className="video-name">New logo.mp4</p>
               <p>Real state</p>
             </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
+            <span className="tags-and-delete">
+              <p className="dashboard-tags">Tags :- Logo, Real state</p>
+              <i className="ri-delete-bin-line"></i>
+            </span>
           </div>
           <div className="dashboard-divide"></div>
 
@@ -132,19 +142,13 @@ const VideoAndImage = () => {
               <p className="video-name">New logo.mp4</p>
               <p>Real state</p>
             </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
+            <span className="tags-and-delete">
+              <p className="dashboard-tags">Tags :- Logo, Real state</p>
+              <i className="ri-delete-bin-line"></i>
+            </span>
           </div>
           <div className="dashboard-divide"></div>
 
-          <div className="dashboard-video-detail">
-            <div className="">
-              <h4>Logo</h4>
-              <p className="video-name">New logo.mp4</p>
-              <p>Real state</p>
-            </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
-          </div>
-          <div className="dashboard-divide"></div>
         </div>
 
         <div className="dashboard-portfolio-video">
@@ -156,7 +160,10 @@ const VideoAndImage = () => {
               <p className="video-name">New logo.png</p>
               <p>Real state</p>
             </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
+            <span className="tags-and-delete">
+              <p className="dashboard-tags">Tags :- Logo, Real state</p>
+              <i className="ri-delete-bin-line"></i>
+            </span>
           </div>
           <div className="dashboard-divide"></div>
 
@@ -166,7 +173,23 @@ const VideoAndImage = () => {
               <p className="video-name">New logo.png</p>
               <p>Real state</p>
             </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
+            <span className="tags-and-delete">
+              <p className="dashboard-tags">Tags :- Logo, Real state</p>
+              <i className="ri-delete-bin-line"></i>
+            </span>
+          </div>
+          <div className="dashboard-divide"></div>
+          
+          <div className="dashboard-video-detail">
+            <div className="">
+              <h4>Logo</h4>
+              <p className="video-name">New logo.png</p>
+              <p>Real state</p>
+            </div>
+            <span className="tags-and-delete">
+              <p className="dashboard-tags">Tags :- Logo, Real state</p>
+              <i className="ri-delete-bin-line"></i>
+            </span>
           </div>
           <div className="dashboard-divide"></div>
 
@@ -176,29 +199,13 @@ const VideoAndImage = () => {
               <p className="video-name">New logo.png</p>
               <p>Real state</p>
             </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
+            <span className="tags-and-delete">
+              <p className="dashboard-tags">Tags :- Logo, Real state</p>
+              <i className="ri-delete-bin-line"></i>
+            </span>
           </div>
           <div className="dashboard-divide"></div>
 
-          <div className="dashboard-video-detail">
-            <div className="">
-              <h4>Logo</h4>
-              <p className="video-name">New logo.png</p>
-              <p>Real state</p>
-            </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
-          </div>
-          <div className="dashboard-divide"></div>
-
-          <div className="dashboard-video-detail">
-            <div className="">
-              <h4>Logo</h4>
-              <p className="video-name">New logo.png</p>
-              <p>Real state</p>
-            </div>
-            <p className="dashboard-tags">Tags :- Logo, Real state</p>
-          </div>
-          <div className="dashboard-divide"></div>
         </div>
       </div>
     </>
