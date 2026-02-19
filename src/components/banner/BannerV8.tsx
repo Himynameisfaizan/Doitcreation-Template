@@ -7,6 +7,7 @@ import Counter from "../counter/Counter";
 import BrandSlider from "../slider/BrandSlider";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import BannerForm from "../bannerform/BannerForm";
 
 const BannerV8 = () => {
   const splitName: string = "We design";
@@ -134,6 +135,7 @@ const BannerV8 = () => {
           </div>
         </div>
       </div>
+      <BannerForm/>
       <BrandSlider />
     </>
   );

@@ -1,5 +1,7 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
+// import thumb15 from "@/assets/img/thumb/15.jpg"
+// import thumb15 from "../../../public/assets/img/thumb/15.jpg"
 import Image from "next/image";
 // import PartnerV2Data from "@/assets/jsonData/partner/PartnerV2Data.json";
 import PartnerV2Data from '../../../public/assets/jsonData/partner/PartnerV2Data.json'

@@ -80,7 +80,7 @@ const BrandSlider = () => {
 
   return (
     <>
-      <div className="slider-section w-100 bg-black">
+      <div className="slider-section w-100 bg-black mt-3">
         <div className="d-flex align-items-center gap-4 w-100">
           <div
             className="flex-shrink-0 d-none d-sm-block"

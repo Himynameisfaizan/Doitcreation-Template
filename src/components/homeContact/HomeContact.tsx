@@ -75,7 +75,7 @@ export const HomeContact = () => {
             <div className="col-lg-4 contact-detail bg-gray">
               <div className="">
                 <h4>Hii! We are here to help you</h4>
-                <div className="d-flex flex-column gap-3">
+                <div className="d-flex flex-column gap-3 mt-4">
                   <div className="contact-icon-container ">
                     <i className="ri-mic-fill"></i>
                     <div className="divider-vertical"></div>
