@@ -21,10 +21,22 @@ const BreadHeader = ({ title, breadCrumb }: DataType) => {
         <div className="container">
           <div className="breadHeader">
             <div className="d-flex flex-column align-items-start first">
-                <h2 className="">DO IT CREATION</h2>
-                <h3 className="">A Full-Service Digital & Web Solution Company</h3>
+              <h2 className="do-it-heading">DO IT CREATION</h2>
+              <h2 className="do-it-sub-heading">
+                A Full-Service Digital & Web Solution Company
+              </h2>
             </div>
           </div>
+          <p className="do-it-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem
+            delectus quibusdam ex atque quisquam suscipit, mollitia facilis
+            impedit ipsum, officiis dicta. Doloribus possimus architecto quam
+            similique vitae nihil quaerat?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem
+            delectus quibusdam ex atque quisquam suscipit, mollitia facilis
+            impedit ipsum, officiis dicta. Doloribus possimus architecto quam
+            similique vitae nihil quaerat?
+          </p>
         </div>
       </div>
     </>

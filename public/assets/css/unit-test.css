@@ -786,27 +786,38 @@ a.button-regular:hover i::after {
 
 .breadHeader{
 	position: relative;
-	padding: 170px 0px;
-	max-width: 900px;
+	padding: 170px 0px 20px 0;
+	max-width: 1200px;
 	/* background-color: white; */
 	margin: auto;
 	/* padding-top: 220px; */
 }
 
-.breadHeader .first h2{
+.breadHeader .first .do-it-heading{
 	font-size: 60px;
 	margin: 10px 0;
+	font-weight: 700;
 }
 
-.breadHeader .first h3{
+.breadHeader .first .do-it-sub-heading{
 	max-width: 800px;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 60px;
 	line-height: 60px;
 	letter-spacing: -1px;
 	word-spacing: 10px;
-	/* color: rgb(155, 231, 155); */
+	color: #c2c2c2;
 	text-align: start;
+}
+.do-it-para{
+	/* background-color: #0077B5; */
+	max-width: 600px;
+	text-align: left;
+	margin: 0 0 0 auto;
+	padding-bottom: 100px;
+	color: #e5e5e5dc !important;
+	line-height: 24px;
+	font-size: 16px;
 }
 .breadcrumb-area {
 	background-position: center !important;
