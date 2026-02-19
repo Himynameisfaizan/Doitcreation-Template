@@ -1,7 +1,5 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import thumb15 from "@/assets/img/thumb/15.jpg"
-import thumb15 from "../../../public/assets/img/thumb/15.jpg"
 import Image from "next/image";
 // import PartnerV2Data from "@/assets/jsonData/partner/PartnerV2Data.json";
 import PartnerV2Data from '../../../public/assets/jsonData/partner/PartnerV2Data.json'
@@ -20,7 +18,7 @@ const PartnerV2 = ({ sectionClass }: DataType) => {
                     <div className="row">
                         <div className="col-lg-6 pr-110 pr-md-15 pr-xs-15">
                             <div className="partner-two-thumb">
-                                <Image src={thumb15} alt="Image Not Found" />
+                                {/* <Image src={thumb15} alt="Image Not Found" /> */}
                             </div>
                         </div>
                         <div className="col-lg-6">
