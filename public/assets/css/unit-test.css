@@ -784,6 +784,30 @@ a.button-regular:hover i::after {
      # Bradcrumb 
 =================================================================== */
 
+.breadHeader{
+	position: relative;
+	padding: 170px 0px;
+	max-width: 900px;
+	/* background-color: white; */
+	margin: auto;
+	/* padding-top: 220px; */
+}
+
+.breadHeader .first h2{
+	font-size: 60px;
+	margin: 10px 0;
+}
+
+.breadHeader .first h3{
+	max-width: 800px;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 60px;
+	letter-spacing: -1px;
+	word-spacing: 10px;
+	/* color: rgb(155, 231, 155); */
+	text-align: start;
+}
 .breadcrumb-area {
 	background-position: center !important;
 	word-break: break-word;
