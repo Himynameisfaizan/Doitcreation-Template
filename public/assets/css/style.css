@@ -9758,7 +9758,7 @@ a.btn-circle:hover strong {
   height: 70px;
   width: 70px;
   line-height: 50px;
-  background: var(--bg-gradient);
+  /* background: var(--bg-gradient); */
   text-align: center;
   color: var(--color-heading);
   font-weight: 700;

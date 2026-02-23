@@ -7,6 +7,7 @@ import FooterV1 from "@/components/footer/FooterV1"
 import HeaderV1 from "@/components/header/HeaderV1"
 import PartnerV2 from "@/components/partner/PartnerV2"
 import { ProductCarousel } from "@/components/productCarousel/ProductCarousel"
+import {ServiceDetailsContent} from "@/components/services/ServiceDetailsContent"
 
 const AboutUsPage = () => {
     return(
@@ -18,6 +19,7 @@ const AboutUsPage = () => {
             {/* <AboutV6 sectionClass='default-padding'/>
             <FunFactV1 sectionClass='default-padding-bottom'/>
             <PartnerV2/> */}
+            <ServiceDetailsContent />
             <FooterV1 />
             <DarkClass />
         </>

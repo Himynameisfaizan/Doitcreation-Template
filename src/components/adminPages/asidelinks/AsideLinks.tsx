@@ -22,7 +22,7 @@ const AsideLinks = () => {
         </div>
         <div className="dashboard-li-links">
           <ul>
-            <Link href="/admin/review">
+            <Link href="/admin/home">
               <li>
                 <i className="ri-home-4-line"></i> Home
               </li>
