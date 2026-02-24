@@ -87,7 +87,7 @@ const UsersSection = () => {
         </div>
 
         {dummyUsers.map((user, index) => (
-          <div className="user-table-row">
+          <div className="user-table-row" key={index}>
             <span>{index + 1}</span>
             <span className="user-name">{user.name}</span>
             <span>
