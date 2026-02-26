@@ -703,13 +703,71 @@ strong {
   }
 }
 
-/* ============================================================== 
+/* ===============================
     # home portfolio section
-=================================================================== */
+================================== */
 
-/* ============================================================== 
+/* ========================= */
+/*     IMAGE SLIDER START     */
+/* ========================= */
+
+.image-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-slider .slider-img {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-slider .slider-img:hover {
+  transform: scale(1.03);
+}
+
+/* ========================= */
+/*        RESPONSIVE         */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .image-slider .slider-img {
+    height: 220px;
+  }
+
+  .image-slider .track {
+    gap: 16px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .image-slider .slider-img {
+    height: 160px;
+  }
+
+  .image-slider {
+    padding: 10px 0;
+  }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+  .image-slider .slider-img {
+    height: 130px;
+  }
+}
+/* ========================= */
+/*     IMAGE SLIDER END     */
+/* ========================= */
+
+
+/* =================================
     # Template Default Styles
-=================================================================== */
+==================================== */
 
 body {
   font-family: var(--font-default);
@@ -16303,7 +16361,7 @@ ul.footer-social li a img {
 
   /* Banner Style Eight */
   .banner-style-eight-heading h2 {
-    font-size: 120px;
+    font-size: 90px;
   }
 
   .banner-style-eight-heading {
@@ -16325,9 +16383,9 @@ ul.footer-social li a img {
     display: none;
   }
 
-  .banner-style-eight-heading h2:first-child {
+  /* .banner-style-eight-heading h2:first-child {
     color: var(--color-primary);
-  }
+  } */
 
   /* Banner Style Nine */
   .banner-style-nine-area .content h2 {
@@ -17847,7 +17905,7 @@ ul.footer-social li a img {
   /* Banner Style Eight */
   .banner-style-eight-heading h2 {
     font-size: 55px;
-    line-height: 1.2;
+    /* line-height: 1.2; */
   }
 
   .banner-style-eight-heading h2.title-right {
@@ -17889,13 +17947,13 @@ ul.footer-social li a img {
     border: none;
   }
 
-  .banner-style-eight-heading h2:first-child {
+  /* .banner-style-eight-heading h2:first-child {
     color: var(--color-secondary);
-  }
+  } */
 
-  .bg-dark .banner-style-eight-heading h2:first-child {
+  /* .bg-dark .banner-style-eight-heading h2:first-child {
     color: var(--color-primary);
-  }
+  } */
 
   /* Banner Style Nine */
   .banner-style-nine-area .content h2 {
@@ -20418,5 +20476,112 @@ nav.navbar.validnavs .navbar-collapse.collapse.show img.light-img {
 
   .pricing-style-two {
     padding: 50px 40px;
+  }
+}
+
+
+/* ==================================== */
+/*        RESPONSIVE Home contact start
+/* ==================================== */
+
+@media (max-width: 992px) {
+  .contact-form-parent {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .contact-form-parent > div:nth-child(3),
+  .contact-form-parent > div:nth-child(4) {
+    grid-column: span 1; /* reset span */
+  }
+
+  .contact-detail {
+    position: static; /* remove sticky */
+    margin-top: 30px;
+  }
+
+  .contact-social-icon {
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .contact-form-parent {
+    gap: 14px;
+  }
+
+  .contact-form-parent label {
+    font-size: 14px;
+  }
+
+  .contact-form-parent input,
+  .contact-form-parent textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-detail h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact-icon-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .divider-vertical {
+    display: none;
+  }
+
+  .icon-info div {
+    font-size: 14px;
+  }
+
+  .icon-info a {
+    font-size: 13px;
+  }
+
+  .contact-social-icon {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .contact-social-icon i,
+  .contact-social-icon .image {
+    width: 36px;
+    height: 36px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .sub-title {
+    font-size: 14px;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 400px) {
+  .contact-social-icon {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .contact-icon-container {
+    padding: 8px;
+  }
+
+  .contact-form-parent button {
+    width: 100%;
   }
 }

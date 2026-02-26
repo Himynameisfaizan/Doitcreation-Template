@@ -262,8 +262,7 @@ const Project = () => {
                   <Image
                     src={item}
                     alt="img"
-                    style={{ height: "300px", width: "auto" }}
-                    className="rounded"
+                    className="slider-img rounded"
                   />
                 </div>
               ))}
@@ -291,8 +290,7 @@ const Project = () => {
                   <Image
                     src={item}
                     alt="img"
-                    style={{ height: "300px", width: "auto" }}
-                    className="rounded"
+                    className="slider-img rounded"
                   />
                 </div>
               ))}

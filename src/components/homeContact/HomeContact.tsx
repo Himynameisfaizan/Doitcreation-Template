@@ -91,35 +91,6 @@ export const HomeContact = () => {
                     more which help to you expand your business.
                   </div>
                 </div>
-                {/* <form action="">
-                  <div className="contact-form-parent">
-                    <div className="d-flex flex-column">
-                      <label htmlFor="">
-                        Full Name<span> *</span>
-                      </label>
-                      <input type="text" name="" id="" />
-                    </div>
-                    <div className="d-flex flex-column">
-                      <label htmlFor="">
-                        Email<span> *</span>
-                      </label>
-                      <input type="email" name="" id="" />
-                    </div>
-                    <div className="d-flex flex-column">
-                      <label htmlFor="">
-                        Mobile no.<span> *</span>
-                      </label>
-                      <input type="text" name="" id="" />
-                    </div>
-                    <div className="d-flex flex-column">
-                      <label htmlFor="">Message</label>
-                      <textarea name="" id="" rows={6}></textarea>
-                    </div>
-                    <div className="">
-                      <button>Submit</button>
-                    </div>
-                  </div>
-                </form> */}
                 <form onSubmit={handleSubmit}>
                   <div className="contact-form-parent">
                     <div className="d-flex flex-column">
