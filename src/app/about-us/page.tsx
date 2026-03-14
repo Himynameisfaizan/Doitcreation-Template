@@ -16,10 +16,10 @@ const AboutUsPage = () => {
             <BreadHeader />
             {/* <Breadcrumb title="About Us" breadCrumb="about-us"/> */}
             <ProductCarousel />
-            {/* <AboutV6 sectionClass='default-padding'/>
-            <FunFactV1 sectionClass='default-padding-bottom'/>
-            <PartnerV2/> */}
+            {/* <AboutV6 sectionClass='default-padding'/> */}
+            {/* <PartnerV2/> */}
             <ServiceDetailsContent />
+            <FunFactV1 sectionClass='default-padding-bottom'/>
             <FooterV1 />
             <DarkClass />
         </>

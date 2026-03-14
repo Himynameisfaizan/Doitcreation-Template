@@ -80,13 +80,14 @@ const Terms = () => {
 
           <div>
             <p>
-              (a) DO IT CREATION numbers provided by DO IT CREATION can be used
+              3.1 DO IT CREATION numbers provided by DO IT CREATION can be used
               only for Customer’s own use as mentioned in the documents. This
               number cannot be used for any other company without obtaining the
               requisite Authorization from the third party and prior written
-              approval from DO IT CREATION. <br />
+              approval from DO IT CREATION.
               <br />
-              (b) The change of name of Customer is not permitted as the
+              <br />
+              3.2 The change of name of Customer is not permitted as the
               Services or any other resources in use is not transferable. The
               change in name between the blood relatives/ legal heirs is
               permitted provided new Customer Acquisition Form (CAF), and all
@@ -98,14 +99,15 @@ const Terms = () => {
               In case of death of the original Customer, death certificate will
               suffice instead of No Objection Certificate. <br />
               <br />
-              (c) The Services can be used only by Customer and/or a person whom
+              3.3 The Services can be used only by Customer and/or a person whom
               Customer may specifically authorize to use DO IT CREATION
               Services, (hereinafter referred to as an “Authorized User”) for
               business communication purposes. It is hereby further clarified
               that Customers or its Authorized User(s) are not permitted to
-              resell the right to use our Services. <br />
+              resell the right to use our Services.
               <br />
-              (h) DO IT CREATION is an intermediary and has no control over the
+              <br />
+              3.4 DO IT CREATION is an intermediary and has no control over the
               way Customer use the Services. Customer is required to use the
               Services in accordance with all the applicable laws. If Customer
               uses the Services outside of India, Customer expressly understands
@@ -113,7 +115,7 @@ const Terms = () => {
               with different laws, regulations, or customs that may apply in
               connection with Servetel use of the Services. <br />
               <br />
-              (i) In order to give Customer a better experience and/or to deal
+              3.5 In order to give Customer a better experience and/or to deal
               with certain external factors, DO IT CREATION reserves the right
               to modify the attributes and resources available to the APIs from
               time to time. Cutomer will be notified about any such changes made
@@ -121,20 +123,22 @@ const Terms = () => {
               notifications in the application. Please note that DO IT CREATION
               will not be liable to Customer or any third party for such
               modifications to the API/(s) or adverse effects (if any) that may
-              result to Customer from such modifications. <br />
+              result to Customer from such modifications.
               <br />
-              (j) The Services may not be available to Customer for use if
+              <br />
+              3.6 The Services may not be available to Customer for use if
               Customer exceeds their Credit Limit as defined below in clause
-              4.1, if applicable. <br />
+              4.1, if applicable.
               <br />
-              (k) The standard delivery time for any service is one week
+              <br />
+              3.7 The standard delivery time for any service is one week
               starting from the date of receipt of payment, verification of KYC
               and acceptance by DO IT CREATION. However, the same is subject to
               the mutually agreed delivery lead times during the acceptance
               stage.
               <br />
               <br />
-              (l) Before beginning a planned maintenance, DO IT CREATION will
+              3.8 Before beginning a planned maintenance, DO IT CREATION will
               notify the Enhanced Customer Support registered contact details.
             </p>
           </div>
@@ -145,51 +149,60 @@ const Terms = () => {
             <h3>4. Charges, Bill Plan, Credit Limit and Invoice</h3>
           </div>
 
-          <div>
-            <p>
-              4.1 Charges and Bill Plan: Customer agree to pay the charges for
-              the use of the Services (hereinafter referred to as “Charges”) in
-              accordance with the pricing. <br />
-              <br />
-              4.2 Payment of Invoices: DO IT CREATION will raise an invoice and
-              it will be automatically settled against the prepayment deposit
-              made by Customer in accordance with the Pricing and Bill Plan.
-              Usage charges will be ongoing and deducted from the minutes
-              purchased by the Customer, at the commencement of the Plan. The
-              invoice(s) submitted by DO IT CREATION shall be subject to
-              inspection and verification by the User and any discrepancies
-              therein shall be brought to the notice of DO IT CREATION within 7
-              working days of receipt of the invoice(s). If necessary, DO IT
-              CREATION shall modify and provide an amended invoice(s) and User
-              will make the payments as per the modified invoice(s). Services to
-              the Customer shall be suspended if bills remain unpaid for more
-              than 10 days after the due date. The account shall get permanently
-              closed, and all the associated resources will get released after
-              30 days of non-payment or non-renewal from due date. All kind of
-              payments are to be made in favour of DO IT CREATION. All tariffs,
-              octroi, or other kind of taxes are applicable at the prevailing
-              rates varying from time to time. <br />
-              <br /> 4.3 Revision of Charges: Before making any upward revision
-              of Charges, DO IT CREATION will give Customer a 30 (Thirty) days’
-              prior written notice. However, in the event of any changes that
-              result in rise in any third-party cost including but not limited
-              to telecom operators etc., DO IT CREATION may revise the Charges
-              payable by the Customer on giving a 15 (Fifteen) days’ prior
-              written notice. In case there is a dispute with respect to the
-              revised Charges between the parties, the parties will try to
-              resolve the dispute through discussions from the date a party
-              notifies such dispute. In case the dispute about revision of
-              Charges stays unresolved, the parties can terminate this Agreement
-              in accordance with clause 16 (Termination). <br />
-              <br /> 4.4 Disputed Invoice: In the event Customer disputes any
-              Invoice, in whole or in part, Customer will notify DO IT CREATION
-              within Ten (10) Days from the date of receipt of such an Invoice
-              of Customer’s intention to do so. <br />
-              <br /> 4.5 Upon receipt of such a notification, parties will
-              amicably discuss such a disputed Invoice and make all reasonable
-              endeavors to resolve such a dispute.
-            </p>
-          </div>
+          <p>
+            <strong>4.1 Charges and Bill Plan:</strong> Customer agree to pay
+            the charges for the use of the Services (hereinafter referred to as
+            “Charges”) in accordance with the pricing.
+          </p>
+
+          <p>
+            <strong>4.2 Payment of Invoices:</strong> DO IT CREATION will raise
+            an invoice and it will be automatically settled against the
+            prepayment deposit made by Customer in accordance with the Pricing
+            and Bill Plan. Usage charges will be ongoing and deducted from the
+            minutes purchased by the Customer, at the commencement of the Plan.
+            The invoice(s) submitted by DO IT CREATION shall be subject to
+            inspection and verification by the User and any discrepancies
+            therein shall be brought to the notice of DO IT CREATION within 7
+            working days of receipt of the invoice(s). If necessary, DO IT
+            CREATION shall modify and provide an amended invoice(s) and User
+            will make the payments as per the modified invoice(s). Services to
+            the Customer shall be suspended if bills remain unpaid for more than
+            10 days after the due date. The account shall get permanently
+            closed, and all the associated resources will get released after 30
+            days of non-payment or non-renewal from due date. All kind of
+            payments are to be made in favour of DO IT CREATION. All tariffs,
+            octroi, or other kind of taxes are applicable at the prevailing
+            rates varying from time to time.
+          </p>
+
+          <p>
+            <strong>4.3 Revision of Charges:</strong> Before making any upward
+            revision of Charges, DO IT CREATION will give Customer a 30 (Thirty)
+            days’ prior written notice. However, in the event of any changes
+            that result in rise in any third-party cost including but not
+            limited to telecom operators etc., DO IT CREATION may revise the
+            Charges payable by the Customer on giving a 15 (Fifteen) days’ prior
+            written notice. In case there is a dispute with respect to the
+            revised Charges between the parties, the parties will try to resolve
+            the dispute through discussions from the date a party notifies such
+            dispute. In case the dispute about revision of Charges stays
+            unresolved, the parties can terminate this Agreement in accordance
+            with clause 16 (Termination).
+          </p>
+
+          <p>
+            <strong>4.4 Disputed Invoice:</strong> In the event Customer
+            disputes any Invoice, in whole or in part, Customer will notify DO
+            IT CREATION within Ten (10) Days from the date of receipt of such an
+            Invoice of Customer’s intention to do so.
+          </p>
+
+          <p>
+            <strong>4.5</strong> Upon receipt of such a notification, parties
+            will amicably discuss such a disputed Invoice and make all
+            reasonable endeavors to resolve such a dispute.
+          </p>
         </div>
 
         <div className="first">
@@ -200,215 +213,278 @@ const Terms = () => {
             </h3>
           </div>
 
-          <div>
-            <p>
-              5.1 Customer will ensure that he and/or his Authorized User(s) use
-              the Services in accordance with applicable laws and this
-              Agreement. It is clarified that Customer and/or its Authorized
-              User(s) will not use our Services to make any calls or send any
-              messages in contravention of the applicable laws. Before using our
-              Services in any jurisdiction, Customer and/or its Authorized
-              User(s) will familiarize themselves with all laws applicable to
-              Servetel Services in such a jurisdiction and only use Servetel
-              Services if and in the manner the law permits. Servetel provides
-              no representation or warranty in this regard. While using our
-              Services, Customer and their Authorized Users must be sure to
-              comply with all the laws applicable to them.
-              <br />
-              <br />
-              5.2 Our use of the service is subject to all applicable local,
-              state, national laws and regulations (including without limitation
-              those governing account collections, export control, consumer
-              protection, unfair competition, anti-discrimination, securities
-              laws and false advertising).
-              <br />
-              <br />
-              5.3 Customer and/or its Authorized User(s) will not copy, modify,
-              duplicate, mirror, republish, download, transmit, license, sell,
-              transfer, assign, display or otherwise commercially exploit or
-              distribute all or any portion of the Proprietary Technology and
-              the Services in any form or assist third parties in obtaining
-              access to the Services or build a Services or service which
-              competes with the Services.
-              <br />
-              <br />
-              5.4 Customer understands and agrees to use the service only for
-              lawful purposes. At any time, Customer shall not use the service
-              for any illegal, fraudulent, improper or abusive purpose or in any
-              way, which interferes with DO IT CREATION’ ability to provide the
-              service to other customers, prevents or restricts other customers
-              from using the services, or damages any Servetel or other
-              customer’s property. Prohibited uses include, but are not limited,
-              to uses in connection with the following:
-              <br />
-              1. Behaviour that is obscene, threatening, harassing, defamatory,
-              libellous, deceptive, fraudulent, malicious, infringing or
-              invasive of another’s privacy.
-              <br />
-              2. Sending unsolicited bulk messages or advertisements, including
-              voicemails or photocopies.
-              <br />
-              3. Harvesting or otherwise collecting information about others
-              without their consent.
-              <br />
-              4. Creating a false Caller ID Identity or otherwise attempting to
-              mislead others as to the identity of the sender or the origin of
-              any communication made using the services.
-              <br />
-              5. Pretending to be anyone or any entity, Customer is not,
-              including impersonating or misrepresenting as another person
-              (including a celebrity), a civic or government leader or otherwise
-              misrepresenting Customer’s affiliation with a person or entity.
-              <br />
-              6. Transmitting any material that may violate the intellectual
-              property rights or other rights of third parties.
-              <br />
-              7. Violating any TRAI regulations concerning the transmission of
-              technical data through the service.
-              <br />
-              8. Violation or non-adherence to any existing laws of the land
-              governing the business associated with this agreement.
-              <br />
-              9. Data/Service usage that
-              <br />
-              <br />
-              a) belongs to another person and to which Customer does not have
-              any right of use;
-              <br />
-              b) is grossly harmful, harassing, blasphemous, defamatory,
-              obscene, pornographic, paedophilic, libelous, invasive of
-              another’s privacy, hateful, or racially, ethnically objectionable,
-              disparaging, relating or encouraging money laundering or gambling,
-              or is otherwise unlawful in any manner whatsoever;
-              <br />
-              c) harms minors in any way;
-              <br />
-              d) deceives or misleads the addressee about the origin of such
-              messages or communicates any information which is grossly
-              offensive or menacing in nature;
-              <br />
-              e) threatens the unity, integrity, defence, security or
-              sovereignty of India or any country, friendly relations of India
-              or any country with foreign states, or public order or causes
-              incitement to the commission of any cognizable offence or prevents
-              investigation of any offence or is insulting to any nation; <br />
-              f ) contains software viruses or any other computer code, files or
-              programs designed to interrupt, destroy or limit the functionality
-              of any computer resource;
-              <br />
-              g) is aimed at inflicting hatred or dissension based on ethnic
-              groups, religions, races, and inter-groups;
-              <br />
-              h) relates to gambling is prohibited by law
-              <br />
-              i) relates to any extortion and/or threats;
-              <br />
-              j) leads to the spreading of false and/or misleading information
-              resulting in consumer loss, whether knowingly or unknowingly;
-              and/or
-              <br />
-              k) violates any law for the time being in force.5.5 Customer
-              confirms and undertakes that the telecom resources provided to
-              Customer are non-transferable and shall not be further assigned or
-              transferred on any other commercial basis to any authorized
-              person.
-              <br />
-              <br />
-              5.6 Further, Customer undertakes that they shall be personally
-              responsible for any misuse of any telecom resources allocated to
-              the Customer and are also liable for the proceedings that may be
-              initiated by any of the government agencies/DoT for any acts,
-              deeds & things that may be done/caused to be done or alleged to
-              have been caused or done by them from the above mobile numbers and
-              Customer will keep DO IT CREATION indemnified against any such
-              proceedings.
-              <br />
-              <br />
-              5.7 Customer shall be solely liable for any transmissions sent
-              through the service and that DO IT CREATION has no control over
-              the content of any transmission.
-              <br />
-              <br />
-              5.8 Customer will abide by all applicable DO IT CREATION
-              agreements, policies and procedures from time to time.
-              <br />
-              <br />
-              5.9 Customer shall not attempt to gain unauthorized access to the
-              service, other accounts, or computer systems or networks connected
-              to the service through password mining or any other means.
-              <br />
-              <br />
-              5.10 Customer shall not interfere with other customers or third
-              parties’ use and enjoyment of the service or use the service in
-              any manner which disrupts, prevents or restricts any other
-              customer from using the service.
-              <br />
-              <br />
-              5.11 Customer shall be solely responsible for all acts or
-              omissions that occur under DO IT CREATION Account or password,
-              including the content of our transmission through the Service.
-              <br />
-              <br />
-              5.12 Customer and/or its Authorized User(s) shall protect the
-              privacy of the information collected/received by them through the
-              use of the Services.
-              <br />
-              <br />
-              5.13 Customer and/or its Authorized User(s) have read, understood
-              and grant its consent to DO IT CREATION’ privacy policy which is
-              located at https://www.DO IT CREATION.com/privacy-policy/
-              (“Privacy Policy”). The location of the Privacy Policy may be
-              changed from time to time. Customer will be notified of any such
-              change on their registered contact details. Further, Customer
-              agrees to share DO IT CREATION Privacy Policy with every person
-              whose information will be processed by DO IT CREATION on
-              Customer’s behalf during the course of Customer’s use of the
-              Services.
-              <br />
-              <br />
-              5.14 Customer and/or its Authorized User(s) will only make system
-              recordings and use such system recordings in accordance with the
-              applicable laws.
-              <br />
-              <br />
-              5.15 Customer(s) and/or its Authorized User(s) agree to take
-              approval of the Sender ID from DO IT CREATION before sending out
-              any Transactional Messages via SMS/voice. Further, such a Customer
-              agrees to send out a Transactional Message to a Subscriber
-              pertaining to its services or activities only in response to a
-              verifiable request from such a Subscriber and/or in accordance
-              with applicable law (as amended from time to time).
-              <br />
-              <br />
-              5.16 Customer and/or its Authorized User(s) agree not to use
-              Servetel Services to make a conference call or send a message to
-              any Subscriber registered under the NDNCR and/or NCPR or any other
-              applicable customer preference-based do-not-disturb database for
-              sharing unsolicited commercial communication (except in accordance
-              with the applicable law).
-              <br />
-              <br />
-              5.17 Customer is validly existing and in good standing under the
-              applicable laws.
-              <br />
-              <br />
-              5.18 Customer has the full right, power, authority and capacity to
-              execute this Agreement.
-              <br />
-              <br />
-              5.19 Customer and/or its Authorized User(s) have obtained and will
-              continue to obtain a clear written consent from every person for
-              (i) the purpose and (ii) the duration, for which their information
-              will be processed by DO IT CREATION on Customer’s behalf during
-              Customer use of the Services. This consent may be through letter
-              or email or any other manner prescribed by the applicable data
-              protection law. Customer also agrees to provide a copy of the
-              written consent to DO IT CREATION immediately, upon request, and
-              in such a manner so as not to cause DO IT CREATION or a service
-              provider of DO IT CREATION, to be in violation of any applicable
-              laws.
-            </p>
-          </div>
+          <p>
+            <strong>5.1</strong> Customer will ensure that he and/or his
+            Authorized User(s) use the Services in accordance with applicable
+            laws and this Agreement. It is clarified that Customer and/or its
+            Authorized User(s) will not use our Services to make any calls or
+            send any messages in contravention of the applicable laws. Before
+            using our Services in any jurisdiction, Customer and/or its
+            Authorized User(s) will familiarize themselves with all laws
+            applicable to Servetel Services in such a jurisdiction and only use
+            Servetel Services if and in the manner the law permits. Servetel
+            provides no representation or warranty in this regard. While using
+            our Services, Customer and their Authorized Users must be sure to
+            comply with all the laws applicable to them.
+          </p>
+
+          <p>
+            <strong>5.2</strong> Our use of the service is subject to all
+            applicable local, state, national laws and regulations (including
+            without limitation those governing account collections, export
+            control, consumer protection, unfair competition,
+            anti-discrimination, securities laws and false advertising).
+          </p>
+
+          <p>
+            <strong>5.3</strong> Customer and/or its Authorized User(s) will not
+            copy, modify, duplicate, mirror, republish, download, transmit,
+            license, sell, transfer, assign, display or otherwise commercially
+            exploit or distribute all or any portion of the Proprietary
+            Technology and the Services in any form or assist third parties in
+            obtaining access to the Services or build a Services or service
+            which competes with the Services.
+          </p>
+
+          <p>
+            <strong>5.4</strong> Customer understands and agrees to use the
+            service only for lawful purposes. At any time, Customer shall not
+            use the service for any illegal, fraudulent, improper or abusive
+            purpose or in any way, which interferes with DO IT CREATION’ ability
+            to provide the service to other customers, prevents or restricts
+            other customers from using the services, or damages any Servetel or
+            other customer’s property. Prohibited uses include, but are not
+            limited, to uses in connection with the following:
+          </p>
+
+          <p>
+            <strong>5.4.1</strong> Behaviour that is obscene, threatening,
+            harassing, defamatory, libellous, deceptive, fraudulent, malicious,
+            infringing or invasive of another’s privacy.
+          </p>
+
+          <p>
+            <strong>5.4.2</strong> Sending unsolicited bulk messages or
+            advertisements, including voicemails or photocopies.
+          </p>
+
+          <p>
+            <strong>5.4.3</strong> Harvesting or otherwise collecting
+            information about others without their consent.
+          </p>
+
+          <p>
+            <strong>5.4.4</strong> Creating a false Caller ID Identity or
+            otherwise attempting to mislead others as to the identity of the
+            sender or the origin of any communication made using the services.
+          </p>
+
+          <p>
+            <strong>5.4.5</strong> Pretending to be anyone or any entity,
+            Customer is not, including impersonating or misrepresenting as
+            another person (including a celebrity), a civic or government leader
+            or otherwise misrepresenting Customer’s affiliation with a person or
+            entity.
+          </p>
+
+          <p>
+            <strong>5.4.6</strong> Transmitting any material that may violate
+            the intellectual property rights or other rights of third parties.
+          </p>
+
+          <p>
+            <strong>5.4.7</strong> Violating any TRAI regulations concerning the
+            transmission of technical data through the service.
+          </p>
+
+          <p>
+            <strong>5.4.8</strong> Violation or non-adherence to any existing
+            laws of the land governing the business associated with this
+            agreement.
+          </p>
+
+          <p>
+            <strong>5.4.9</strong> Data/Service usage that
+          </p>
+
+          <p>
+            <strong>5.4.9.1</strong> belongs to another person and to which
+            Customer does not have any right of use;
+          </p>
+
+          <p>
+            <strong>5.4.9.2</strong> is grossly harmful, harassing, blasphemous,
+            defamatory, obscene, pornographic, paedophilic, libelous, invasive
+            of another’s privacy, hateful, or racially, ethnically
+            objectionable, disparaging, relating or encouraging money laundering
+            or gambling, or is otherwise unlawful in any manner whatsoever;
+          </p>
+
+          <p>
+            <strong>5.4.9.3</strong> harms minors in any way;
+          </p>
+
+          <p>
+            <strong>5.4.9.4</strong> deceives or misleads the addressee about
+            the origin of such messages or communicates any information which is
+            grossly offensive or menacing in nature;
+          </p>
+
+          <p>
+            <strong>5.4.9.5</strong> threatens the unity, integrity, defence,
+            security or sovereignty of India or any country, friendly relations
+            of India or any country with foreign states, or public order or
+            causes incitement to the commission of any cognizable offence or
+            prevents investigation of any offence or is insulting to any nation;
+          </p>
+
+          <p>
+            <strong>5.4.9.6</strong> contains software viruses or any other
+            computer code, files or programs designed to interrupt, destroy or
+            limit the functionality of any computer resource;
+          </p>
+
+          <p>
+            <strong>5.4.9.7</strong> is aimed at inflicting hatred or dissension
+            based on ethnic groups, religions, races, and inter-groups;
+          </p>
+
+          <p>
+            <strong>5.4.9.8</strong> relates to gambling is prohibited by law
+          </p>
+
+          <p>
+            <strong>5.4.9.9</strong> relates to any extortion and/or threats;
+          </p>
+
+          <p>
+            <strong>5.4.9.10</strong> leads to the spreading of false and/or
+            misleading information resulting in consumer loss, whether knowingly
+            or unknowingly; and/or
+          </p>
+
+          <p>
+            <strong>5.4.9.11</strong> violates any law for the time being in
+            force.
+          </p>
+
+          <p>
+            <strong>5.5</strong> Customer confirms and undertakes that the
+            telecom resources provided to Customer are non-transferable and
+            shall not be further assigned or transferred on any other commercial
+            basis to any authorized person.
+          </p>
+
+          <p>
+            <strong>5.5</strong> Further, Customer undertakes that they shall be
+            personally responsible for any misuse of any telecom resources
+            allocated to the Customer and are also liable for the proceedings
+            that may be initiated by any of the government agencies/DoT for any
+            acts, deeds & things that may be done/caused to be done or alleged
+            to have been caused or done by them from the above mobile numbers
+            and Customer will keep DO IT CREATION indemnified against any such
+            proceedings.
+          </p>
+
+          <p>
+            <strong>5.6</strong> Customer shall be solely liable for any
+            transmissions sent through the service and that DO IT CREATION has
+            no control over the content of any transmission.
+          </p>
+
+          <p>
+            <strong>5.7</strong> Customer will abide by all applicable DO IT
+            CREATION agreements, policies and procedures from time to time.
+          </p>
+
+          <p>
+            <strong>5.8</strong> Customer shall not attempt to gain unauthorized
+            access to the service, other accounts, or computer systems or
+            networks connected to the service through password mining or any
+            other means.
+          </p>
+
+          <p>
+            <strong>5.9</strong> Customer shall not interfere with other
+            customers or third parties’ use and enjoyment of the service or use
+            the service in any manner which disrupts, prevents or restricts any
+            other customer from using the service.
+          </p>
+
+          <p>
+            <strong>5.10</strong> Customer shall be solely responsible for all
+            acts or omissions that occur under DO IT CREATION Account or
+            password, including the content of our transmission through the
+            Service.
+          </p>
+
+          <p>
+            <strong>5.11</strong> Customer and/or its Authorized User(s) shall
+            protect the privacy of the information collected/received by them
+            through the use of the Services.
+          </p>
+
+          <p>
+            <strong>5.12</strong> Customer and/or its Authorized User(s) have
+            read, understood and grant its consent to DO IT CREATION’ privacy
+            policy which is located at
+            https://www.doitcreation.com/privacy-policy/ (“Privacy Policy”). The
+            location of the Privacy Policy may be changed from time to time.
+            Customer will be notified of any such change on their registered
+            contact details. Further, Customer agrees to share DO IT CREATION
+            Privacy Policy with every person whose information will be processed
+            by DO IT CREATION on Customer’s behalf during the course of
+            Customer’s use of the Services.
+          </p>
+
+          <p>
+            <strong>5.13</strong> Customer and/or its Authorized User(s) will
+            only make system recordings and use such system recordings in
+            accordance with the applicable laws.
+          </p>
+
+          <p>
+            <strong>5.14</strong> Customer(s) and/or its Authorized User(s)
+            agree to take approval of the Sender ID from DO IT CREATION before
+            sending out any Transactional Messages via SMS/voice. Further, such
+            a Customer agrees to send out a Transactional Message to a
+            Subscriber pertaining to its services or activities only in response
+            to a verifiable request from such a Subscriber and/or in accordance
+            with applicable law (as amended from time to time).
+          </p>
+
+          <p>
+            <strong>5.15</strong> Customer and/or its Authorized User(s) agree
+            not to use Servetel Services to make a conference call or send a
+            message to any Subscriber registered under the NDNCR and/or NCPR or
+            any other applicable customer preference-based do-not-disturb
+            database for sharing unsolicited commercial communication (except in
+            accordance with the applicable law).
+          </p>
+
+          <p>
+            <strong>5.16</strong> Customer is validly existing and in good
+            standing under the applicable laws.
+          </p>
+
+          <p>
+            <strong>5.17</strong> Customer has the full right, power, authority
+            and capacity to execute this Agreement.
+          </p>
+
+          <p>
+            <strong>5.18</strong> Customer and/or its Authorized User(s) have
+            obtained and will continue to obtain a clear written consent from
+            every person for (i) the purpose and (ii) the duration, for which
+            their information will be processed by DO IT CREATION on Customer’s
+            behalf during Customer use of the Services. This consent may be
+            through letter or email or any other manner prescribed by the
+            applicable data protection law. Customer also agrees to provide a
+            copy of the written consent to DO IT CREATION immediately, upon
+            request, and in such a manner so as not to cause DO IT CREATION or a
+            service provider of DO IT CREATION, to be in violation of any
+            applicable laws.
+          </p>
         </div>
 
         <div className="first">
@@ -436,39 +512,40 @@ const Terms = () => {
             <h3>7. “DO IT CREATION Data”</h3>
           </div>
 
-          <div>
-            <p>
-              7.1 means the data automatically generated and recorded by DO IT
-              CREATION system pursuant to Customer’s and/or Customer’s
-              Authorized User(s)’ use of the Services which includes but is not
-              limited to billing and pricing information, data about a call
-              (time of call and duration), activities that Customer or
-              Customer’s Authorized User(s) do in creating work flows (call work
-              flows/ IVR/auto attendant) SMS templates, audio uploads and
-              activities performed either by Customer or their Authorized
-              User(s) in and during a call such as dual tone multi frequency key
-              access and details of the Authorized User.
-              <br />
-              <br />
-              7.2 Customer Data and DO IT CREATION Data will be treated as
-              Confidential Information and subject to the confidentiality
-              obligations set out in clause 12 (Confidentiality Obligations) of
-              this Agreement, the Customer Data and DO IT CREATION Data will be
-              handled in accordance with our Privacy Policy.
-              <br />
-              <br />
-              7.3 Before terminating this Agreement in accordance with clause 16
-              (Termination), Customer will be responsible for downloading the
-              Customer Data and Servetel Data for their records.
-              <br />
-              <br />
-              7.4 On termination of the Agreement your Customer Data and DO IT
-              CREATION Data will be deleted as soon as reasonably possible.
-              However, it is hereby clarified that DO IT CREATION will retain
-              Customer Data and DO IT CREATION Data if required by applicable
-              laws.
-            </p>
-          </div>
+          <p>
+            <strong>7.1</strong> means the data automatically generated and
+            recorded by DO IT CREATION system pursuant to Customer’s and/or
+            Customer’s Authorized User(s)’ use of the Services which includes
+            but is not limited to billing and pricing information, data about a
+            call (time of call and duration), activities that Customer or
+            Customer’s Authorized User(s) do in creating work flows (call work
+            flows/ IVR/auto attendant) SMS templates, audio uploads and
+            activities performed either by Customer or their Authorized User(s)
+            in and during a call such as dual tone multi frequency key access
+            and details of the Authorized User.
+          </p>
+
+          <p>
+            <strong>7.2</strong> Customer Data and DO IT CREATION Data will be
+            treated as Confidential Information and subject to the
+            confidentiality obligations set out in clause 12 (Confidentiality
+            Obligations) of this Agreement, the Customer Data and DO IT CREATION
+            Data will be handled in accordance with our Privacy Policy.
+          </p>
+
+          <p>
+            <strong>7.3</strong> Before terminating this Agreement in accordance
+            with clause 16 (Termination), Customer will be responsible for
+            downloading the Customer Data and Servetel Data for their records.
+          </p>
+
+          <p>
+            <strong>7.4</strong> On termination of the Agreement your Customer
+            Data and DO IT CREATION Data will be deleted as soon as reasonably
+            possible. However, it is hereby clarified that DO IT CREATION will
+            retain Customer Data and DO IT CREATION Data if required by
+            applicable laws.
+          </p>
         </div>
 
         <div className="first">
@@ -536,139 +613,178 @@ const Terms = () => {
             <h3>11. Intellectual Property Rights</h3>
           </div>
 
-          <div>
-            <p>
-              1. Customer acknowledges that DO IT CREATION owns and has the
-              right to use all the Intellectual Property Rights in our Services.
-              Servetel is only granting a limited right to use Services (as
-              stipulated in clause 3 (Right to Use the Services)) in accordance
-              with this Agreement and are is granting Customer any Intellectual
-              Property Rights in the Services (including any new software,
-              content, corrections or enhancements, adaptations and additions
-              made in relation to the Services).
-              <br />
-              <br />
-              2. Customer will not, at any time claim and/or apply for any right
-              in and right to DO IT CREATION Services and any new software,
-              content, corrections or enhancements, adaptations and additions in
-              respect of our Services. Customer has agreed to assign to us all
-              present and future rights (including Intellectual Property
-              Rights), title and interests, in, over and upon any and all
-              content, corrections or enhancements, adaptations and additions in
-              relation to our Services, in India or any part of the world.
-              Customer also agrees that the rights assigned to us by Customer
-              are absolute, exclusive, perpetual and irrevocable. We will be
-              entitled to transfer the rights to any person and use it anywhere
-              in the world without requiring any interference or interruption
-              from Customer.
-            </p>
-          </div>
+          <p>
+            <strong>11.1.</strong> Customer acknowledges that DO IT CREATION
+            owns and has the right to use all the Intellectual Property Rights
+            in our Services. Servetel is only granting a limited right to use
+            Services (as stipulated in clause 3 (Right to Use the Services)) in
+            accordance with this Agreement and are is granting Customer any
+            Intellectual Property Rights in the Services (including any new
+            software, content, corrections or enhancements, adaptations and
+            additions made in relation to the Services).
+          </p>
+          <p>
+            <strong>11.2.</strong> Customer will not, at any time claim and/or
+            apply for any right in and right to DO IT CREATION Services and any
+            new software, content, corrections or enhancements, adaptations and
+            additions in respect of our Services. Customer has agreed to assign
+            to us all present and future rights (including Intellectual Property
+            Rights), title and interests, in, over and upon any and all content,
+            corrections or enhancements, adaptations and additions in relation
+            to our Services, in India or any part of the world. Customer also
+            agrees that the rights assigned to us by Customer are absolute,
+            exclusive, perpetual and irrevocable. We will be entitled to
+            transfer the rights to any person and use it anywhere in the world
+            without requiring any interference or interruption from Customer.
+          </p>
         </div>
 
         <div className="first">
           <div>
-            <h3> 12. Confidentiality Obligations</h3>
+            <h3>Agency Protection: Non-Solicitation & Ownership Rights</h3>
           </div>
 
-          <div>
-            <p>
-              12.1 Parties agree that: “Confidential Information” means all
-              information disclosed (whether in oral, written, or other tangible
-              or intangible form) by one party (hereinafter referred to as the
-              “Disclosing Party”) to the other party (hereinafter referred to as
-              the “Receiving Party”) concerning or related to this Agreement,
-              Services or the Disclosing Party (whether before, on or after the
-              Effective Date), be it expressly designated as confidential or not
-              and that which may reasonably be inferred/ considered to be
-              confidential from its nature or circumstances surrounding its
-              disclosure. It is clarified that Confidential Information will
-              include without limitation: (a) any data or information that is
-              competitively sensitive material, and not generally known to the
-              public, including, but not limited to, information relating to the
-              Services; activities related to marketing, finance, operations;
-              and our vendors/service providers; (b) any scientific or technical
-              information, design, process, proce- dure, formula, or improvement
-              that is commercially valuable and secret in the sense that its
-              confidentiality affords a party a competitive advantage over its
-              competitors; and (c) all confidential or proprietary concepts,
-              documentation, reports, data, specifications, computer software,
-              source code, object code, flow charts, databases, inventions,
-              know-how, show-how and trade secrets, whether or not patentable or
-              copyrightable.
-              <br />
-              <br />
-              12.2 The Receiving Party will maintain in confidence the
-              Confidential Information of the Disclosing Party. The Receiving
-              Party will use the same degree of care in protecting the
-              Disclosing Party’s Confidential Information as the Receiving Party
-              uses to protect its own Confidential Information from unauthorized
-              use or disclosure, but in no event less than reasonable care. Any
-              Confidential Information of the Disclosing Party will be used by
-              the Receiving Party solely for the purpose of carrying out the
-              Receiving Party’s obligations under this Agreement. Further, it is
-              clarified that the Receiving Party may disclose the Confidential
-              Information to its employees, advisors, professional consultants
-              and lawyers (hereinafter referred to as “Representative/(s)”) on a
-              strict need to know basis, provided such Representative/(s) have
-              entered into a non-disclosure or other confidentiality agreement
-              with the Receiving Party containing terms substantially similar to
-              the terms of confidentiality contained in this Agreement.
-              <br />
-              <br />
-              12.3 Confidential Information will not include information that:
-              (a) is in or enters the public domain without breach of the
-              provisions of this Agreement through no fault of the Receiving
-              Party; (b) the Receiving Party can demonstrate (from the
-              files/documents in existence at the time of disclosure) was in its
-              possession prior to first receiving it from the Disclosing Party;
-              (c) the Receiving Party can demonstrate was developed by the
-              Receiving Party independently and without use of or reference to
-              the Disclosing Party’s Confidential Information; (d) the Receiving
-              Party receives from a third-party without restriction on
-              disclosure and without breach of a nondisclosure obligation; or
-              (e) is required to be disclosed to our service providers,
-              including payment gateway providers, pursuant to a legal
-              proceeding or investigation; or (f ) is required to be disclosed
-              pursuant to a judicial or legislative order or proceeding;
-              provided that, to the extent permitted by and practical under the
-              circumstances, Receiving Party will provide to the Disclosing
-              Party prior notice of the intended disclosure and an opportunity
-              to respond or object to the disclosure; or if prior notice is not
-              permitted or practical under the circumstances, a prompt notice of
-              such disclosure.
-            </p>
-          </div>
+          <p>
+            <strong>12.1</strong> The Client agrees not to directly contact,
+            hire, contract, or offer freelance work to any employee, designer,
+            developer, consultant, or team member of Do It Creation during the
+            project period and for 18 months after project completion, without
+            written consent from the agency.
+          </p>
+
+          <p>
+            <strong>12.2</strong> Any attempt by the Client to bypass the agency
+            and directly engage with a team member for services similar to those
+            provided by Do It Creation will be considered a serious breach of
+            agreement.
+          </p>
+
+          <p>
+            <strong>12.3</strong> All concepts, designs, source files, artwork,
+            website elements, branding materials, and other creative assets
+            created by Do It Creation remain the exclusive intellectual property
+            of the agency until full payment is made and all contractual terms
+            are respected.
+          </p>
+
+          <p>
+            <strong>12.4</strong> If the Client violates the non-solicitation
+            clause or attempts to bypass the agency, all rights granted to the
+            Client for any design, website, branding, or marketing material will
+            be immediately revoked, and the Client will no longer have
+            permission to use any of the work created by the agency.
+          </p>
+
+          <p>
+            <strong>12.5</strong> In case of violation, the Client agrees to pay
+            a bypass penalty fee equivalent to ₹1,00,000 or the total project
+            value (whichever is higher) to Do It Creation, along with immediate
+            removal of all agency-created assets. The agency reserves the right
+            to pursue legal action and claim damages for unauthorized usage or
+            breach of agreement.
+          </p>
         </div>
 
         <div className="first">
           <div>
-            <h3> 13. Limitation of Liability</h3>
+            <h3> 13. Confidentiality Obligations</h3>
           </div>
 
-          <div>
-            <p>
-              DO IT CREATION will not be liable to Customer or any third party
-              for any indirect, special, incidental, exemplary, punitive or
-              consequential damages of any kind, including but not limited to
-              loss of profits, loss of use, loss of revenue, loss of goodwill,
-              interruption of business, arising out of or in connection with
-              this Agreement, whether in contract, tort, strict liability or
-              otherwise, even if we have been advised as such or are otherwise
-              aware of the possibility of such damages. To the maximum extent
-              permitted by law, our total liability arising out of or in
-              connection with this Agreement will be limited to the actual
-              direct loss incurred by a Customer, up to a limit of Rupees
-              one-month value of Customer service or Fifty thousand (INR
-              50,000/-) whichever is lower. In case where monthly value is not
-              defined, then the monthly value will be calculated by dividing by
-              12 to arrive at the value.
-            </p>
-          </div>
+          <p>
+            <strong>13.1</strong> Parties agree that: “Confidential Information”
+            means all information disclosed (whether in oral, written, or other
+            tangible or intangible form) by one party (hereinafter referred to
+            as the “Disclosing Party”) to the other party (hereinafter referred
+            to as the “Receiving Party”) concerning or related to this
+            Agreement, Services or the Disclosing Party (whether before, on or
+            after the Effective Date), be it expressly designated as
+            confidential or not and that which may reasonably be inferred/
+            considered to be confidential from its nature or circumstances
+            surrounding its disclosure. It is clarified that Confidential
+            Information will include without limitation: (a) any data or
+            information that is competitively sensitive material, and not
+            generally known to the public, including, but not limited to,
+            information relating to the Services; activities related to
+            marketing, finance, operations; and our vendors/service providers;
+            (b) any scientific or technical information, design, process, proce-
+            dure, formula, or improvement that is commercially valuable and
+            secret in the sense that its confidentiality affords a party a
+            competitive advantage over its competitors; and (c) all confidential
+            or proprietary concepts, documentation, reports, data,
+            specifications, computer software, source code, object code, flow
+            charts, databases, inventions, know-how, show-how and trade secrets,
+            whether or not patentable or copyrightable.
+          </p>
+
+          <p>
+            <strong>13.2</strong> The Receiving Party will maintain in
+            confidence the Confidential Information of the Disclosing Party. The
+            Receiving Party will use the same degree of care in protecting the
+            Disclosing Party’s Confidential Information as the Receiving Party
+            uses to protect its own Confidential Information from unauthorized
+            use or disclosure, but in no event less than reasonable care. Any
+            Confidential Information of the Disclosing Party will be used by the
+            Receiving Party solely for the purpose of carrying out the Receiving
+            Party’s obligations under this Agreement. Further, it is clarified
+            that the Receiving Party may disclose the Confidential Information
+            to its employees, advisors, professional consultants and lawyers
+            (hereinafter referred to as “Representative/(s)”) on a strict need
+            to know basis, provided such Representative/(s) have entered into a
+            non-disclosure or other confidentiality agreement with the Receiving
+            Party containing terms substantially similar to the terms of
+            confidentiality contained in this Agreement.
+          </p>
+
+          <p>
+            <strong>13.3</strong> Confidential Information will not include
+            information that: (a) is in or enters the public domain without
+            breach of the provisions of this Agreement through no fault of the
+            Receiving Party; (b) the Receiving Party can demonstrate (from the
+            files/documents in existence at the time of disclosure) was in its
+            possession prior to first receiving it from the Disclosing Party;
+            (c) the Receiving Party can demonstrate was developed by the
+            Receiving Party independently and without use of or reference to the
+            Disclosing Party’s Confidential Information; (d) the Receiving Party
+            receives from a third-party without restriction on disclosure and
+            without breach of a nondisclosure obligation; or (e) is required to
+            be disclosed to our service providers, including payment gateway
+            providers, pursuant to a legal proceeding or investigation; or (f )
+            is required to be disclosed pursuant to a judicial or legislative
+            order or proceeding; provided that, to the extent permitted by and
+            practical under the circumstances, Receiving Party will provide to
+            the Disclosing Party prior notice of the intended disclosure and an
+            opportunity to respond or object to the disclosure; or if prior
+            notice is not permitted or practical under the circumstances, a
+            prompt notice of such disclosure.
+          </p>
         </div>
 
         <div className="first">
           <div>
-            <h3>14. Indemnity Obligations</h3>
+            <h3>14. Limitation of Liability</h3>
+          </div>
+
+          <p>
+            DO IT CREATION will not be liable to Customer or any third party for
+            any indirect, special, incidental, exemplary, punitive or
+            consequential damages of any kind, including but not limited to loss
+            of profits, loss of use, loss of revenue, loss of goodwill,
+            interruption of business, arising out of or in connection with this
+            Agreement, whether in contract, tort, strict liability or otherwise,
+            even if we have been advised as such or are otherwise aware of the
+            possibility of such damages. To the maximum extent permitted by law,
+            our total liability arising out of or in connection with this
+            Agreement will be limited to the actual direct loss incurred by a
+            Customer, up to a limit of Rupees one-month value of Customer
+            service or Fifty thousand (INR 50,000/-) whichever is lower. In case
+            where monthly value is not defined, then the monthly value will be
+            calculated by dividing by 12 to arrive at the value.
+          </p>
+        </div>
+
+        <div className="first">
+          <div>
+            <h3> 15. Indemnity Obligations</h3>
           </div>
 
           <div>
@@ -704,7 +820,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3> 15. Warranty</h3>
+            <h3> 16. Warranty</h3>
           </div>
 
           <div>
@@ -732,91 +848,148 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3>16. Term and Termination</h3>
+            <h3>17. Term and Termination</h3>
           </div>
 
-          <div>
-            <p>
-              16.1 Term: This Agreement will commence from the Effective Date
-              and will remain in force unless terminated in accordance with the
-              provision of clause
-              <br />
-              <br />
-              16.2 Termination:
-              <br />
-              a) Customer may stop using the Services at any time at their sole
-              discretion by sending an email to DO IT CREATION and DO IT
-              CREATION will terminate this Agreement.
-              <br />
-              b) Customer also agrees that DO IT CREATION may temporarily stop
-              providing the Services to Customer or terminate the Agreement with
-              immediate effect if: <br />
-              (i) Customer fails to pay an amount that is due as per clause 4
-              (Charges, Bill Plan, Credit Limit and Invoice) of this Agreement;{" "}
-              <br />
-              (ii) there is a breach or alleged breach of the representations
-              and warranties given by Customer in this Agreement; <br />
-              (iii) there is a breach or alleged breach of any of the provisions
-              of this Agree- ment, if such breach is not capable of being
-              remedied. Provided however that, in the event of a curable breach,
-              Customer will cure the breach within Fifteen (15) days from the
-              date of issuance of a written intimation of the same, at the end
-              of which if the breach continues, this Agreement will
-              automatically come to an end; <br />
-              (iv) Customer suspends or ceases, or threatens to suspend or
-              cease, carrying on all or a substantial part of your business;{" "}
-              <br />
-              (v) our relevant license(s) get suspended or revoked by any
-              government authority <br />
-              (vi) Customer withdraws their consent to our Privacy Policy;{" "}
-              <br />
-              (vii) either Customer or we file a petition for bankruptcy; <br />
-              (viii) our Services / service comes under a government or
-              regulatory scrutiny or investigation or under any direction from
-              the regulatory authority, or if there is a reasonable anticipation
-              of the same; <br />
-              (ix) there is a dispute between the parties and the parties fail
-              to reach a consensus and the dispute persists beyond Twenty (21)
-              days from the date it was notified <br />
-              (x) our telecom service provider(s) suspend or terminate their
-              telecom resources allotted to us; <br />
-              (xi) Customer objects to an amendment of this Agreement by us in
-              accordance with clause 25 (Amendment); and/or <br />
-              (xii) any law, regulation or a governmental or judicial order/
-              direction requires us to do so. <br />
-              (xiii) DO IT CREATION determines that customer use of the service
-              violate or has at any time violated these terms of service or any
-              other applicable laws in India. (xiv) DO IT CREATION determines
-              that such action is necessary to maintain or improve the services,
-              to prevent fraud or misrepresentation by affirmative acts and
-              omissions, to protect other users or third parties, or for any
-              other good cause. <br />
-              (xvi) If the number purchased by the Customer is found to be
-              involved in any fraudulent activities, then services will be
-              barred without any prior notice.
-              <br />
-              c) Customer agrees that we may terminate this Agreement, without
-              cause, by providing Customer advance notice of 30 (Thirty) days.
-              <br />
-              d) On termination of this Agreement for any reason, any rights,
-              remedies, obligations or liabilities of the parties that have
-              accrued up to the date of termination, will not be affected or
-              prejudiced (including but not limited to our right to be paid for
-              the use of our Services).
-              <br />
-              e) Upon termination of the services or agreement, DO IT CREATION
-              may immediately deactivate or delete any service account and all
-              related information and files in the said account and bar any
-              further access to such files, information, or the services. DO IT
-              CREATION shall not be liable to Customer or any third party for
-              any reason for terminating any use or access to the service.
-            </p>
-          </div>
+          <p>
+            <strong>17.1</strong> Term: This Agreement will commence from the
+            Effective Date and will remain in force unless terminated in
+            accordance with the provision of clause
+          </p>
+
+          <p>
+            <strong>17.2</strong> Termination:
+          </p>
+
+          <p>
+            <strong>17.2.1</strong> Customer may stop using the Services at any
+            time at their sole discretion by sending an email to DO IT CREATION
+            and DO IT CREATION will terminate this Agreement.
+          </p>
+
+          <p>
+            <strong>17.2.2</strong> Customer also agrees that DO IT CREATION may
+            temporarily stop providing the Services to Customer or terminate the
+            Agreement with immediate effect if:
+          </p>
+
+          <p>
+            <strong>17.2.3</strong> Customer fails to pay an amount that is due
+            as per clause 4 (Charges, Bill Plan, Credit Limit and Invoice) of
+            this Agreement;
+          </p>
+
+          <p>
+            <strong>17.2.4</strong> there is a breach or alleged breach of the
+            representations and warranties given by Customer in this Agreement;
+          </p>
+
+          <p>
+            <strong>17.2.5</strong> there is a breach or alleged breach of any
+            of the provisions of this Agree- ment, if such breach is not capable
+            of being remedied. Provided however that, in the event of a curable
+            breach, Customer will cure the breach within Fifteen (15) days from
+            the date of issuance of a written intimation of the same, at the end
+            of which if the breach continues, this Agreement will automatically
+            come to an end;
+          </p>
+
+          <p>
+            <strong>17.2.6</strong> Customer suspends or ceases, or threatens to
+            suspend or cease, carrying on all or a substantial part of your
+            business;
+          </p>
+
+          <p>
+            <strong>17.2.7</strong> our relevant license(s) get suspended or
+            revoked by any government authority
+          </p>
+
+          <p>
+            <strong>17.2.8</strong> Customer withdraws their consent to our
+            Privacy Policy;
+          </p>
+
+          <p>
+            <strong>17.2.9</strong> either Customer or we file a petition for
+            bankruptcy;
+          </p>
+
+          <p>
+            <strong>17.2.10</strong> our Services / service comes under a
+            government or regulatory scrutiny or investigation or under any
+            direction from the regulatory authority, or if there is a reasonable
+            anticipation of the same;
+          </p>
+
+          <p>
+            <strong>17.2.11</strong> there is a dispute between the parties and
+            the parties fail to reach a consensus and the dispute persists
+            beyond Twenty (21) days from the date it was notified
+          </p>
+
+          <p>
+            <strong>17.2.12</strong> our telecom service provider(s) suspend or
+            terminate their telecom resources allotted to us;
+          </p>
+
+          <p>
+            <strong>17.2.13</strong> Customer objects to an amendment of this
+            Agreement by us in accordance with clause 25 (Amendment); and/or
+          </p>
+
+          <p>
+            <strong>17.2.14</strong> any law, regulation or a governmental or
+            judicial order/ direction requires us to do so.
+          </p>
+
+          <p>
+            <strong>17.2.15</strong> DO IT CREATION determines that customer use
+            of the service violate or has at any time violated these terms of
+            service or any other applicable laws in India.
+          </p>
+
+          <p>
+            <strong>17.2.16</strong> DO IT CREATION determines that such action
+            is necessary to maintain or improve the services, to prevent fraud
+            or misrepresentation by affirmative acts and omissions, to protect
+            other users or third parties, or for any other good cause.
+          </p>
+
+          <p>
+            <strong>17.2.17</strong> If the number purchased by the Customer is
+            found to be involved in any fraudulent activities, then services
+            will be barred without any prior notice.
+          </p>
+
+          <p>
+            <strong>17.2.18</strong> Customer agrees that we may terminate this
+            Agreement, without cause, by providing Customer advance notice of 30
+            (Thirty) days.
+          </p>
+
+          <p>
+            <strong>17.2.19</strong> On termination of this Agreement for any
+            reason, any rights, remedies, obligations or liabilities of the
+            parties that have accrued up to the date of termination, will not be
+            affected or prejudiced (including but not limited to our right to be
+            paid for the use of our Services).
+          </p>
+
+          <p>
+            <strong>17.2.20</strong> Upon termination of the services or
+            agreement, DO IT CREATION may immediately deactivate or delete any
+            service account and all related information and files in the said
+            account and bar any further access to such files, information, or
+            the services. DO IT CREATION shall not be liable to Customer or any
+            third party for any reason for terminating any use or access to the
+            service.
+          </p>
         </div>
 
         <div className="first">
           <div>
-            <h3> 17. Survival</h3>
+            <h3> 18. Survival</h3>
           </div>
 
           <div>
@@ -828,14 +1001,14 @@ const Terms = () => {
               (Warranty), (Governing Law) and (Dispute Resolution) and such
               other clauses which by their nature and context are intended to
               remain binding post the termination of the Agreement, will survive
-              and remain in effect even after the Agreement is terminated.
+              and remain in effect even after the Agreement is terminated
             </p>
           </div>
         </div>
 
         <div className="first">
           <div>
-            <h3> 18. Copyright & Usage Rights</h3>
+            <h3>19. Copyright & Usage Rights</h3>
           </div>
 
           <div>
@@ -857,7 +1030,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3> 19. Release Terms</h3>
+            <h3> 20. Release Terms</h3>
           </div>
 
           <div>
@@ -873,7 +1046,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3> 20. Entire Agreement</h3>
+            <h3>21. Entire Agreement</h3>
           </div>
 
           <div>
@@ -885,14 +1058,14 @@ const Terms = () => {
               its subject matter Each party agrees that it will have no remedies
               in respect of any statement, representation, assurance or warranty
               (whether made innocently or negligently) that is not set out in
-              this Agreement.
+              this Agreement
             </p>
           </div>
         </div>
 
         <div className="first">
           <div>
-            <h3> 21. Governing Law</h3>
+            <h3>22. Governing Law</h3>
           </div>
 
           <div>
@@ -911,7 +1084,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3> 22. Dispute Resolution</h3>
+            <h3> 23. Dispute Resolution</h3>
           </div>
 
           <div>
@@ -936,7 +1109,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3> 23. Restrictions on Transfer</h3>
+            <h3> 24. Restrictions on Transfer</h3>
           </div>
 
           <div>
@@ -957,7 +1130,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3> 24. Invalid Provision</h3>
+            <h3> 25. Invalid Provision</h3>
           </div>
 
           <div>
@@ -979,7 +1152,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3> 25. Nature of Relationship</h3>
+            <h3> 26. Nature of Relationship</h3>
           </div>
 
           <div>
@@ -998,7 +1171,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3>26. Notices</h3>
+            <h3>27. Notices</h3>
           </div>
 
           <div>
@@ -1023,7 +1196,7 @@ const Terms = () => {
 
         <div className="first">
           <div>
-            <h3> 27. Amendment</h3>
+            <h3> 28. Amendment</h3>
           </div>
 
           <div>

@@ -2,33 +2,33 @@
     {
         "id": 1,
         "animation": "fadeInDown",
-        "count": 360,
-        "suffix": "K",
-        "label": "World Customer",
+        "count": 20,
+        "suffix": "+",
+        "label": "Industries",
         "duration": "0"
     },
     {
         "id": 2,
         "animation": "fadeInUp",
-        "count": 98,
-        "suffix": "%",
-        "label": "Positive Rating",
+        "count": 250,
+        "suffix": "+",
+        "label": "Cities",
         "duration": "0.5s"
     },
     {
         "id": 3,
         "animation": "fadeInDown",
-        "count": 874,
+        "count": 1000,
         "suffix": "+",
-        "label": "Total Branch",
+        "label": "Startup",
         "duration": "0"
     },
     {
         "id": 4,
         "animation": "fadeInUp",
-        "count": 35,
-        "suffix": "",
-        "label": "Years experience",
+        "count": 25,
+        "suffix": "+",
+        "label": "Professional Team",
         "duration": "0.5s"
     }
 ]
