@@ -50,7 +50,7 @@ export const ClientTestimonials = () => {
     const tl = gsap.to(track, {
       y: -totalWidth,
       yPercent: -50,
-      duration: 60,
+      duration: 80,
       ease: "none",
       repeat: -1,
       modifiers: {
@@ -915,7 +915,7 @@ export const ClientTestimonials = () => {
 
           <div
             ref={wrapperRef3}
-            className="mySwiper linear-swiper swiper-client"
+            className="mySwiper linear-swiper swiper-client last-carousel"
           >
             <div
               className=""
@@ -935,9 +935,9 @@ export const ClientTestimonials = () => {
                       </div>
                       <div className="client-name d-flex flex-column align-items-start">
                         <h4>{item.name}</h4>
-                        <div className="review-photo d-flex align-items-center gap-1 ">
+                        <div className="review-photo d-flex align-items-center ">
                           <p className="">{item.reviews} Reviews</p>
-                          <p>-</p>
+                          <p className="">-</p>
                           <p className="">{item.photos} Photos</p>
                         </div>
                       </div>

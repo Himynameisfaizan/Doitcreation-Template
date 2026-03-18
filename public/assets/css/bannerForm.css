@@ -2,6 +2,12 @@
 /*====================================== 
             Banner form start 
 ========================================*/
+@media(max-width: 768px){
+    #BannerForm{
+        display: none;
+    }
+}
+
 .banner-form-main-container{
     width: 90%;
     margin: 0 auto;
