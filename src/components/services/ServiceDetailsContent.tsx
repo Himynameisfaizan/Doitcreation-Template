@@ -19,18 +19,20 @@ export const ServiceDetailsContent = () => {
             </div>
             <div className="row ">
               <div className="col-lg-7">
-                <h2>Marketing & SEO Optimization</h2>
+                <h2>One Team. One Vision. Your Growth.</h2>
                 <p>
-                  We denounce with righteous indige nation and dislike men who
-                  are so beguiled and demo realized by the charms of pleasure of
-                  the moment, so blinded by desire, that they cannot foresee the
-                  pain and trouble that are bound to ensue cannot foresee. These
-                  cases are perfectly simple and easy to distinguish. In a free
-                  hour, when our power of choice is untrammelled data structures
-                  manages data in technology. Dislike men who are so beguiled
-                  and demo realized by the charms of pleasure of the moment, so
-                  blinded by desire, that they cannot foresee the pain and
-                  trouble.
+                  We deliver creativity, performance, and measurable growth by
+                  working as an extended in-house team for our clients,
+                  understanding their vision, challenges, and goals in depth.
+                  Our approach combines strategic thinking, innovative design,
+                  seamless development, and result-driven marketing to create
+                  solutions that not only look good but perform exceptionally.
+                  We believe in building long-term partnerships, ensuring
+                  consistent support, transparency, and continuous improvement
+                  at every stage of the journey. Our aim is to become a trusted
+                  one-stop agency for all business needs, where brands can find
+                  everything under one roof and confidently grow, scale, and
+                  succeed through smart execution and impactful solutions.
                 </p>
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">

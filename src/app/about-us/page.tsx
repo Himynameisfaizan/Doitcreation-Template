@@ -5,9 +5,11 @@ import DarkClass from "@/components/classes/DarkClass"
 import FunFactV1 from "@/components/fact/FunFactV1"
 import FooterV1 from "@/components/footer/FooterV1"
 import HeaderV1 from "@/components/header/HeaderV1"
+import { HomeContact } from "@/components/homeContact/HomeContact"
 import PartnerV2 from "@/components/partner/PartnerV2"
 import { ProductCarousel } from "@/components/productCarousel/ProductCarousel"
 import {ServiceDetailsContent} from "@/components/services/ServiceDetailsContent"
+import { ClientTestimonials } from "@/components/testimonials/ClientTestimonials"
 
 const AboutUsPage = () => {
     return(
@@ -20,6 +22,8 @@ const AboutUsPage = () => {
             {/* <PartnerV2/> */}
             <ServiceDetailsContent />
             <FunFactV1 sectionClass='default-padding-bottom'/>
+            <ClientTestimonials/>
+            <HomeContact/>
             <FooterV1 />
             <DarkClass />
         </>

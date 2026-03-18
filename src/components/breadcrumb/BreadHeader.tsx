@@ -23,19 +23,17 @@ const BreadHeader = ({ title, breadCrumb }: DataType) => {
             <div className="d-flex flex-column align-items-start first">
               <h2 className="do-it-heading">DO IT CREATION</h2>
               <h2 className="do-it-sub-heading">
-                A Full-Service Digital & Web Solution Company
+                One Agency for All Your Business Needs
               </h2>
             </div>
           </div>
           <p className="do-it-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem
-            delectus quibusdam ex atque quisquam suscipit, mollitia facilis
-            impedit ipsum, officiis dicta. Doloribus possimus architecto quam
-            similique vitae nihil quaerat?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rem
-            delectus quibusdam ex atque quisquam suscipit, mollitia facilis
-            impedit ipsum, officiis dicta. Doloribus possimus architecto quam
-            similique vitae nihil quaerat?
+            Do It Creation is an innovative business solutions agency offering
+            end-to-end services, including branding, logo design, website
+            development, trademark registration, and digital marketing. Our
+            vision is to be your one-stop agency for all business needs, helping
+            brands grow, scale, and succeed through creative strategy, smart
+            execution, and result-driven solutions.
           </p>
         </div>
       </div>
