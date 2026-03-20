@@ -1,7 +1,7 @@
-import Icon1 from "../../../public/assets/img/icon/8+ Years.png";
-import Icon2 from "../../../public/assets/img/icon/2500+ Project Done.png";
-import Icon3 from "../../../public/assets/img/icon/20+ Contry.png";
-import Icon4 from "../../../public/assets/img/icon/Expert Team.png";
+import Icon1 from "../../../public/assets/img/icon/1-service.webp";
+import Icon2 from "../../../public/assets/img/icon/2-service.webp";
+import Icon3 from "../../../public/assets/img/icon/3-service.webp";
+import Icon4 from "../../../public/assets/img/icon/4-service.webp";
 import Image from "next/image";
 
 export const ServiceDetailsContent = () => {
@@ -19,7 +19,11 @@ export const ServiceDetailsContent = () => {
             </div>
             <div className="row ">
               <div className="col-lg-7">
-                <h2>One Team. One Vision. Your Growth.</h2>
+                <h2>Premium Logo Design Services in India</h2>
+                <h4>
+                  Designed to Impress. Built to Last. Because Your Brand Gets
+                  Only One Chance.
+                </h4>
                 <p>
                   We deliver creativity, performance, and measurable growth by
                   working as an extended in-house team for our clients,
@@ -37,15 +41,15 @@ export const ServiceDetailsContent = () => {
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>
-                  We’re always excited to collaborate on new ideas and bring
-                  visions to life. Whether you're building a brand from scratch
-                  or elevating an existing one, we’re here to help. Let us
-                  transform your brand into a true industry leader.
+                  We’re always excited to partner with brands that aim to stand
+                  out. If you’re looking for a logo that reflects excellence,
+                  authority, and long-term vision, let’s connect. We create
+                  something that sets you apart and attracts the right audience.
                 </p>
                 <ul className="feature-list-item">
-                  <li>End-to-End Branding</li>
-                  <li>Vision-to-Reality</li>
-                  <li>Market-Ready Scalability</li>
+                  <li>Copyright-Protected Design</li>
+                  <li>Print & Digital Ready</li>
+                  <li>Trademark-Compatible Logo</li>
                 </ul>
               </div>
             </div>
@@ -54,45 +58,45 @@ export const ServiceDetailsContent = () => {
                 <div className="process-style-two-item">
                   {/* <span>01</span> */}
                   <span>
-                    <Image src={Icon1} alt="8+ Years Experience" />
+                    <Image src={Icon1} alt="Strategy & Research" />
                   </span>
-                  <h4>8+ Years Experience</h4>
+                  <h4>Strategy & Research</h4>
                   <p>
-                    Strategy-driven creativity that builds lasting brand value
-                    with clarity, consistency, and impact always
+                    Understanding brand, audience, and competitors to define a
+                    unique creative direction.
                   </p>
                 </div>
                 <div className="process-style-two-item">
                   {/* <span>02</span> */}
                   <span>
-                    <Image src={Icon2} alt="2500+ Projects Delivered" />
+                    <Image src={Icon2} alt="Concept Design" />
                   </span>
-                  <h4>2500+ Projects Delivered</h4>
+                  <h4>Concept Design</h4>
                   <p>
-                    Transforming ideas into impactful designs with precision,
-                    consistency, and measurable results always.
+                    Crafting original logo concepts focused on uniqueness,
+                    clarity, and brand recall.
                   </p>
                 </div>
                 <div className="process-style-two-item">
                   {/* <span>03</span> */}
                   <span>
-                    <Image src={Icon3} alt="Design Implement" />
+                    <Image src={Icon3} alt="Refinement & Testing" />
                   </span>
-                  <h4>Global Client Trust</h4>
+                  <h4>Refinement & Testing</h4>
                   <p>
-                    Building global brands with trust, consistency, and creative
-                    excellence across diverse industries always.
+                    Refining designs and testing across real-world applications
+                    for perfect scalability.
                   </p>
                 </div>
                 <div className="process-style-two-item">
                   {/* <span>04</span> */}
                   <span>
-                    <Image src={Icon4} alt="Final Result" />
+                    <Image src={Icon4} alt="Final Delivery & Protection" />
                   </span>
-                  <h4>Expert Creative Team</h4>
+                  <h4>Final Delivery & Protection</h4>
                   <p>
-                    Your extended creative team delivering precision, speed, and
-                    scalable design support for brands always.
+                    Providing all formats with copyright safety, trademark
+                    readiness, and print compatibility.
                   </p>
                 </div>
               </div>

@@ -24,6 +24,14 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
           <Link href="/">Home</Link>
         </li>
 
+        <li>
+          <Link href="/about-us">About</Link>
+        </li>
+
+        <li>
+          <Link href="/logo-design">Logo Design</Link>
+        </li>
+
         {/* <li className="dropdown">
           <Link
             href="#"
@@ -35,30 +43,13 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
           </Link>
           <ul className="dropdown-menu">
             <li>
-              <Link href="#">Graphic Design</Link>
+              <Link href="/logo-design">Logo Design</Link>
             </li>
-            <li>
-              <Link href="#">Web Design & Devlepment</Link>
-            </li>
-            <li>
-              <Link href="#">Digital Marketing</Link>
-            </li>
-            <li>
-              <Link href="#">Logo Design</Link>
-            </li>
-            <li>
-              <Link href="#">Brand Name Suggestion</Link>
-            </li>
-
           </ul>
         </li> */}
 
         <li className="dropdown">
           <Link href="/portfolio">Portfolio</Link>
-        </li>
-
-        <li>
-          <Link href="/about-us">About</Link>
         </li>
 
         <li>
