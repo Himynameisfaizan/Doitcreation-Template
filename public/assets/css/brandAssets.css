@@ -1,5 +1,5 @@
 .brand-section{
-    padding:90px 8%;
+    padding:120px 8%;
     min-height:100vh;
     color:#eaeaf0;
 }
@@ -8,7 +8,7 @@
 .brand-header{
     text-align:center;
     max-width:900px;
-    margin:0 auto 70px;
+    margin:0 auto 40px;
 }
 
 .brand-header h1{
