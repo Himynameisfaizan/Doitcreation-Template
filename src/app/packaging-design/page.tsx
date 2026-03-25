@@ -7,7 +7,7 @@ import FooterV1 from "@/components/footer/FooterV1"
 import HeaderV1 from "@/components/header/HeaderV1"
 import { HomeContact } from "@/components/homeContact/HomeContact"
 import PartnerV2 from "@/components/partner/PartnerV2"
-import { ProductCarousel } from "@/components/productCarousel/ProductCarousel"
+import { ProductCarousel } from "@/components/packagingCarousel/ProductCarousel"
 import {ServiceDetailsContent} from "@/components/packaging-service/ServiceDetailsContent"
 import { ClientTestimonials } from "@/components/testimonials/ClientTestimonials"
 

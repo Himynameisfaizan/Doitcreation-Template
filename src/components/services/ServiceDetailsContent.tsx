@@ -1,7 +1,7 @@
-import Icon1 from "../../../public/assets/img/icon/8+ Years.png";
-import Icon2 from "../../../public/assets/img/icon/2500+ Project Done.png";
-import Icon3 from "../../../public/assets/img/icon/20+ Contry.png";
-import Icon4 from "../../../public/assets/img/icon/Expert Team.png";
+import Icon1 from "../../../public/assets/img/icon/years.png";
+import Icon2 from "../../../public/assets/img/icon/project.png";
+import Icon3 from "../../../public/assets/img/icon/contry.png";
+import Icon4 from "../../../public/assets/img/icon/expertteam.png";
 import Image from "next/image";
 
 export const ServiceDetailsContent = () => {

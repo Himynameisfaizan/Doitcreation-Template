@@ -5,10 +5,10 @@ import Image from "next/image";
 import ServiceListData from "../../../public/assets/jsonData/services/ServiceListData.json";
 import ServiceList from "../services/ServiceList";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
-import Icon1 from "../../../public/assets/img/icon/8+ Years.png";
-import Icon2 from "../../../public/assets/img/icon/2500+ Project Done.png";
-import Icon3 from "../../../public/assets/img/icon/20+ Contry.png";
-import Icon4 from "../../../public/assets/img/icon/Expert Team.png";
+import Icon1 from "../../../public/assets/img/icon/years.png";
+import Icon2 from "../../../public/assets/img/icon/project.png";
+import Icon3 from "../../../public/assets/img/icon/contry.png";
+import Icon4 from "../../../public/assets/img/icon/expertteam.png";
 import Link from "next/link";
 import { useState } from "react";
 

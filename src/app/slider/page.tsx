@@ -4,10 +4,10 @@ import Image from "next/image";
 import gsap from "gsap";
 import Draggable from "gsap/Draggable";
 
-import icon1 from "../../../public/assets/img/icon/20+ Contry.png";
-import icon2 from "../../../public/assets/img/icon/Expert Team.png";
-import icon3 from "../../../public/assets/img/icon/8+ Years.png";
-import icon4 from "../../../public/assets/img/icon/2500+ Project Done.png";
+import icon1 from "../../../public/assets/img/icon/contry.png";
+import icon2 from "../../../public/assets/img/icon/expertteam.png";
+import icon3 from "../../../public/assets/img/icon/years.png";
+import icon4 from "../../../public/assets/img/icon/project.png";
 
 gsap.registerPlugin(Draggable);
 const Page = () => {
