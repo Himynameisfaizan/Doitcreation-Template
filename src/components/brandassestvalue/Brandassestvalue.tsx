@@ -10,36 +10,71 @@ const Brandassestvalue = () => {
       have been designed to be suitable for modern digital brands and businesses.`,
       img: "/assets/img/brandAssest/1.jpeg",
       batch: "All in one",
+      data: [
+        "50 Visiting Cards Designs",
+        "50 Letterhead Designs",
+        "50 Brochure Designs",
+        "50 Fonts Collections",
+        "50 Professional PPTs",
+        "50 FB Posts Designs",
+        "50 Product Mockups",
+        "50 Custom Infographic",
+      ],
     },
     {
       title: "Visiting Cards",
       desc: "A premium set of 50 fully editable visiting card designs, crafted for modern businesses to create a strong and professional brand impression.",
       img: "/assets/img/brandAssest/2.jpeg",
       batch: "50 visiting cards",
+      data: [
+        "50+ Visiting Cards Design Collection",
+        "Professional Cards Design",
+        "Hight Quality Vector Files",
+      ],
     },
     {
       title: "Letterhead Design",
       desc: "Premium letterhead templates with fully editable files, designed for professional and consistent brand communication.",
       img: "/assets/img/brandAssest/3.jpeg",
       batch: "50 Letter Head",
+      data: [
+        "50+ Letterhead Design Collection",
+        "Professional Letterhead Design",
+        "Hight Quality Vector Files",
+      ],
     },
     {
       title: "Brochure Design",
       desc: "Premium social branding templates",
       img: "/assets/img/brandAssest/4.jpeg",
       batch: "50 Brochure design",
+      data: [
+        "50+ Brochure Design Collection",
+        "Professional Brochure Design",
+        "Hight Quality Vector Files",
+      ],
     },
     {
       title: "Social Media Posts",
       desc: "High-quality product design assets",
       img: "/assets/img/brandAssest/5.jpeg",
       batch: "50 Posts",
+      data: [
+        "50+ Social Media Post Design Collection",
+        "Professional Post Design",
+        "Hight Quality Graphic Files",
+      ],
     },
     {
       title: "Logo Intro",
       desc: "Complete digital branding ecosystem",
       img: "/assets/img/brandAssest/6.jpeg",
       batch: "Logo with Animation",
+      data: [
+        "50+ Logo Animation Collection",
+        "Professional Intro Design",
+        "Hight Quality Motion Files",
+      ],
     },
   ];
   const [selectedItem, setSelectedItem] = useState<any>(null);
@@ -81,34 +116,31 @@ const Brandassestvalue = () => {
       </section>
       {selectedItem && (
         <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            background: "rgba(0,0,0,0.6)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 9999,
-          }}
+          className="brandPopUpContainer"
           onClick={() => setSelectedItem(null)}
         >
-          <div
-            style={{
-              background: "#363636",
-              padding: "20px",
-              borderRadius: "10px",
-              maxWidth: "500px",
-              width: "90%",
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="brandDataPop" onClick={(e) => e.stopPropagation()}>
             <h2>{selectedItem.title}</h2>
-            <p>{selectedItem.desc}</p>
-
-            <button onClick={() => setSelectedItem(null)}>Close</button>
+            <ul className="itemsData">
+              {selectedItem.data.map((item: String, index: any) => (
+                <li key={index}>
+                  <i className="ri-arrow-right-long-line"></i>
+                  {item}
+                </li>
+              ))}
+              <li>
+                <i className="ri-arrow-right-long-line"></i>
+                Full Editable File
+              </li>
+              <li>
+                <i className="ri-arrow-right-long-line"></i>
+                Instant Digital Delivery
+              </li>
+            </ul>
+            <i
+              className="ri-close-large-line brandCloseButton"
+              onClick={() => setSelectedItem(null)}
+            ></i>
           </div>
         </div>
       )}
