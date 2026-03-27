@@ -6,10 +6,11 @@ const Brandassestvalue = () => {
   const assets = [
     {
       title: "Brand Design Bundle",
-      desc: `This premium branding bundle offers everything you need to build, grow, and manage your brand. All of the included assets 
+      desc: `This premium branding bundle offers everything you need. All of the included assets 
       have been designed to be suitable for modern digital brands and businesses.`,
       img: "/assets/img/brandAssest/1.jpeg",
       batch: "All in one",
+      amount: 4999,
       data: [
         "50 Visiting Cards Designs",
         "50 Letterhead Designs",
@@ -26,6 +27,7 @@ const Brandassestvalue = () => {
       desc: "A premium set of 50 fully editable visiting card designs, crafted for modern businesses to create a strong and professional brand impression.",
       img: "/assets/img/brandAssest/2.jpeg",
       batch: "50 visiting cards",
+      amount: 3499,
       data: [
         "50+ Visiting Cards Design Collection",
         "Professional Cards Design",
@@ -37,6 +39,7 @@ const Brandassestvalue = () => {
       desc: "Premium letterhead templates with fully editable files, designed for professional and consistent brand communication.",
       img: "/assets/img/brandAssest/3.jpeg",
       batch: "50 Letter Head",
+      amount: 3499,
       data: [
         "50+ Letterhead Design Collection",
         "Professional Letterhead Design",
@@ -48,6 +51,7 @@ const Brandassestvalue = () => {
       desc: "Premium social branding templates",
       img: "/assets/img/brandAssest/4.jpeg",
       batch: "50 Brochure design",
+      amount: 3499,
       data: [
         "50+ Brochure Design Collection",
         "Professional Brochure Design",
@@ -59,6 +63,7 @@ const Brandassestvalue = () => {
       desc: "High-quality product design assets",
       img: "/assets/img/brandAssest/5.jpeg",
       batch: "50 Posts",
+      amount: 3499,
       data: [
         "50+ Social Media Post Design Collection",
         "Professional Post Design",
@@ -70,6 +75,7 @@ const Brandassestvalue = () => {
       desc: "Complete digital branding ecosystem",
       img: "/assets/img/brandAssest/6.jpeg",
       batch: "Logo with Animation",
+      amount: 3499,
       data: [
         "50+ Logo Animation Collection",
         "Professional Intro Design",
@@ -109,6 +115,7 @@ const Brandassestvalue = () => {
                   </span>
                 </div>
                 <p>{item.desc}</p>
+                <a className="buyButton">Buy: ₹{item.amount}</a>
               </div>
             </div>
           ))}
@@ -121,6 +128,8 @@ const Brandassestvalue = () => {
         >
           <div className="brandDataPop" onClick={(e) => e.stopPropagation()}>
             <h2>{selectedItem.title}</h2>
+            <p>{selectedItem.desc}</p>
+            <h4>Q. What is in this package?</h4>
             <ul className="itemsData">
               {selectedItem.data.map((item: String, index: any) => (
                 <li key={index}>
