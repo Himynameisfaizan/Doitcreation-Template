@@ -12,7 +12,6 @@ const ContactForm = () => {
     email: "",
     phone: "",
     message: "",
-    source: "From -> Contact page",
   });
 
   const [loading, setLoading] = useState(false);
@@ -44,12 +43,12 @@ const ContactForm = () => {
 
       if (data.success) {
         setSuccess("Message sent successfully! ✅");
-        setForm({ name: "", email: "", phone: "", message: "", source: "" });
+        setForm({ name: "", email: "", phone: "", message: ""});
       } else {
-        setError("Failed to send message ❌");
+        setError("Failed to send message ");
       }
     } catch (err) {
-      setError("Something went wrong ❌");
+      setError("Something went wrong ");
     } finally {
       setLoading(false);
     }

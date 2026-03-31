@@ -86,44 +86,6 @@ export const ProductCarousel = () => {
   const duplicatedImages = [...images, ...images, ...images];
   return (
     <>
-      {/* <Swiper
-        slidesPerView="auto"
-        spaceBetween={20}
-        loop={true}
-        speed={4000}
-        freeMode={true}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-        modules={[Autoplay]}
-        className="mySwiper linear-swiper"
-        style={{ padding: "0 0 60px 0", transitionTimingFunction: "linear" }}
-      >
-        {img.map((img) => (
-          <SwiperSlide
-            style={{ height: "auto", maxWidth: "300px", objectFit: "cover" }}
-          >
-            <div className="">
-              <Image src={img.img} alt="" className="rounded" />
-              <div className="d-flex align-items-center gap-2">
-                <span style={{ fontSize: "14px" }}>{img.title}</span>
-                <span
-                  style={{
-                    height: "6px",
-                    width: "6px",
-                    backgroundColor: "#E4202A",
-                    display: "inline-block",
-                    borderRadius: "2px",
-                  }}
-                ></span>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
-
       <div
         ref={wrapperRef}
         style={{
@@ -148,18 +110,6 @@ export const ProductCarousel = () => {
                 style={{ height: "300px", width: "auto" }}
                 className="rounded"
               />
-              {/* <div className="d-flex align-items-center gap-2 mt-2">
-                <span style={{ fontSize: "14px" }}>{item.title}</span>
-                <span
-                  style={{
-                    height: "6px",
-                    width: "6px",
-                    backgroundColor: "#E4202A",
-                    display: "inline-block",
-                    borderRadius: "2px",
-                  }}
-                />
-              </div> */}
             </div>
           ))}
         </div>

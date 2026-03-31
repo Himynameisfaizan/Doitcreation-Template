@@ -9,7 +9,6 @@ export const HomeContact = () => {
     email: "",
     phone: "",
     message: "",
-    source: "Home contact form",
   });
 
   const [loading, setLoading] = useState(false);
@@ -37,16 +36,19 @@ export const HomeContact = () => {
         body: JSON.stringify(form),
       });
 
+      if (!res.ok) {
+        throw new Error("Request failed");
+      }
       const data = await res.json();
 
       if (data.success) {
         setSuccess("Message sent successfully! ✅");
-        setForm({ name: "", email: "", phone: "", message: "", source: "" });
+        setForm({ name: "", email: "", phone: "", message: "" });
       } else {
-        setError("Failed to send message ❌");
+        setError("Failed to send message");
       }
     } catch (err) {
-      setError("Something went wrong ❌");
+      setError("Failed to send");
     } finally {
       setLoading(false);
     }
@@ -121,7 +123,7 @@ export const HomeContact = () => {
 
                     <div className="d-flex flex-column">
                       <label>
-                        Mobile no.<span> *</span>
+                        Mobile no.
                       </label>
                       <input
                         type="text"
@@ -149,7 +151,7 @@ export const HomeContact = () => {
                       </button>
                     </div>
 
-                    {/* ✅ STATUS MESSAGES */}
+                    {/* STATUS MESSAGES */}
                     {success && (
                       <p style={{ color: "green", marginTop: "10px" }}>
                         {success}

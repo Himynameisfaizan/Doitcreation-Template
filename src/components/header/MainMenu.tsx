@@ -48,13 +48,34 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
             <li>
               <Link href="/packaging-design">Packaging Design</Link>
             </li>
+            <li>
+              <Link href="/website-design">Website Design</Link>
+            </li>
+            <li>
+              <Link href="/logo-trademark">Logo Trademark</Link>
+            </li>
+            <li>
+              <Link href="/brand-name">Brand Name Suggestion</Link>
+            </li>
+            <li>
+              <Link href="/social-media-marketing">Social Media Marketing</Link>
+            </li>
+            <li>
+              <Link href="/seo">SEO</Link>
+            </li>
+            <li>
+              <Link href="/app-development">App Development</Link>
+            </li>
+            <li>
+              <Link href="/video-shoot">Video & Shoot Service</Link>
+            </li>
           </ul>
         </li>
 
         <li className="dropdown">
           <Link href="/portfolio">Portfolio</Link>
         </li>
-        
+
         <li className="dropdown">
           <Link href="/brandassest">Brand assest</Link>
         </li>

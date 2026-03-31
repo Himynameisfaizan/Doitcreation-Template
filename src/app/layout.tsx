@@ -52,6 +52,7 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <ClientLayout>{children}</ClientLayout>
+        <script src="https://checkout.razorpay.com/v1/checkout.js" />
       </body>
     </html>
   );
